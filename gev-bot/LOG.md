@@ -7,6 +7,20 @@ bot hit (blocked sites, no new results, ambiguous data).
 
 ---
 
+## 2026-09-25 20:19 UTC — hourly run
+
+**Alerts sent:** none (no alert rule matched).
+
+**New contracts found:** 0. All 26 queries returned only tracked items. Latest gevernova.com press release still 2026-09-16; latest 8-K still the Q2 release.
+
+**Close calls:** Western Farmers Electric Cooperative (Oklahoma co-op), 2x LM6000VELOX at the Anadarko Plant — surfaced as new by the LM6000 query, but the Power Engineering article is dated 2024-05-16. Not added (outside window, pre-2026).
+
+**Look into:** nothing new. Standing: Venezuela payment terms; Q2 10-Q geographic revenue split; Qatalum AGP deal date.
+
+**Issues:** sixteenth consecutive quiet hour. Search engine keeps rotating in old aero orders (TVA, Springfield, now WFEC) as "recent"; each needs a dateline fetch. Next scheduled run 21:17 UTC.
+
+---
+
 ## 2026-09-25 19:19 UTC — hourly run
 
 **Alerts sent:** none (no alert rule matched).
