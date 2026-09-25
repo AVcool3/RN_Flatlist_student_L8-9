@@ -7,6 +7,29 @@ bot hit (blocked sites, no new results, ambiguous data).
 
 ---
 
+## 2026-09-25 04:18 UTC — hourly run
+
+**Alerts sent:** none (no new GEV contract in the last 7 days beyond rows already tracked).
+
+**New contracts found:** 0 new this week; 11 backfill rows added so the tracker covers the full 2024-2026 named-customer picture (Duke, Qurayyah, KOWEPO, Blue Energy Texas, Egypt MDEPC, Enea Poland, Aula Australia, Greenvolt Romania, Powerica + Enfinity India, Prokon/Enertrag Germany). 1 update: Taiba 1 + Qassim 1 total is 3.8 GW, completion 2027.
+
+**Close calls:**
+- Blue Energy (Victoria, TX) 2.5 GW gas-plus-nuclear: two 7HA.02 (~1 GW) by 2030 + up to five BWRX-300 SMRs from 2032. Announced Aug 13, 2026; NRC construction-permit filing Sept 16, 2026. Turbines are "to be deployed", FID not until 2027 — NOT a firm order yet.
+- Duke Energy (Apr 2025): 8 firm 7HA + "plan to advance" up to 11 more. The 11 read as reservation/pipeline, not backlog. Any Duke IRP filing converting these is worth an alert.
+- Siemens Energy read-through: 12.5 GW booked in calendar Q2 2026, ~60 GW backlog, sold out to FY2028. GEV booked 20 GW in the same quarter with 116 GW under contract — GEV is still taking the larger share, but Siemens is growing faster off a smaller base.
+
+**Look into:**
+- Laguna conference transcript is hosted by GEV itself (PDF, Sept 16) — cleaner source than investing.com for the 5/6/7 GW per quarter ladder: https://www.gevernova.com/sites/default/files/ge-vernova-morgan-stanley-laguna-conference-2026-transcript.pdf
+- India: two wind orders (Powerica 100 MW, Enfinity 163.4 MW, both Pune-built, deliveries Q4 2026) but still NO gas turbine order in India despite the ~$1.5B HVDC deal expected to convert in Q4. Watch for India gas.
+- Mitsubishi Power large-frame backlog 35 GW; 10 large-frame orders in its FQ1 2026 (4 US, 6 Japan). Third competitor is small relative to GEV/Siemens.
+- Jefferies initiated/reiterated Buy on Sept 22, 2026 — check the note's GW-under-contract assumption vs GEV's >=125 GW.
+
+**Issues:**
+- turbomachinerymag.com returned HTTP 403 on fetch (LG&E Mill Creek MC5 7HA.03 details) — row added from search snippet only; verify date.
+- No GEV press release dated Sept 24-25. Quiet day.
+
+---
+
 ## 2026-09-25 03:20 UTC — hourly run (manual "go one right now")
 
 **Alerts sent:** 1 — "GEV: Sept 16 Laguna conf: H2'26 20 GW new gas commitments 'likely conservative'; 5 GW/qtr output now, 6 GW/qtr 2H27; $200B backlog very early 2027. Venezuela firmed Sept 2 w/ PDVSA+Corpoelec, payment still unknown."
