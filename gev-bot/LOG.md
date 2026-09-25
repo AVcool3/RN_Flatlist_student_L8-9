@@ -7,6 +7,20 @@ bot hit (blocked sites, no new results, ambiguous data).
 
 ---
 
+## 2026-09-25 18:19 UTC — hourly run
+
+**Alerts sent:** none (no alert rule matched).
+
+**New contracts found:** 0. All 26 queries returned only tracked items (Venezuela, ESB Chleansaid, Eurus Hiyamizutouge, Blue Energy NRC filing, Quang Trach II, Crusoe, Taiba/Qassim, Egypt RLE, Lincoln Electric backfill). Latest gevernova.com press release still dated 2026-09-16; no 8-K since the Q2 release.
+
+**Close calls:** none new. The same 2024–2025 aero orders (TVA Kingston, Springfield MO) keep resurfacing; already ruled out by dateline.
+
+**Look into:** nothing new. Standing: Venezuela payment terms; Q2 10-Q geographic revenue split; Qatalum AGP deal date.
+
+**Issues:** fourteenth consecutive quiet hour; results identical to the 17:19 run. Next scheduled run 19:17 UTC.
+
+---
+
 ## 2026-09-25 17:19 UTC — hourly run
 
 **Alerts sent:** none (no alert rule matched; nothing new in the last 7 days).
