@@ -7,6 +7,22 @@ bot hit (blocked sites, no new results, ambiguous data).
 
 ---
 
+## 2026-09-25 15:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0 new in the last 7 days.
+
+**Close calls:** none new.
+
+**Look into:**
+- Nothing new. Note for the pitch: a search snippet cites GEV's HA-class equipment backlog at 29 GW as of Q2 2025 — pairs with the 116 GW total at Q2 2026 to show how fast the HA mix is growing, but verify against the Q2 2025 8-K before using.
+
+**Issues:**
+- Eleventh quiet hour. All 26 queries returned previously tracked items. No GEV press release dated Sept 24-26.
+
+---
+
 ## 2026-09-25 14:19 UTC — hourly run
 
 **Alerts sent:** none.
