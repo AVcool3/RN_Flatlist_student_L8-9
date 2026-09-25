@@ -7,6 +7,21 @@ bot hit (blocked sites, no new results, ambiguous data).
 
 ---
 
+## 2026-09-25 14:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0 new in the last 7 days. 1 update: LG&E/KU Mill Creek MC5 (7HA.03, 645 MW) date resolved to May 2024 via Gas Turbine World (had been "date unverified").
+
+**Close calls:** none new. GS Power Anyang (Korea) 7HA.02 surfaced but is a 2018-2022 project, already operating — no row.
+
+**Look into:** nothing new.
+
+**Issues:**
+- Tenth quiet hour. All 26 queries returned previously tracked items. No GEV press release dated Sept 24-26.
+
+---
+
 ## 2026-09-25 13:19 UTC — hourly run
 
 **Alerts sent:** none.
