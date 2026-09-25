@@ -7,6 +7,25 @@ bot hit (blocked sites, no new results, ambiguous data).
 
 ---
 
+## 2026-09-25 05:18 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0 new in the last 7 days. 3 backfill rows (Hawaiian Electric 6x LM6000VELOX, Kansai Nanko 3x 7HA.03, ATCO Whyalla 4x LM6000VELOX) so the aero + Japan picture is complete.
+
+**Close calls:**
+- None new. The same items keep surfacing (Crusoe 2025, Venezuela MOU, Blue Energy TX).
+
+**Look into:**
+- Siemens Energy discloses ~25% of its gas order book is data-center linked vs GEV's ~20% of GW under contract. GEV is the more utility-weighted book; that is a defensive point for the pitch if data-center capex slows.
+- Hawaiian Electric Waiau (booked Q2 2026, first units 2029) is the pattern to watch for U.S. utilities: aero packages replacing 60-year-old oil steam units. Aero orders were 61 units in Q2 — most are this kind of small, high-price-per-kW (~$1,800/kW) deal.
+- Electrification backlog ~$42B (from ~$9B at YE2022). Worth its own slide.
+
+**Issues:**
+- Quiet news day; all 26 queries returned only previously tracked items. No press release from GEV on Sept 24 or 25.
+
+---
+
 ## 2026-09-25 04:18 UTC — hourly run
 
 **Alerts sent:** none (no new GEV contract in the last 7 days beyond rows already tracked).
