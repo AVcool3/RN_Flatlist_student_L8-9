@@ -24,6 +24,7 @@
 //
 // Input files recognised (all under results/):
 //   baseline.json, baseline-<workstream>.json, YYYY-MM-DD.json, YYYY-MM-DD-<workstream>.json
+//   baseline-derived.json, YYYY-MM-DD-derived.json   (from derive.mjs: USD metrics)
 // Files with "-only" in the name (old-schema archives) are skipped.
 // ============================================================================
 
@@ -49,6 +50,8 @@ for (const name of readdirSync(resultsDir).sort()) {
   const d = doc.data ?? doc;
   if (!d || typeof d !== "object") continue;
   // Baseline files carry their own date; daily files are dated by filename.
+  // Baseline files carry their own date; derive.mjs output has none, so a
+  // baseline-derived.json is dated like baseline.json (runWindow.baselineDate).
   const date = m[1] === "baseline" ? (d.baseline_date || runWindow.baselineDate) : m[1];
   const bucket = byDate.get(date) ?? { files: [] };
   bucket.files.push(name);
@@ -125,6 +128,15 @@ function rowsForDate(date, b) {
     // c) "Promo offers": count of visible promotional offers per service (promotions workstream + trial text).
     const promoCount = (rowsOf, promoFilter) => promos.filter(promoFilter).length + (promos.length ? 0 : rowsOf.filter((r) => hasPromo(r.trial_offer)).length);
     if (sp.length) rows.push({ date, country: c, metric: "Promo offers", spotify: promoCount(sp, isSpotify), currency: "", apple: ap.length ? promoCount(ap, isApple) : null, youtube: yt.length ? promoCount(yt, isYouTube) : null, source_url: promos[0]?.source_url ?? sp[0]?.price_citation ?? "", flag: "" });
+  }
+
+  // c2) "Individual price USD": from derive.mjs (or the agent's derived_metrics), with the cited FX source.
+  for (const m of b.derived_metrics ?? []) {
+    if (num(m.spotify_individual_usd) === null) continue;
+    rows.push({ date, country: up(m.country), metric: "Individual price USD", spotify: Math.round(m.spotify_individual_usd * 100) / 100, currency: "USD",
+      apple: num(m.apple_music_individual_usd) !== null ? Math.round(m.apple_music_individual_usd * 100) / 100 : null,
+      youtube: num(m.youtube_premium_individual_usd) !== null ? Math.round(m.youtube_premium_individual_usd * 100) / 100 : null,
+      source_url: m.fx_source ?? "", flag: "" });
   }
 
   // d) "Audiobook hrs": Spotify only, from the audiobooks workstream.

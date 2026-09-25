@@ -1,6 +1,6 @@
 # Country indicators (latest run: 2026-09-25)
 
-Built by `build-dataset.mjs` from 1 dated run(s): 2026-09-25 (baseline.json).
+Built by `build-dataset.mjs` from 1 dated run(s): 2026-09-25 (baseline-derived.json, baseline.json).
 Blank cells mean the input is not in the JSON yet; the notes below say which workstream fills it. Nothing is estimated.
 
 | Country | Pricing power index | Basis | Monetization products | Monetization depth | Feature monetization index | Plans | Plans w/ promo | Promotion intensity | Competitor lag (days) |
@@ -54,7 +54,7 @@ Blank cells mean the input is not in the JSON yet; the notes below say which wor
 - Countries with a Pricing power index: 19 of 35.
 - Countries with Monetization depth: 0 of 35.
 - Countries with Competitor lag: 0 of 35.
-- Master table rows: 163 (all dates: 163).
+- Master table rows: 192 (all dates: 192).
 
 ## Flagged rows (not corrected, verify on the cited page)
 

@@ -21,6 +21,7 @@ carried forward: a missing value is left blank and recorded in `data_gaps`.
 |---|---|---|
 | `results/baseline.json`, `results/YYYY-MM-DD.json` | `run.mjs` | Pricing agent run: today's prices per country/tier, 24 months of Spotify price history, investment signals, competitor reactions, consumer reaction, analyst summary |
 | `results/baseline-<ws>.json`, `results/YYYY-MM-DD-<ws>.json` | `run.mjs --workstream <ws>` | One focused agent run per research area (see workstreams below) |
+| `results/baseline-derived.json`, `results/YYYY-MM-DD-derived.json` | `derive.mjs` | Per pricing run: `suspect_prices` (rows outside a plausible per-currency range, kept but excluded from USD metrics) and `derived_metrics` (Spotify/Apple/YouTube Individual in USD with the FX provider, timestamp and URL beside every number) |
 | `results/master-table.csv` | `build-dataset.mjs` | The one long table for charts: `date, country, metric, spotify, currency, apple, youtube, previous, change_pct, source_url, flag` |
 | `results/indicators.csv` + `indicators.md` | `build-dataset.mjs` | Per-country indices: Pricing Power Index, Monetization Depth, Feature Monetization Index, Promotion Intensity, Competitor Response Lag |
 | `results/baseline-brief.md` | hand-built from `baseline.json` | The investment brief for the 2026-09-25 baseline |
@@ -36,7 +37,8 @@ carried forward: a missing value is left blank and recorded in `data_gaps`.
 | `run.mjs` | Builds the prompt + sub-schema for a job and runs the `firecrawl agent` CLI | you want to change how the CLI is called |
 | `snapshot.mjs` | Saves watched pages as markdown via the Firecrawl scrape API | you want a different normalisation or concurrency |
 | `diff.mjs` | Diffs today's snapshot folder against the previous one | you want different "signal" patterns |
-| `build-dataset.mjs` | Builds the master table and indicators from all result files | you want a new metric or index |
+| `derive.mjs` | Post-processing for one pricing result: flags implausible prices (mis-parsed thousands), fetches a dated USD FX rate, computes Spotify vs Apple/YouTube in USD | you add a currency, or want a different FX source |
+| `build-dataset.mjs` | Builds the master table and indicators from all result files (including `*-derived.json` for USD) | you want a new metric or index |
 | `results/`, `snapshots/` | Output. Committed to git so history is the archive | never by hand |
 | `../.github/workflows/pricing-scraper.yml` | GitHub Actions cron for the 5-day window + manual button | you change the dates or the default jobs |
 
@@ -71,7 +73,9 @@ node pricing-scraper/snapshot.mjs                       # -> snapshots/<today>/
 node pricing-scraper/snapshot.mjs --only pricing,ads    # a subset of categories
 node pricing-scraper/diff.mjs                           # -> snapshots/<today>-diff.md
 
-# --- derived dataset (free, local) ---
+# --- post-processing (free, local; derive.mjs makes one FX request) ---
+node pricing-scraper/derive.mjs pricing-scraper/results/baseline.json   # ALWAYS after a pricing run -> results/baseline-derived.json
+node pricing-scraper/derive.mjs pricing-scraper/results/2026-09-26.json --no-network   # checks only, skip FX
 node pricing-scraper/build-dataset.mjs                  # -> results/master-table.csv, indicators.csv, indicators.md
 ```
 
@@ -108,8 +112,13 @@ original core schema, so daily price checks stay fast.
 | Promotion Intensity | Spotify plans with a visible promo ÷ Spotify plans offered | pricing run (+ `promotions`) |
 | Competitor Response Lag | min days from a Spotify price change to an Apple/YouTube reaction, same country | `spotify_price_history` + `competitor_reactions` |
 
-`build-dataset.mjs` also **flags** (never corrects) prices that look like
-parsing errors, e.g. a JPY price under 20, so you can check the cited page.
+`derive.mjs` never deletes data. Rows outside a per-currency plausible range are
+listed under `suspect_prices` and excluded from the USD metrics, because the
+agent occasionally drops thousands digits (e.g. reads ₩10,900 as 11.99). The FX
+provider, timestamp and URL are stored beside every converted number.
+`build-dataset.mjs` applies a simpler flag of its own (a price under 20 in a
+currency where monthly prices run in the hundreds) and reads the USD figures
+from `*-derived.json` into the `Individual price USD` metric.
 
 ## Daily page snapshots: seeing changes before they are disclosed
 
@@ -133,8 +142,8 @@ retry never re-spends credits.
 ## The 5-day schedule
 
 The workflow cron is `0 13 26-30 9 *`: 13:00 UTC every day from 26 to 30 Sept 2026.
-Each run: snapshot + diff → pricing agent run → optional workstreams → rebuild
-dataset → commit. GitHub only runs cron on the default branch, so until this
+Each run: snapshot + diff → pricing agent run → derive (sanity + FX) → optional
+workstreams → rebuild dataset → commit. GitHub only runs cron on the default branch, so until this
 branch is merged use the **Run workflow** button in the Actions tab (pick this
 branch); the inputs let you tick baseline, choose workstreams, or skip the
 expensive agent run.

@@ -9,9 +9,10 @@
 #   1. snapshot.mjs       save today's copy of every watched web page (cheap)
 #   2. diff.mjs           report what changed since yesterday's snapshot
 #   3. run.mjs            the daily Firecrawl AGENT pricing run (expensive)
-#   4. run.mjs --workstream <list>   optional extra agent jobs (see input)
-#   5. build-dataset.mjs  rebuild master-table.csv + indicators.csv/.md
-#   6. commit + push
+#   4. derive.mjs         sanity-check prices + cited USD FX for that result
+#   5. run.mjs --workstream <list>   optional extra agent jobs (see input)
+#   6. build-dataset.mjs  rebuild master-table.csv + indicators.csv/.md
+#   7. commit + push
 #
 # TWO ways this workflow starts:
 #   1. `schedule`          -> automatic daily run, Sept 26-30 2026 at 13:00 UTC
@@ -101,6 +102,15 @@ jobs:
             node pricing-scraper/run.mjs --baseline
           else
             node pricing-scraper/run.mjs
+          fi
+
+      - name: Sanity-check prices and USD-normalize today's pricing result
+        if: env.DO_PRICING == 'true'
+        run: |
+          if [ "$DO_BASELINE" = "true" ]; then
+            node pricing-scraper/derive.mjs pricing-scraper/results/baseline.json
+          else
+            node pricing-scraper/derive.mjs "pricing-scraper/results/$(date -u +%F).json"
           fi
 
       - name: Extra workstream agent runs
