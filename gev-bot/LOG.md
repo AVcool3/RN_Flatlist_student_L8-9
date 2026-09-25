@@ -7,6 +7,23 @@ bot hit (blocked sites, no new results, ambiguous data).
 
 ---
 
+## 2026-09-25 07:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0 new in the last 7 days. 1 backfill row (Eneva – Azulão, Brazil, 1x 7HA.02 ~350 MW reserve power; date not in snippet — verify).
+
+**Close calls:** none new.
+
+**Look into:**
+- Brazil now has a named GEV HA project (Eneva Azulão) to pair with the Q1 "Brazil" mention in the 21 GW signings. Worth confirming whether Eneva has more 7HA units reserved for its 2025-26 auction wins.
+- Trade press now quotes 5-7 year lead times for "non-prioritized" 7HA slots — supports the pricing-power thesis and the reservation-priority answer from earlier.
+
+**Issues:**
+- Third consecutive quiet hour (overnight US time). All 26 queries returned previously tracked items only. No GEV press release dated Sept 24-26.
+
+---
+
 ## 2026-09-25 06:18 UTC — hourly run
 
 **Alerts sent:** none.
