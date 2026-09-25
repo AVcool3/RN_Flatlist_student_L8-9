@@ -18,7 +18,7 @@
 //
 // REQUIREMENTS
 //   - Node 18+ (no npm install needed; only built-in modules are used)
-//   - FIRECRAWL_API_KEY in the environment. The `agent` endpoint is NOT
+//   - FIRECRAWL_API_KEY (or FireAPI) in the environment. The `agent` endpoint is NOT
 //     available on Firecrawl's keyless free tier, so this script refuses to
 //     run without a key instead of hanging on an interactive login prompt.
 //
@@ -128,11 +128,16 @@ function main() {
     return;
   }
 
+  // The Firecrawl CLI only looks at FIRECRAWL_API_KEY, but the key may be
+  // stored under a friendlier name (the cloud environment uses `FireAPI`).
+  // Copy it across so either name works. Add more fallbacks here if needed.
+  const apiKey = process.env.FIRECRAWL_API_KEY || process.env.FireAPI;
+
   // Fail fast with a clear message instead of letting the CLI open its
   // interactive "Login with browser / Enter API key" menu.
-  if (!process.env.FIRECRAWL_API_KEY) {
+  if (!apiKey) {
     console.error(
-      "\n[pricing-scraper] ERROR: FIRECRAWL_API_KEY is not set.\n" +
+      "\n[pricing-scraper] ERROR: neither FIRECRAWL_API_KEY nor FireAPI is set.\n" +
         "The `firecrawl agent` endpoint requires an API key (keyless tier is not supported).\n" +
         "Get one at https://www.firecrawl.dev/ and export FIRECRAWL_API_KEY, or add it as a\n" +
         "GitHub Actions secret / cloud-environment secret for scheduled runs.\n"
@@ -146,7 +151,7 @@ function main() {
   const npx = process.platform === "win32" ? "npx.cmd" : "npx";
   const result = spawnSync(npx, cliArgs, {
     stdio: ["ignore", "inherit", "inherit"], // stdin closed -> no login prompt
-    env: { ...process.env, FIRECRAWL_NO_TELEMETRY: "1" },
+    env: { ...process.env, FIRECRAWL_API_KEY: apiKey, FIRECRAWL_NO_TELEMETRY: "1" },
   });
 
   if (result.status !== 0) {

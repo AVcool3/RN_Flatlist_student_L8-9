@@ -59,7 +59,9 @@ jobs:
 
       - name: Run scraper
         env:
+          # Either secret name works; run.mjs picks whichever is set.
           FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
+          FireAPI: ${{ secrets.FireAPI }}
         run: |
           # If the manual "baseline" checkbox was ticked, pass --baseline.
           if [ "${{ github.event.inputs.baseline }}" = "true" ]; then

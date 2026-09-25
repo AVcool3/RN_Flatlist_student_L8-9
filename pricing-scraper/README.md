@@ -23,7 +23,7 @@ at <https://www.firecrawl.dev/> and put it in **one** of these places:
 - **GitHub Actions:** repo → Settings → Secrets and variables → Actions →
   New repository secret → name `FIRECRAWL_API_KEY`.
 - **Claude Code cloud environment:** environment → Edit → add an environment
-  variable named `FIRECRAWL_API_KEY`.
+  variable named `FIRECRAWL_API_KEY` **or** `FireAPI` (both names are accepted).
 
 `run.mjs` refuses to run without it (exit code 2) instead of hanging on the
 CLI's interactive login menu.
