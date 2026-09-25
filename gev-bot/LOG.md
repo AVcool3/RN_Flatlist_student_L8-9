@@ -7,6 +7,20 @@ bot hit (blocked sites, no new results, ambiguous data).
 
 ---
 
+## 2026-09-25 23:19 UTC — hourly run
+
+**Alerts sent:** none (no alert rule matched).
+
+**New contracts found:** 0. First run with the 28-query set. The two new nuclear queries surfaced the SGE/Samsung BWRX-300 MoU (already tracked from 22:19) directly, which confirms they close the gap that caused the two-day late catch. Latest gevernova.com press release still 2026-09-22 (SMR MoU); latest 8-K still the Q2 release.
+
+**Close calls:** the UK "series of MoUs" for BWRX-300 (Aecon, AtkinsRéalis, Jacobs, Laing O'Rourke) surfaced as if recent, but the release is dated 2024-09-09. GEVH/Velan valves collaboration (June 2026) and the Southeast Asia BWRX-300 MoU (March 2026) also resurfaced — both older than the window, both nuclear, not added.
+
+**Look into:** nothing new. Standing: whether SGE's Feb 2026 design agreement plus the Sept 22 MoU points to a firm Polish order before the Jan 2027 print; Venezuela payment terms; Q2 10-Q geographic revenue split; Qatalum AGP date.
+
+**Issues:** none new. End of Friday US time; expect a quiet weekend for press releases. Next scheduled run 00:17 UTC (Sat 26 Sept).
+
+---
+
 ## 2026-09-25 22:19 UTC — hourly run
 
 **Alerts sent:** none. The one new item is a non-binding nuclear MoU, not a turbine contract, so no alert rule matched.
