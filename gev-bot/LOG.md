@@ -7,6 +7,20 @@ bot hit (blocked sites, no new results, ambiguous data).
 
 ---
 
+## 2026-09-25 22:19 UTC — hourly run
+
+**Alerts sent:** none. The one new item is a non-binding nuclear MoU, not a turbine contract, so no alert rule matched.
+
+**New contracts found:** 1 new row (non-binding). SGE (Poland's ORLEN Synthos Green Energy), Samsung C&T, Hitachi and GE Vernova signed an MoU on 2026-09-22 to pursue BWRX-300 small modular reactor deployment across Central/Eastern Europe and the UK. GEV press release confirmed. No reactor count, no MW, no money. Relevance to the pitch: it is nuclear optionality and a Europe-geography datapoint, not gas backlog.
+
+**Close calls:** the SMR MoU above. Also the usual 2024–2025 aero orders resurfacing (TVA, Springfield); already ruled out.
+
+**Look into:** whether SGE's earlier BWRX-300 design agreement (Feb 2026) plus this MoU implies a firm Polish order before the Jan 2027 print. Standing: Venezuela payment terms; Q2 10-Q geographic revenue split; Qatalum AGP date.
+
+**Issues:** the press release was published 09-22 but only surfaced now via a 09-24 Motley Fool article, so the gevernova.com news query is missing recent releases; next runs should also query "GE Vernova Hitachi" and "BWRX-300" explicitly. Next scheduled run 23:17 UTC.
+
+---
+
 ## 2026-09-25 21:19 UTC — hourly run
 
 **Alerts sent:** none (no alert rule matched).
