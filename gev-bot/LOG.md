@@ -7,6 +7,20 @@ bot hit (blocked sites, no new results, ambiguous data).
 
 ---
 
+## 2026-09-25 17:19 UTC — hourly run
+
+**Alerts sent:** none (no alert rule matched; nothing new in the last 7 days).
+
+**New contracts found:** 0 new. 1 backfill row added to CONTRACTS.md: Lincoln Electric System (Nebraska municipal), 2x LM6000VELOX, ~100 MW, announced 2026-02-16, COD 2029 — surfaced by the LM6000 query, dated before the watch window so no alert.
+
+**Close calls:** TVA Kingston 16x LM6000VELOX (850 MW) and Springfield MO City Utilities 3x LM6000VELOX both surfaced as "recent" but WebFetch datelines show May 2024 and March 2025 — old, not added.
+
+**Look into:** Qatalum (Qatar) 5x Advanced Gas Path upgrades + 15-yr services surfaced in the Middle East query; services, not new turbines, date unverified. Standing items unchanged: Venezuela payment terms; Q2 10-Q geographic revenue split.
+
+**Issues:** thirteenth consecutive quiet hour for new-in-window contracts. Search engines keep resurfacing 2024–2025 aero orders as if current; datelines must be fetched before trusting them. Next scheduled run 18:17 UTC.
+
+---
+
 ## 2026-09-25 16:19 UTC — hourly run
 
 **Alerts sent:** none (no alert rule matched).
