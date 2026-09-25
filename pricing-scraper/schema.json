@@ -1,1 +1,194 @@
-{"type":"object","properties":{"baseline_date":{"type":"string"},"scope":{"type":"object","properties":{"countries":{"type":"array","items":{"type":"string"}},"services":{"type":"array","items":{"type":"string"}},"competitors_prioritized":{"type":"array","items":{"type":"string"}},"baseline_limitations":{"type":"array","items":{"type":"string"}}},"required":["countries","services","competitors_prioritized","baseline_limitations"]},"pricing_baseline":{"type":"array","items":{"type":"object","properties":{"country":{"type":"string"},"service":{"type":"string"},"tier":{"type":"string"},"price":{"anyOf":[{"type":"number"},{"type":"integer"}]},"currency":{"type":"string"},"period":{"type":"string"},"price_citation":{"type":"string"}},"required":["country","service","tier","price","currency","period","price_citation"]}},"scraper_spec_next_5_days":{"type":"object","properties":{"run_schedule":{"type":"object","properties":{"frequency":{"type":"string"},"start_date":{"type":"string"},"end_date":{"type":"string"},"timezone":{"type":"string"},"weekly_production_schedule":{"type":"string"}},"required":["frequency","start_date","end_date","timezone","weekly_production_schedule"]},"config":{"type":"object","properties":{"countries":{"type":"array"},"services":{"type":"array"},"tiers":{"type":"object","properties":{}},"price_fields":{"type":"array"},"reaction_fields":{"type":"array"},"stores":{"type":"array"},"categories":{"type":"array"},"historical_backfill":{"type":"object","properties":{}},"derived_fields":{"type":"array"}},"required":["countries","services","tiers","price_fields","reaction_fields","stores","categories","historical_backfill","derived_fields"]},"implementation_notes":{"type":"array","items":{"type":"string"}}},"required":["run_schedule","config","implementation_notes"]}},"required":["baseline_date","scope","pricing_baseline","scraper_spec_next_5_days"]}
+{
+  "type": "object",
+  "description": "Investment-research snapshot on Spotify subscription pricing, with Apple and YouTube as the comparison set. Every fact must carry a source URL and an as-of date. Never infer or estimate a value: leave it out and record the gap in data_gaps instead.",
+  "properties": {
+    "baseline_date": { "type": "string", "description": "YYYY-MM-DD date this snapshot represents." },
+    "run_type": { "type": "string", "enum": ["baseline", "daily"], "description": "baseline = the one-time reference snapshot; daily = one of the follow-up monitoring runs." },
+
+    "scope": {
+      "type": "object",
+      "properties": {
+        "countries": { "type": "array", "items": { "type": "string" }, "description": "ISO 3166-1 alpha-2 codes requested." },
+        "services": { "type": "array", "items": { "type": "string" } },
+        "competitors_prioritized": { "type": "array", "items": { "type": "string" }, "description": "Spotify first, then the comparison set in priority order." },
+        "baseline_limitations": { "type": "array", "items": { "type": "string" }, "description": "Every country/service/tier that could NOT be captured, and why. Spotify gaps first." }
+      },
+      "required": ["countries", "services", "competitors_prioritized", "baseline_limitations"]
+    },
+
+    "pricing_baseline": {
+      "type": "array",
+      "description": "One row per (country, service, tier) with a price shown on an official localized page. Spotify rows first.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "country": { "type": "string" },
+          "service": { "type": "string", "description": "e.g. Spotify Premium, Apple Music, Apple One, YouTube Premium, YouTube Music Premium" },
+          "tier": { "type": "string", "description": "e.g. Individual, Duo, Family, Student, Basic, Lite, Platinum, Premier" },
+          "price": { "anyOf": [{ "type": "number" }, { "type": "integer" }] },
+          "currency": { "type": "string", "description": "ISO 4217 code" },
+          "period": { "type": "string", "description": "month or year" },
+          "tax_inclusive": { "type": "string", "description": "yes / no / not stated" },
+          "trial_offer": { "type": "string", "description": "Any intro or trial offer shown, verbatim, or 'none'." },
+          "as_of": { "type": "string", "description": "YYYY-MM-DD the page was retrieved." },
+          "price_citation": { "type": "string", "description": "Exact URL of the official localized page the price was read from." }
+        },
+        "required": ["country", "service", "tier", "price", "currency", "period", "as_of", "price_citation"]
+      }
+    },
+
+    "spotify_price_history": {
+      "type": "array",
+      "description": "Dated Spotify price changes per country over the last 24 months (the historical backfill). This shows hike cadence and which regions move first.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "country": { "type": "string" },
+          "tier": { "type": "string" },
+          "old_price": { "anyOf": [{ "type": "number" }, { "type": "integer" }] },
+          "new_price": { "anyOf": [{ "type": "number" }, { "type": "integer" }] },
+          "currency": { "type": "string" },
+          "pct_change": { "type": "number", "description": "(new-old)/old*100, rounded to 1 decimal. Only when both prices are cited." },
+          "announced_date": { "type": "string", "description": "YYYY-MM-DD or 'unknown'" },
+          "effective_date": { "type": "string", "description": "YYYY-MM-DD or 'unknown'" },
+          "source_url": { "type": "string" },
+          "source_type": { "type": "string", "enum": ["official", "filing", "press", "analyst", "social", "other"] }
+        },
+        "required": ["country", "tier", "new_price", "currency", "source_url", "source_type"]
+      }
+    },
+
+    "investment_signals": {
+      "type": "array",
+      "description": "Dated, sourced facts an investor would act on: earnings and guidance, subscriber/MAU/ARPU/churn metrics, pricing announcements, regulatory actions, analyst notes, executive commentary. Spotify first, then competitors. Include the exact figure when one is stated.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "date": { "type": "string", "description": "YYYY-MM-DD of the event or publication." },
+          "entity": { "type": "string", "description": "Spotify, Apple, YouTube/Google, or another named company." },
+          "category": { "type": "string", "enum": ["earnings", "guidance", "pricing_announcement", "subscriber_metrics", "arpu_or_margin", "churn_or_retention", "regulatory", "analyst_note", "executive_commentary", "product_change", "competitor_move", "other"] },
+          "headline": { "type": "string", "description": "One factual sentence." },
+          "detail": { "type": "string", "description": "2-4 sentences of specifics, including exact numbers quoted from the source." },
+          "countries": { "type": "array", "items": { "type": "string" }, "description": "Affected ISO codes, or ['global']." },
+          "metric_name": { "type": "string", "description": "e.g. Premium subscribers, ARPU, gross margin, price change %. Empty if none." },
+          "metric_value": { "type": "string", "description": "Value as printed in the source, with unit, e.g. '276M', '€4.50', '31.1%'." },
+          "source_url": { "type": "string" },
+          "source_type": { "type": "string", "enum": ["official", "filing", "press", "analyst", "social", "other"] },
+          "confidence": { "type": "string", "enum": ["high", "medium", "low"], "description": "high = official/filing; medium = reputable press; low = single unconfirmed report." }
+        },
+        "required": ["date", "entity", "category", "headline", "detail", "countries", "source_url", "source_type", "confidence"]
+      }
+    },
+
+    "competitor_reactions": {
+      "type": "array",
+      "description": "How Apple, YouTube, Amazon or others responded to Spotify price moves (or vice versa): price matches, holds, bundles, promos. Include timing relative to the Spotify move.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "competitor": { "type": "string" },
+          "date": { "type": "string" },
+          "action": { "type": "string", "description": "e.g. matched hike, held price, launched cheaper tier, extended trial." },
+          "countries": { "type": "array", "items": { "type": "string" } },
+          "relative_to_spotify": { "type": "string", "description": "led / followed within N days / no response yet / unrelated" },
+          "detail": { "type": "string" },
+          "source_url": { "type": "string" }
+        },
+        "required": ["competitor", "date", "action", "countries", "relative_to_spotify", "source_url"]
+      }
+    },
+
+    "consumer_reaction": {
+      "type": "array",
+      "description": "Observable consumer response per country: app store ratings and review counts, review sentiment about price, cancellation chatter, press coverage of backlash. Report what the source shows; do not editorialize.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "country": { "type": "string" },
+          "service": { "type": "string" },
+          "store": { "type": "string", "enum": ["ios_app_store", "google_play", "press", "social", "other"] },
+          "rating": { "type": "number", "description": "Current average rating if shown." },
+          "rating_count": { "type": "string", "description": "As printed, e.g. '2.1M'." },
+          "price_sentiment_summary": { "type": "string", "description": "1-2 sentences on what recent reviews/coverage say about price, with a rough share if determinable." },
+          "as_of": { "type": "string" },
+          "source_url": { "type": "string" }
+        },
+        "required": ["country", "service", "store", "price_sentiment_summary", "as_of", "source_url"]
+      }
+    },
+
+    "derived_metrics": {
+      "type": "array",
+      "description": "Computed comparisons per country. Only compute when every input is present in pricing_baseline; otherwise omit the row and log the gap.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "country": { "type": "string" },
+          "currency": { "type": "string" },
+          "fx_rate_to_usd": { "type": "number", "description": "Units of local currency per 1 USD." },
+          "fx_source": { "type": "string", "description": "URL and date of the FX rate used." },
+          "spotify_individual_local": { "type": "number" },
+          "spotify_individual_usd": { "type": "number" },
+          "apple_music_individual_usd": { "type": "number" },
+          "youtube_premium_individual_usd": { "type": "number" },
+          "spotify_vs_apple_pct": { "type": "number", "description": "(spotify - apple)/apple*100; positive = Spotify pricier." },
+          "spotify_vs_youtube_pct": { "type": "number" },
+          "last_spotify_hike_date": { "type": "string" },
+          "months_since_last_spotify_hike": { "type": "number" },
+          "notes": { "type": "string" }
+        },
+        "required": ["country", "currency", "fx_rate_to_usd", "fx_source", "spotify_individual_local", "spotify_individual_usd"]
+      }
+    },
+
+    "analyst_summary": {
+      "type": "object",
+      "description": "Investment-grade synthesis. Every point must be traceable to a row above; cite the source_url inline in parentheses.",
+      "properties": {
+        "key_findings": { "type": "array", "items": { "type": "string" }, "description": "5-10 factual takeaways about Spotify's pricing position and momentum, most material first." },
+        "hike_pattern": { "type": "string", "description": "What the history shows about WHERE Spotify hikes first, HOW OFTEN, and by HOW MUCH, with dates." },
+        "bull_points": { "type": "array", "items": { "type": "string" } },
+        "bear_points": { "type": "array", "items": { "type": "string" } },
+        "watch_items_next_5_days": { "type": "array", "items": { "type": "string" }, "description": "Specific pages, dates, or events the daily runs should check." },
+        "data_gaps": { "type": "array", "items": { "type": "string" }, "description": "What could not be sourced and what it would take to get it." },
+        "overall_confidence": { "type": "string", "enum": ["high", "medium", "low"] }
+      },
+      "required": ["key_findings", "hike_pattern", "bull_points", "bear_points", "watch_items_next_5_days", "data_gaps", "overall_confidence"]
+    },
+
+    "scraper_spec_next_5_days": {
+      "type": "object",
+      "properties": {
+        "run_schedule": {
+          "type": "object",
+          "properties": {
+            "frequency": { "type": "string" },
+            "start_date": { "type": "string" },
+            "end_date": { "type": "string" },
+            "timezone": { "type": "string" },
+            "weekly_production_schedule": { "type": "string" }
+          },
+          "required": ["frequency", "start_date", "end_date", "timezone", "weekly_production_schedule"]
+        },
+        "config": {
+          "type": "object",
+          "properties": {
+            "countries": { "type": "array" },
+            "services": { "type": "array" },
+            "tiers": { "type": "object", "properties": {} },
+            "price_fields": { "type": "array" },
+            "reaction_fields": { "type": "array" },
+            "stores": { "type": "array" },
+            "categories": { "type": "array" },
+            "historical_backfill": { "type": "object", "properties": {} },
+            "derived_fields": { "type": "array" }
+          },
+          "required": ["countries", "services", "tiers", "price_fields", "reaction_fields", "stores", "categories", "historical_backfill", "derived_fields"]
+        },
+        "implementation_notes": { "type": "array", "items": { "type": "string" } }
+      },
+      "required": ["run_schedule", "config", "implementation_notes"]
+    }
+  },
+  "required": ["baseline_date", "run_type", "scope", "pricing_baseline", "spotify_price_history", "investment_signals", "competitor_reactions", "consumer_reaction", "derived_metrics", "analyst_summary", "scraper_spec_next_5_days"]
+}

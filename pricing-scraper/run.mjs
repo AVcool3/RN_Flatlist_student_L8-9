@@ -30,7 +30,15 @@ import { spawnSync } from "node:child_process";
 import { existsSync, mkdirSync, readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
-import { services, effort, regions, runWindow, allCountryCodes, analysisFocus } from "./config.mjs";
+import {
+  services,
+  effort,
+  regions,
+  runWindow,
+  allCountryCodes,
+  analysisFocus,
+  preferredSources,
+} from "./config.mjs";
 
 // Pin the CLI version so a future CLI release can't silently change behaviour.
 const CLI_VERSION = "1.24.4";
@@ -67,16 +75,22 @@ function buildPrompt() {
     .join("\n\n");
 
   const runKind = isBaseline
-    ? `This is the ONE-TIME BASELINE run. Set baseline_date to ${today}.`
+    ? `This is the ONE-TIME BASELINE run. Set baseline_date to ${today} and run_type to "baseline". ` +
+      `Do the full historical backfill (24 months) and the full investment_signals sweep.`
     : `This is a DAILY MONITORING run on ${today}, part of a 5-day watch from ` +
       `${runWindow.startDate} to ${runWindow.endDate}. Set baseline_date to ` +
-      `${runWindow.baselineDate} (the original baseline) and report today's prices, ` +
-      `paying closest attention to any Spotify price change since the baseline.`;
+      `${runWindow.baselineDate} (the original baseline) and run_type to "daily". ` +
+      `Report today's prices, and focus investment_signals, competitor_reactions and ` +
+      `consumer_reaction on anything NEW since ${runWindow.baselineDate}: a Spotify ` +
+      `price change, announcement, filing, analyst note, or competitor response.`;
+
+  // Source hints, one per line, so the agent starts from official material.
+  const sourceText = preferredSources.map((u) => `- ${u}`).join("\n");
 
   // Prompt layout: services + run kind, then the Spotify-first focus paragraph
   // from config.mjs, then the collection instructions, then the country list.
   return (
-    `${services.join(", ")} subscription pricing. ${runKind}\n\n` +
+    `${services.join(", ")} subscription pricing: investment research snapshot. ${runKind}\n\n` +
     `${analysisFocus}\n\n` +
     `Collect the current consumer subscription price for every tier of every ` +
     `service in every country listed below, using the localized official ` +
@@ -84,6 +98,7 @@ function buildPrompt() {
     `price_citation. Also fill scraper_spec_next_5_days with a spec for ` +
     `running this scraper daily from ${runWindow.startDate} to ${runWindow.endDate} ` +
     `(${runWindow.timezone}).\n\n` +
+    `Preferred sources (cite whatever you actually use):\n${sourceText}\n\n` +
     `Countries by region:\n\n${regionText}`
   );
 }
@@ -113,10 +128,10 @@ function main() {
     `firecrawl-cli@${CLI_VERSION}`,
     "agent",
     prompt,
-    "--effort", effort,
+    "--effort", isBaseline ? effort.baseline : effort.daily,
     "--schema-file", schemaPath,
     "--wait",                      // block until the agent job finishes
-    "--timeout", "1800",           // give up after 30 min so CI never hangs
+    "--timeout", isBaseline ? "3600" : "1800", // 60 min baseline / 30 min daily cap
     "--json",
     "-o", outFile,
   ];
