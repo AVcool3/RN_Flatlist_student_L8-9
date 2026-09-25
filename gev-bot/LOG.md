@@ -7,6 +7,23 @@ bot hit (blocked sites, no new results, ambiguous data).
 
 ---
 
+## 2026-09-25 06:18 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0 new in the last 7 days. 1 backfill row (Spain – Santa Maria de las Fuentes, 15x 6.1MW-158m, April 2026).
+
+**Close calls:** none new.
+
+**Look into:**
+- Mitsubishi Heavy's president sees 2026 global gas turbine demand at 70-100 GW vs ~100 GW in 2025 — the first OEM voice hinting at a flat-to-down order year for the industry. GEV's own H1 2026 was 40 GW signed, so GEV is taking a rising share of a market that may have peaked in unit terms. Worth a bear-case slide.
+- Electrification backlog ~$42B (vs ~$9B YE2022); Q4 2025 was the largest quarter of direct hyperscaler orders in Electrification. Q3 print (Oct 28) should show whether the H1 data-center surge continued at the guided ~20% mix.
+
+**Issues:**
+- Quiet hour; all 26 queries returned only tracked items. No GEV press release dated Sept 24-26.
+
+---
+
 ## 2026-09-25 05:18 UTC — hourly run
 
 **Alerts sent:** none.
