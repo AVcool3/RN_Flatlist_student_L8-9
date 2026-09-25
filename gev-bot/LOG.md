@@ -7,6 +7,23 @@ bot hit (blocked sites, no new results, ambiguous data).
 
 ---
 
+## 2026-09-25 08:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0 new turbine contracts in the last 7 days.
+
+**Close calls:**
+- SPIC Brasil / GEV — São Simão hydroelectric plant, Generating Unit 3 modernization completed (press release 2026-09-14). Hydro services milestone, not a turbine order; logged as a Brazil services datapoint, no tracker row.
+
+**Look into:**
+- Mitsubishi Heavy now says global gas turbine orders should settle around ~70 GW/yr for the five years after 2026 (vs ~100 GW in 2025). If right, GEV's 40 GW H1-2026 pace is a share gain into a normalizing market. Pair with GEV's own "20 GW in H2 is conservative" line for the pitch.
+
+**Issues:**
+- Fourth quiet hour. All 26 queries returned previously tracked items. No GEV press release dated Sept 24-26.
+
+---
+
 ## 2026-09-25 07:19 UTC — hourly run
 
 **Alerts sent:** none.
