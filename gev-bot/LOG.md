@@ -7,6 +7,23 @@ bot hit (blocked sites, no new results, ambiguous data).
 
 ---
 
+## 2026-09-25 09:18 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0 new in the last 7 days. 1 backfill row (Iberdrola – Topolobampo III, Mexico, 7HA.01, ~766 MW, operating).
+
+**Close calls:** none new.
+
+**Look into:**
+- Confirmed Q2 2026 split: 53 GW firm equipment backlog + 63 GW slot reservations = 116 GW. Use these as the base for the conversion-rate chart (Q1: 44 + 56 = 100).
+- Siemens Energy raised its industry outlook to 110-120 GW/yr of annual gas additions, vs Mitsubishi's ~70 GW/yr view. Two OEMs, opposite reads of the same market — flag the disagreement in the pitch rather than pick one.
+
+**Issues:**
+- Fifth quiet hour. All 26 queries returned previously tracked items. No GEV press release dated Sept 24-26.
+
+---
+
 ## 2026-09-25 08:19 UTC — hourly run
 
 **Alerts sent:** none.
