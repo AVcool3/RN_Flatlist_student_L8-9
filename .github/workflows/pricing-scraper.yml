@@ -1,0 +1,82 @@
+# ============================================================================
+# .github/workflows/pricing-scraper.yml
+#
+# Runs pricing-scraper/run.mjs on a schedule and commits the JSON result back
+# to this branch, so you can "see the scraper" working over the 5-day window
+# just by watching the pricing-scraper/results/ folder fill up.
+#
+# TWO ways this workflow starts:
+#   1. `schedule`          -> automatic daily run, Sept 26-30 2026 at 13:00 UTC
+#   2. `workflow_dispatch` -> manual run from the GitHub "Actions" tab.
+#                            Tick the "baseline" box for the one-time baseline.
+#
+# BEFORE THE FIRST RUN you must add a repository secret:
+#   GitHub repo -> Settings -> Secrets and variables -> Actions -> New secret
+#   Name:  FIRECRAWL_API_KEY
+#   Value: your key from https://www.firecrawl.dev/
+#
+# NOTE: GitHub cron only runs on the DEFAULT branch. If this branch is not
+# merged/default yet, use the manual "Run workflow" button and pick this
+# branch from the dropdown, or run `node pricing-scraper/run.mjs` locally.
+# ============================================================================
+name: Apple/YouTube pricing scraper
+
+on:
+  schedule:
+    # ┌──────── minute (0)
+    # │  ┌───── hour   (13 = 13:00 UTC = 09:00 US Eastern)
+    # │  │  ┌── day-of-month range: 26th through 30th
+    # │  │  │     ┌── month: 9 = September
+    # │  │  │     │ ┌── day-of-week: any
+    - cron: "0 13 26-30 9 *"
+    # This window matches `runWindow` in pricing-scraper/config.mjs.
+    # After Sept 30 2026 the cron will not fire again until Sept 2027, so
+    # delete or edit this block when the 5-day watch is over.
+  workflow_dispatch:
+    inputs:
+      baseline:
+        description: "Run the one-time BASELINE (writes results/baseline.json)"
+        type: boolean
+        default: false
+
+# Allow the job to push the results commit back to the repo.
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    # Hard stop so a stuck agent job can't burn runner minutes forever.
+    timeout-minutes: 45
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Run scraper
+        env:
+          FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
+        run: |
+          # If the manual "baseline" checkbox was ticked, pass --baseline.
+          if [ "${{ github.event.inputs.baseline }}" = "true" ]; then
+            node pricing-scraper/run.mjs --baseline
+          else
+            node pricing-scraper/run.mjs
+          fi
+
+      - name: Commit results back to the branch
+        run: |
+          git config user.name  "pricing-scraper[bot]"
+          git config user.email "pricing-scraper@users.noreply.github.com"
+          git add pricing-scraper/results/
+          # Only commit if the scraper actually produced/changed a file.
+          if git diff --cached --quiet; then
+            echo "No new results to commit."
+          else
+            git commit -m "chore(pricing-scraper): results for $(date -u +%F)"
+            git push
+          fi
