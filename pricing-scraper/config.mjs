@@ -12,8 +12,26 @@
 // the Firecrawl agent receives, and passes schema.json alongside it.
 // ============================================================================
 
-// The two subscription services we are tracking price changes for.
-export const services = ["Apple", "YouTube"];
+// The subscription services we are tracking price changes for.
+// Spotify is listed FIRST because it is the primary subject: the whole point of
+// this scraper is understanding Spotify's price movement. Apple and YouTube
+// are the comparison set, so we can see whether they lead, follow, or ignore
+// a Spotify hike in each region.
+export const services = ["Spotify", "Apple", "YouTube"];
+
+// The one-paragraph "why" that is pasted into the agent prompt. Edit this if
+// the business question changes (e.g. you start caring about Amazon Music).
+export const analysisFocus =
+  "THE MAIN GOAL IS UNDERSTANDING SPOTIFY'S PRICE MOVEMENT. Spotify Premium " +
+  "(Individual, Duo, Family, Student, and any Basic/Lite/Platinum tier offered " +
+  "locally) is the primary service: capture its localized price in EVERY " +
+  "country listed, and if the exact pricing was unavailable for any country, say so explicitly in the price citation. " +
+  "Apple (Apple Music and Apple One) and YouTube (Premium and Music Premium) are the " +
+  "comparison set: their prices matter mainly to show whether they move before, " +
+  "with, or after Spotify in each region. In scope.competitors_prioritized put " +
+  "Spotify first. In baseline_limitations, call out any country where Spotify " +
+  "pricing could not be captured, because that gap matters more than an Apple or " +
+  "YouTube gap.";
 
 // Reasoning effort passed to `firecrawl agent --effort`.
 // "low" = cheaper/faster, "high" = more thorough but uses more credits.

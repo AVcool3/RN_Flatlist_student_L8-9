@@ -1,8 +1,11 @@
-# Apple / YouTube subscription pricing scraper
+# Spotify vs Apple / YouTube subscription pricing scraper
 
-A Firecrawl-agent scraper that captures Apple and YouTube subscription prices
-across 36 countries, as a **one-time baseline** and then **once a day for 5 days**
-(26–30 Sept 2026) so you can spot price hikes region by region.
+A Firecrawl-agent scraper that captures **Spotify** subscription prices (the main
+subject) plus Apple and YouTube prices (the comparison set) across 36 countries,
+as a **one-time baseline** and then **once a day for 5 days** (26–30 Sept 2026).
+The goal is understanding Spotify's price movement region by region and whether
+Apple and YouTube lead, follow, or ignore it. The focus paragraph the agent
+receives lives in `analysisFocus` in `config.mjs`.
 
 ## Files
 

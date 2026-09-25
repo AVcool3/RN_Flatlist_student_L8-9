@@ -30,7 +30,7 @@ import { spawnSync } from "node:child_process";
 import { existsSync, mkdirSync, readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
-import { services, effort, regions, runWindow, allCountryCodes } from "./config.mjs";
+import { services, effort, regions, runWindow, allCountryCodes, analysisFocus } from "./config.mjs";
 
 // Pin the CLI version so a future CLI release can't silently change behaviour.
 const CLI_VERSION = "1.24.4";
@@ -70,10 +70,14 @@ function buildPrompt() {
     ? `This is the ONE-TIME BASELINE run. Set baseline_date to ${today}.`
     : `This is a DAILY MONITORING run on ${today}, part of a 5-day watch from ` +
       `${runWindow.startDate} to ${runWindow.endDate}. Set baseline_date to ` +
-      `${runWindow.baselineDate} (the original baseline) and report today's prices.`;
+      `${runWindow.baselineDate} (the original baseline) and report today's prices, ` +
+      `paying closest attention to any Spotify price change since the baseline.`;
 
+  // Prompt layout: services + run kind, then the Spotify-first focus paragraph
+  // from config.mjs, then the collection instructions, then the country list.
   return (
-    `${services.join(" and ")} subscription pricing. ${runKind}\n\n` +
+    `${services.join(", ")} subscription pricing. ${runKind}\n\n` +
+    `${analysisFocus}\n\n` +
     `Collect the current consumer subscription price for every tier of every ` +
     `service in every country listed below, using the localized official ` +
     `pricing/storefront page for that country, and cite the page URL in ` +
