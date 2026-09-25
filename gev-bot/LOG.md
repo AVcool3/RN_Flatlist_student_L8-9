@@ -7,6 +7,20 @@ bot hit (blocked sites, no new results, ambiguous data).
 
 ---
 
+## 2026-09-25 19:19 UTC — hourly run
+
+**Alerts sent:** none (no alert rule matched).
+
+**New contracts found:** 0. All 26 queries returned only tracked items. Latest gevernova.com press release still 2026-09-16 (Blue Energy NRC filing); latest 8-K still the Q2 release.
+
+**Close calls:** none new. Renovalia Santa Maria de las Fuentes (Spain, 15x 6.1 MW) resurfaced — already tracked.
+
+**Look into:** nothing new. Standing: Venezuela payment terms; Q2 10-Q geographic revenue split; Qatalum AGP deal date.
+
+**Issues:** fifteenth consecutive quiet hour; results identical to the 18:19 run. Friday evening US time, so a press release before Monday is unlikely. Next scheduled run 20:17 UTC.
+
+---
+
 ## 2026-09-25 18:19 UTC — hourly run
 
 **Alerts sent:** none (no alert rule matched).
