@@ -7,6 +7,20 @@ bot hit (blocked sites, no new results, ambiguous data).
 
 ---
 
+## 2026-09-25 21:19 UTC — hourly run
+
+**Alerts sent:** none (no alert rule matched).
+
+**New contracts found:** 0. All 26 queries returned only tracked items. Latest gevernova.com press release still 2026-09-16 (Blue Energy NRC filing); latest 8-K still the Q2 release (2026-07-22).
+
+**Close calls:** none new. Same 2024–2025 aero orders (TVA, Springfield) resurfaced; already ruled out by dateline.
+
+**Look into:** nothing new. Standing: Venezuela payment terms; Q2 10-Q geographic revenue split; Qatalum AGP deal date.
+
+**Issues:** seventeenth consecutive quiet hour; results identical to the 20:19 run. Next scheduled run 22:17 UTC.
+
+---
+
 ## 2026-09-25 20:19 UTC — hourly run
 
 **Alerts sent:** none (no alert rule matched).
