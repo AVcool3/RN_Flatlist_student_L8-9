@@ -87,6 +87,12 @@ module.exports = {
     // --- Competitor / read-through (helps with 'close calls') ---
     "Siemens Energy gas turbine order data center",
     "Mitsubishi Power gas turbine order 2026",
+    // Added 2026-09-25: the SGE/Samsung BWRX-300 MoU (press release 09-22) was
+    // only caught two days late via a secondary article. These two catch
+    // nuclear/SMR announcements directly. Nuclear is not a turbine contract and
+    // will NOT trigger a phone alert, but it belongs in CONTRACTS.md.
+    "GE Vernova Hitachi BWRX-300 agreement",
+    "GE Vernova nuclear SMR order OR memorandum",
   ],
 
   // ---- What counts as a phone-alert-worthy hit ------------------------
