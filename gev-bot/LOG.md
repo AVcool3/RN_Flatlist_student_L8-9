@@ -7,6 +7,24 @@ bot hit (blocked sites, no new results, ambiguous data).
 
 ---
 
+## 2026-09-25 10:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0 new in the last 7 days.
+
+**Close calls:**
+- A trade-press summary references a "comprehensive agreement with AWS" alongside the Chevron / Engine No. 1 / Microsoft plants. No GEV press release or filing names AWS as a turbine customer. Treat as unconfirmed until a primary source appears; do not add to tracker.
+
+**Look into:**
+- Lincoln Electric System (Nebraska) 2x LM6000VELOX ~100 MW keeps surfacing without a date — still unverified, still no row.
+- Siemens Energy's prior industry view was 90-100 GW/yr; now 110-120 GW/yr. Direction of revision (up) matters more than the level for the pitch.
+
+**Issues:**
+- Sixth quiet hour. All 26 queries returned previously tracked items. No GEV press release dated Sept 24-26. Expect U.S.-hours news, if any, from ~13:00 UTC.
+
+---
+
 ## 2026-09-25 09:18 UTC — hourly run
 
 **Alerts sent:** none.
