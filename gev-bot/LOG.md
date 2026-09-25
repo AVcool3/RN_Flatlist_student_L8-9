@@ -7,6 +7,20 @@ bot hit (blocked sites, no new results, ambiguous data).
 
 ---
 
+## 2026-09-25 16:19 UTC — hourly run
+
+**Alerts sent:** none (no alert rule matched).
+
+**New contracts found:** 0. All 26 queries returned only items already in CONTRACTS.md (Venezuela firming, ESB Chleansaid, Quang Trach II, Crusoe, Taiba/Qassim, Q2 disclosures). No GEV press release dated Sept 24–26 surfaced.
+
+**Close calls:** none new this hour.
+
+**Look into:** nothing new. Standing items remain: Venezuela payment terms; Q2 10-Q geographic revenue split (fetch only returned the first section); Blue Energy FID timing.
+
+**Issues:** twelfth consecutive quiet hour; search results were identical to the 15:19 run. Next scheduled run 17:17 UTC.
+
+---
+
 ## 2026-09-25 15:19 UTC — hourly run
 
 **Alerts sent:** none.
