@@ -1,0 +1,403 @@
+{
+  "type": "object",
+  "description": "Investment-research snapshot on Spotify subscription pricing, with Apple and YouTube as the comparison set. Every fact must carry a source URL and an as-of date. Never infer or estimate a value: leave it out and record the gap in data_gaps instead.",
+  "properties": {
+    "baseline_date": { "type": "string", "description": "YYYY-MM-DD date this snapshot represents." },
+    "run_type": { "type": "string", "enum": ["baseline", "daily"], "description": "baseline = the one-time reference snapshot; daily = one of the follow-up monitoring runs." },
+
+    "scope": {
+      "type": "object",
+      "properties": {
+        "countries": { "type": "array", "items": { "type": "string" }, "description": "ISO 3166-1 alpha-2 codes requested." },
+        "services": { "type": "array", "items": { "type": "string" } },
+        "competitors_prioritized": { "type": "array", "items": { "type": "string" }, "description": "Spotify first, then the comparison set in priority order." },
+        "baseline_limitations": { "type": "array", "items": { "type": "string" }, "description": "Every country/service/tier that could NOT be captured, and why. Spotify gaps first." }
+      },
+      "required": ["countries", "services", "competitors_prioritized", "baseline_limitations"]
+    },
+
+    "pricing_baseline": {
+      "type": "array",
+      "description": "One row per (country, service, tier) with a price shown on an official localized page. Spotify rows first.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "country": { "type": "string" },
+          "service": { "type": "string", "description": "e.g. Spotify Premium, Apple Music, Apple One, YouTube Premium, YouTube Music Premium" },
+          "tier": { "type": "string", "description": "e.g. Individual, Duo, Family, Student, Basic, Lite, Platinum, Premier" },
+          "price": { "anyOf": [{ "type": "number" }, { "type": "integer" }] },
+          "currency": { "type": "string", "description": "ISO 4217 code" },
+          "period": { "type": "string", "description": "month or year" },
+          "tax_inclusive": { "type": "string", "description": "yes / no / not stated" },
+          "trial_offer": { "type": "string", "description": "Any intro or trial offer shown, verbatim, or 'none'." },
+          "as_of": { "type": "string", "description": "YYYY-MM-DD the page was retrieved." },
+          "price_citation": { "type": "string", "description": "Exact URL of the official localized page the price was read from." }
+        },
+        "required": ["country", "service", "tier", "price", "currency", "period", "as_of", "price_citation"]
+      }
+    },
+
+    "spotify_price_history": {
+      "type": "array",
+      "description": "Dated Spotify price changes per country over the last 24 months (the historical backfill). This shows hike cadence and which regions move first.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "country": { "type": "string" },
+          "tier": { "type": "string" },
+          "old_price": { "anyOf": [{ "type": "number" }, { "type": "integer" }] },
+          "new_price": { "anyOf": [{ "type": "number" }, { "type": "integer" }] },
+          "currency": { "type": "string" },
+          "pct_change": { "type": "number", "description": "(new-old)/old*100, rounded to 1 decimal. Only when both prices are cited." },
+          "announced_date": { "type": "string", "description": "YYYY-MM-DD or 'unknown'" },
+          "effective_date": { "type": "string", "description": "YYYY-MM-DD or 'unknown'" },
+          "source_url": { "type": "string" },
+          "source_type": { "type": "string", "enum": ["official", "filing", "press", "analyst", "social", "other"] }
+        },
+        "required": ["country", "tier", "new_price", "currency", "source_url", "source_type"]
+      }
+    },
+
+    "investment_signals": {
+      "type": "array",
+      "description": "Dated, sourced facts an investor would act on: earnings and guidance, subscriber/MAU/ARPU/churn metrics, pricing announcements, regulatory actions, analyst notes, executive commentary. Spotify first, then competitors. Include the exact figure when one is stated.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "date": { "type": "string", "description": "YYYY-MM-DD of the event or publication." },
+          "entity": { "type": "string", "description": "Spotify, Apple, YouTube/Google, or another named company." },
+          "category": { "type": "string", "enum": ["earnings", "guidance", "pricing_announcement", "subscriber_metrics", "arpu_or_margin", "churn_or_retention", "regulatory", "analyst_note", "executive_commentary", "product_change", "competitor_move", "other"] },
+          "headline": { "type": "string", "description": "One factual sentence." },
+          "detail": { "type": "string", "description": "2-4 sentences of specifics, including exact numbers quoted from the source." },
+          "countries": { "type": "array", "items": { "type": "string" }, "description": "Affected ISO codes, or ['global']." },
+          "metric_name": { "type": "string", "description": "e.g. Premium subscribers, ARPU, gross margin, price change %. Empty if none." },
+          "metric_value": { "type": "string", "description": "Value as printed in the source, with unit, e.g. '276M', '€4.50', '31.1%'." },
+          "source_url": { "type": "string" },
+          "source_type": { "type": "string", "enum": ["official", "filing", "press", "analyst", "social", "other"] },
+          "confidence": { "type": "string", "enum": ["high", "medium", "low"], "description": "high = official/filing; medium = reputable press; low = single unconfirmed report." }
+        },
+        "required": ["date", "entity", "category", "headline", "detail", "countries", "source_url", "source_type", "confidence"]
+      }
+    },
+
+    "competitor_reactions": {
+      "type": "array",
+      "description": "How Apple, YouTube, Amazon or others responded to Spotify price moves (or vice versa): price matches, holds, bundles, promos. Include timing relative to the Spotify move.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "competitor": { "type": "string" },
+          "date": { "type": "string" },
+          "action": { "type": "string", "description": "e.g. matched hike, held price, launched cheaper tier, extended trial." },
+          "countries": { "type": "array", "items": { "type": "string" } },
+          "relative_to_spotify": { "type": "string", "description": "led / followed within N days / no response yet / unrelated" },
+          "detail": { "type": "string" },
+          "source_url": { "type": "string" }
+        },
+        "required": ["competitor", "date", "action", "countries", "relative_to_spotify", "source_url"]
+      }
+    },
+
+    "consumer_reaction": {
+      "type": "array",
+      "description": "Observable consumer response per country: app store ratings and review counts, review sentiment about price, cancellation chatter, press coverage of backlash. Report what the source shows; do not editorialize.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "country": { "type": "string" },
+          "service": { "type": "string" },
+          "store": { "type": "string", "enum": ["ios_app_store", "google_play", "press", "social", "other"] },
+          "rating": { "type": "number", "description": "Current average rating if shown." },
+          "rating_count": { "type": "string", "description": "As printed, e.g. '2.1M'." },
+          "price_sentiment_summary": { "type": "string", "description": "1-2 sentences on what recent reviews/coverage say about price, with a rough share if determinable." },
+          "as_of": { "type": "string" },
+          "source_url": { "type": "string" }
+        },
+        "required": ["country", "service", "store", "price_sentiment_summary", "as_of", "source_url"]
+      }
+    },
+
+    "derived_metrics": {
+      "type": "array",
+      "description": "Computed comparisons per country. Only compute when every input is present in pricing_baseline; otherwise omit the row and log the gap.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "country": { "type": "string" },
+          "currency": { "type": "string" },
+          "fx_rate_to_usd": { "type": "number", "description": "Units of local currency per 1 USD." },
+          "fx_source": { "type": "string", "description": "URL and date of the FX rate used." },
+          "spotify_individual_local": { "type": "number" },
+          "spotify_individual_usd": { "type": "number" },
+          "apple_music_individual_usd": { "type": "number" },
+          "youtube_premium_individual_usd": { "type": "number" },
+          "spotify_vs_apple_pct": { "type": "number", "description": "(spotify - apple)/apple*100; positive = Spotify pricier." },
+          "spotify_vs_youtube_pct": { "type": "number" },
+          "last_spotify_hike_date": { "type": "string" },
+          "months_since_last_spotify_hike": { "type": "number" },
+          "notes": { "type": "string" }
+        },
+        "required": ["country", "currency", "fx_rate_to_usd", "fx_source", "spotify_individual_local", "spotify_individual_usd"]
+      }
+    },
+
+    "promotions": {
+      "type": "array",
+      "description": "Workstream 'promotions'. One row per promotional offer VISIBLE on an official page today: free trials, discounted intro months, student offers, device bundles, telco bundles, win-back offers. Record the offer text verbatim. Headline prices can rise while realized price does not, so this measures acquisition intensity.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "country": { "type": "string", "description": "ISO 3166-1 alpha-2 code." },
+          "service": { "type": "string", "description": "Spotify Premium, Apple Music, YouTube Premium, ..." },
+          "tier": { "type": "string", "description": "Plan the offer applies to, e.g. Individual, Student." },
+          "offer_type": { "type": "string", "enum": ["free_trial", "intro_discount", "student", "device_bundle", "telco_bundle", "winback", "other"] },
+          "offer_text": { "type": "string", "description": "The offer exactly as shown on the page." },
+          "free_months": { "type": "number", "description": "Number of free months, 0 if none." },
+          "discounted_months": { "type": "number", "description": "Number of discounted (non-free) months, 0 if none." },
+          "discounted_price": { "type": "number", "description": "Monthly price during the discounted months, if any." },
+          "currency": { "type": "string" },
+          "partner": { "type": "string", "description": "Telco / device / retailer partner, if a bundle." },
+          "eligibility": { "type": "string", "description": "Eligibility text verbatim (new users only, lapsed 30+ days, students at eligible institutions, ...)." },
+          "as_of": { "type": "string", "description": "YYYY-MM-DD retrieved." },
+          "source_url": { "type": "string" }
+        },
+        "required": ["country", "service", "tier", "offer_type", "offer_text", "as_of", "source_url"]
+      }
+    },
+
+    "tier_availability": {
+      "type": "array",
+      "description": "Workstream 'tiers'. One row per (country, service, tier) stating whether the plan exists today and, when an official source dates it, when it launched or was removed. Measures price discrimination over time.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "country": { "type": "string" },
+          "service": { "type": "string" },
+          "tier": { "type": "string", "description": "Basic, Lite, Individual, Duo, Family, Student, audiobook-inclusive, music-only, lossless/Platinum/Music Pro, ..." },
+          "status": { "type": "string", "enum": ["available", "not_offered", "launched", "removed"] },
+          "includes_audiobooks": { "type": "string", "description": "yes / no / not stated" },
+          "audio_quality": { "type": "string", "description": "e.g. up to 320 kbps, lossless; or not stated" },
+          "event_date": { "type": "string", "description": "YYYY-MM-DD of launch/removal when an official source gives one; else empty." },
+          "as_of": { "type": "string" },
+          "source_url": { "type": "string" }
+        },
+        "required": ["country", "service", "tier", "status", "as_of", "source_url"]
+      }
+    },
+
+    "audiobook_economics": {
+      "type": "array",
+      "description": "Workstream 'audiobooks'. One row per (country, plan) from Spotify support/product pages, plus one row per dated CHANGE in hour allowances. Investment question: can Spotify monetize audiobooks without materially raising content cost?",
+      "items": {
+        "type": "object",
+        "properties": {
+          "country": { "type": "string" },
+          "plan": { "type": "string", "description": "Premium tier or 'Audiobooks Access' style audiobook-only plan." },
+          "included_hours_per_month": { "type": "number" },
+          "top_up_hours": { "type": "number", "description": "Hours in an additional-hours top-up pack." },
+          "top_up_price": { "type": "number" },
+          "audiobook_only_plan_price": { "type": "number" },
+          "currency": { "type": "string" },
+          "catalog_size": { "type": "string", "description": "e.g. '350,000+ titles', verbatim from the page." },
+          "titles_included_vs_paid": { "type": "string", "description": "How the page describes which titles are included vs bought separately." },
+          "payout_terms": { "type": "string", "description": "Publicly disclosed publisher/author payout terms, or 'not disclosed'." },
+          "change_note": { "type": "string", "description": "If this row records a change: old value -> new value and the date." },
+          "as_of": { "type": "string" },
+          "source_url": { "type": "string" }
+        },
+        "required": ["country", "plan", "as_of", "source_url"]
+      }
+    },
+
+    "advertising_signals": {
+      "type": "array",
+      "description": "Workstream 'ads'. One row per (country, ad product) from Spotify Advertising / Ads Manager pages. Product expansion is a leading indicator for ad-supported revenue.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "country": { "type": "string", "description": "ISO code, or 'global' for a page with no market." },
+          "product": { "type": "string", "description": "Ads Manager, Spotify Audience Network, video ads, programmatic, ..." },
+          "self_serve_available": { "type": "string", "description": "yes / no / not stated" },
+          "minimum_spend": { "type": "number" },
+          "currency": { "type": "string" },
+          "cpm_guidance": { "type": "string", "description": "Any CPM figure or range shown, verbatim; else 'not shown'." },
+          "targeting": { "type": "array", "items": { "type": "string" } },
+          "inventory_types": { "type": "array", "items": { "type": "string" }, "description": "music, podcast, video, display, ..." },
+          "formats": { "type": "array", "items": { "type": "string" }, "description": "audio, video takeover, sponsored playlist, ..." },
+          "programmatic": { "type": "string", "description": "yes / no / partners listed" },
+          "as_of": { "type": "string" },
+          "source_url": { "type": "string" }
+        },
+        "required": ["country", "product", "as_of", "source_url"]
+      }
+    },
+
+    "podcast_monetization": {
+      "type": "array",
+      "description": "Workstream 'podcasts'. One row per (program, country) for Spotify Audience Network, Partner Program, video monetization and similar.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "program": { "type": "string" },
+          "country": { "type": "string", "description": "ISO code or 'global'." },
+          "supported": { "type": "string", "description": "yes / no / announced" },
+          "eligibility_requirements": { "type": "string", "description": "Verbatim thresholds (followers, hours, plays, exclusivity)." },
+          "revenue_share_terms": { "type": "string", "description": "Verbatim, or 'not disclosed'." },
+          "video_monetization": { "type": "string", "description": "yes / no / details" },
+          "expansion_date": { "type": "string", "description": "YYYY-MM-DD the program reached this country, if dated." },
+          "as_of": { "type": "string" },
+          "source_url": { "type": "string" }
+        },
+        "required": ["program", "country", "supported", "as_of", "source_url"]
+      }
+    },
+
+    "creator_economics": {
+      "type": "array",
+      "description": "Workstream 'creators'. One row per term/rule from Spotify for Artists, Loud & Clear and support docs, archived with date so changes can be tracked.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "topic": { "type": "string", "enum": ["royalty_methodology", "stream_eligibility", "artificial_streaming", "minimum_plays", "discovery_mode", "marquee", "showcase", "marketplace_availability", "promotional_tool", "other"] },
+          "countries": { "type": "array", "items": { "type": "string" } },
+          "terms": { "type": "string", "description": "The rule or term verbatim." },
+          "price_or_rate": { "type": "string", "description": "Price, commission, threshold or rate quoted, verbatim." },
+          "currency": { "type": "string" },
+          "eligibility": { "type": "string" },
+          "change_note": { "type": "string", "description": "If a change from earlier terms is documented: old -> new and date." },
+          "as_of": { "type": "string" },
+          "source_url": { "type": "string" }
+        },
+        "required": ["topic", "terms", "as_of", "source_url"]
+      }
+    },
+
+    "marketplace_products": {
+      "type": "array",
+      "description": "Workstream 'marketplace'. One row per (product, country) for Marquee, Showcase, Discovery Mode, concert tickets, merch and artist promotion tools.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "product": { "type": "string" },
+          "country": { "type": "string", "description": "ISO code or 'global'." },
+          "supported": { "type": "string", "description": "yes / no / announced" },
+          "artist_eligibility": { "type": "string" },
+          "minimum_budget": { "type": "number" },
+          "currency": { "type": "string" },
+          "pricing_model": { "type": "string", "description": "CPC, flat fee, royalty discount, revenue share, ..." },
+          "placement": { "type": "string" },
+          "new_features": { "type": "string" },
+          "expansion_date": { "type": "string" },
+          "as_of": { "type": "string" },
+          "source_url": { "type": "string" }
+        },
+        "required": ["product", "country", "supported", "as_of", "source_url"]
+      }
+    },
+
+    "product_launches": {
+      "type": "array",
+      "description": "Workstream 'launches'. One row per dated product/feature launch from Spotify Newsroom or product pages, last 24 months. Classified so the growth-vs-monetization mix can be charted over time.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "date": { "type": "string", "description": "YYYY-MM-DD announced." },
+          "product": { "type": "string" },
+          "geography": { "type": "array", "items": { "type": "string" }, "description": "ISO codes, region names, or 'global'." },
+          "user_type": { "type": "string", "enum": ["listener", "artist", "podcaster", "author", "advertiser", "developer", "other"] },
+          "monetization_type": { "type": "string", "description": "subscription, add-on, ad-supported, creator-paid, free, ..." },
+          "category": { "type": "string", "enum": ["monetization", "engagement", "acquisition", "retention", "creator_tools", "advertising", "audiobooks", "podcasts", "ai"] },
+          "description": { "type": "string" },
+          "source_url": { "type": "string" }
+        },
+        "required": ["date", "product", "geography", "user_type", "category", "description", "source_url"]
+      }
+    },
+
+    "geographic_availability": {
+      "type": "array",
+      "description": "Workstream 'geo'. One row per country listing which monetization products are available, each proven by a cited page. Feeds the Monetization Depth score (products available / 9).",
+      "items": {
+        "type": "object",
+        "properties": {
+          "country": { "type": "string" },
+          "products_available": { "type": "array", "items": { "type": "string", "enum": ["Premium", "Duo", "Student", "Audiobooks", "Spotify Ads", "Podcast monetization", "Creator marketplace tools", "Video", "AI features"] } },
+          "products_not_available": { "type": "array", "items": { "type": "string", "enum": ["Premium", "Duo", "Student", "Audiobooks", "Spotify Ads", "Podcast monetization", "Creator marketplace tools", "Video", "AI features"] } },
+          "unknown": { "type": "array", "items": { "type": "string" }, "description": "Products whose availability could not be verified from a page." },
+          "as_of": { "type": "string" },
+          "source_urls": { "type": "array", "items": { "type": "string" } }
+        },
+        "required": ["country", "products_available", "products_not_available", "as_of", "source_urls"]
+      }
+    },
+
+    "fundamentals": {
+      "type": "array",
+      "description": "Workstream 'fundamentals'. One row per (period, metric) from Spotify's shareholder deck, 6-K, 20-F or prepared remarks. These tell us whether the scraped leading indicators flow through the P&L.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "period": { "type": "string", "description": "e.g. Q2 2026, FY2025." },
+          "period_end": { "type": "string", "description": "YYYY-MM-DD." },
+          "metric": { "type": "string", "enum": ["premium_subscribers", "mau", "ad_supported_mau", "premium_arpu", "revenue", "premium_revenue", "ad_supported_revenue", "gross_margin", "premium_gross_margin", "ad_supported_gross_margin", "operating_expenses", "operating_income", "free_cash_flow", "other"] },
+          "value": { "type": "number" },
+          "unit": { "type": "string", "description": "millions, EUR millions, EUR, percent, ..." },
+          "yoy_change": { "type": "string", "description": "As reported, e.g. '+7%', or empty." },
+          "source_url": { "type": "string" },
+          "source_type": { "type": "string", "enum": ["official", "filing", "press", "analyst", "social", "other"] }
+        },
+        "required": ["period", "metric", "value", "unit", "source_url", "source_type"]
+      }
+    },
+
+    "analyst_summary": {
+      "type": "object",
+      "description": "Investment-grade synthesis. Every point must be traceable to a row above; cite the source_url inline in parentheses.",
+      "properties": {
+        "key_findings": { "type": "array", "items": { "type": "string" }, "description": "5-10 factual takeaways about Spotify's pricing position and momentum, most material first." },
+        "hike_pattern": { "type": "string", "description": "What the history shows about WHERE Spotify hikes first, HOW OFTEN, and by HOW MUCH, with dates." },
+        "bull_points": { "type": "array", "items": { "type": "string" } },
+        "bear_points": { "type": "array", "items": { "type": "string" } },
+        "watch_items_next_5_days": { "type": "array", "items": { "type": "string" }, "description": "Specific pages, dates, or events the daily runs should check." },
+        "data_gaps": { "type": "array", "items": { "type": "string" }, "description": "What could not be sourced and what it would take to get it." },
+        "overall_confidence": { "type": "string", "enum": ["high", "medium", "low"] }
+      },
+      "required": ["key_findings", "hike_pattern", "bull_points", "bear_points", "watch_items_next_5_days", "data_gaps", "overall_confidence"]
+    },
+
+    "scraper_spec_next_5_days": {
+      "type": "object",
+      "properties": {
+        "run_schedule": {
+          "type": "object",
+          "properties": {
+            "frequency": { "type": "string" },
+            "start_date": { "type": "string" },
+            "end_date": { "type": "string" },
+            "timezone": { "type": "string" },
+            "weekly_production_schedule": { "type": "string" }
+          },
+          "required": ["frequency", "start_date", "end_date", "timezone", "weekly_production_schedule"]
+        },
+        "config": {
+          "type": "object",
+          "properties": {
+            "countries": { "type": "array" },
+            "services": { "type": "array" },
+            "tiers": { "type": "object", "properties": {} },
+            "price_fields": { "type": "array" },
+            "reaction_fields": { "type": "array" },
+            "stores": { "type": "array" },
+            "categories": { "type": "array" },
+            "historical_backfill": { "type": "object", "properties": {} },
+            "derived_fields": { "type": "array" }
+          },
+          "required": ["countries", "services", "tiers", "price_fields", "reaction_fields", "stores", "categories", "historical_backfill", "derived_fields"]
+        },
+        "implementation_notes": { "type": "array", "items": { "type": "string" } }
+      },
+      "required": ["run_schedule", "config", "implementation_notes"]
+    }
+  },
+  "required": ["baseline_date", "run_type", "scope", "pricing_baseline", "spotify_price_history", "investment_signals", "competitor_reactions", "consumer_reaction", "derived_metrics", "analyst_summary", "scraper_spec_next_5_days"]
+}

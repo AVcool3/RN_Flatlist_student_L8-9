@@ -1,0 +1,142 @@
+# ============================================================================
+# .github/workflows/pricing-scraper.yml
+#
+# Runs the Spotify alternative-data pipeline on a schedule and commits the
+# results back to this branch, so you can "see the scraper" working just by
+# watching pricing-scraper/results/ and pricing-scraper/snapshots/ fill up.
+#
+# Each scheduled run does, in order:
+#   1. snapshot.mjs       save today's copy of every watched web page (cheap)
+#   2. diff.mjs           report what changed since yesterday's snapshot
+#   3. run.mjs            the daily Firecrawl AGENT pricing run (expensive)
+#   4. derive.mjs         sanity-check prices + cited USD FX for that result
+#   5. run.mjs --workstream <list>   optional extra agent jobs (see input)
+#   6. build-dataset.mjs  rebuild master-table.csv + indicators.csv/.md
+#   7. commit + push
+#
+# TWO ways this workflow starts:
+#   1. `schedule`          -> automatic daily run, Sept 26-30 2026 at 13:00 UTC
+#   2. `workflow_dispatch` -> manual run from the GitHub "Actions" tab, with
+#                            checkboxes/inputs to pick what to run.
+#
+# BEFORE THE FIRST RUN you must add a repository secret:
+#   GitHub repo -> Settings -> Secrets and variables -> Actions -> New secret
+#   Name:  FIRECRAWL_API_KEY      (or FireAPI; both names are accepted)
+#   Value: your key from https://www.firecrawl.dev/
+#
+# NOTE: GitHub cron only runs on the DEFAULT branch. If this branch is not
+# merged/default yet, use the manual "Run workflow" button and pick this
+# branch from the dropdown, or run the scripts locally.
+# ============================================================================
+name: Spotify alternative-data scraper
+
+on:
+  schedule:
+    # ┌──────── minute (0)
+    # │  ┌───── hour   (13 = 13:00 UTC = 09:00 US Eastern)
+    # │  │  ┌── day-of-month range: 26th through 30th
+    # │  │  │     ┌── month: 9 = September
+    # │  │  │     │ ┌── day-of-week: any
+    - cron: "0 13 26-30 9 *"
+    # This window matches `runWindow` in pricing-scraper/config.mjs.
+    # After Sept 30 2026 the cron will not fire again until Sept 2027, so
+    # delete or edit this block when the 5-day watch is over.
+  workflow_dispatch:
+    inputs:
+      baseline:
+        description: "Run as the one-time BASELINE (writes results/baseline*.json)"
+        type: boolean
+        default: false
+      pricing_run:
+        description: "Run the daily Firecrawl agent pricing job (uses credits)"
+        type: boolean
+        default: true
+      workstreams:
+        description: "Extra agent jobs, comma-separated (e.g. promotions,audiobooks) or 'all'. Leave blank for none."
+        type: string
+        default: ""
+      snapshots:
+        description: "Snapshot + diff the watched web pages (1 credit per page)"
+        type: boolean
+        default: true
+
+# Allow the job to push the results commit back to the repo.
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    # Hard stop so a stuck agent job can't burn runner minutes forever.
+    # Raise this if you run many workstreams in one go (each can take 30 min).
+    timeout-minutes: 120
+    env:
+      # Either secret name works; the scripts pick whichever is set.
+      FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
+      FireAPI: ${{ secrets.FireAPI }}
+      # On a scheduled run there are no inputs, so default to: snapshots on,
+      # pricing on, no extra workstreams, not baseline.
+      DO_BASELINE:    ${{ github.event.inputs.baseline || 'false' }}
+      DO_PRICING:     ${{ github.event.inputs.pricing_run || 'true' }}
+      DO_SNAPSHOTS:   ${{ github.event.inputs.snapshots || 'true' }}
+      WORKSTREAMS:    ${{ github.event.inputs.workstreams || '' }}
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Snapshot watched pages and diff against yesterday
+        if: env.DO_SNAPSHOTS == 'true'
+        run: |
+          node pricing-scraper/snapshot.mjs
+          node pricing-scraper/diff.mjs
+
+      - name: Daily pricing agent run
+        if: env.DO_PRICING == 'true'
+        run: |
+          if [ "$DO_BASELINE" = "true" ]; then
+            node pricing-scraper/run.mjs --baseline
+          else
+            node pricing-scraper/run.mjs
+          fi
+
+      - name: Sanity-check prices and USD-normalize today's pricing result
+        if: env.DO_PRICING == 'true'
+        run: |
+          if [ "$DO_BASELINE" = "true" ]; then
+            node pricing-scraper/derive.mjs pricing-scraper/results/baseline.json
+          else
+            node pricing-scraper/derive.mjs "pricing-scraper/results/$(date -u +%F).json"
+          fi
+
+      - name: Extra workstream agent runs
+        if: env.WORKSTREAMS != ''
+        run: |
+          if [ "$DO_BASELINE" = "true" ]; then
+            node pricing-scraper/run.mjs --baseline --workstream "$WORKSTREAMS"
+          else
+            node pricing-scraper/run.mjs --workstream "$WORKSTREAMS"
+          fi
+
+      - name: Rebuild master table and indicators
+        # Always rebuild so the CSVs reflect whatever result files exist now.
+        if: always()
+        run: node pricing-scraper/build-dataset.mjs
+
+      - name: Commit results back to the branch
+        if: always()
+        run: |
+          git config user.name  "pricing-scraper[bot]"
+          git config user.email "pricing-scraper@users.noreply.github.com"
+          git add pricing-scraper/results/ pricing-scraper/snapshots/
+          # Only commit if the scraper actually produced/changed a file.
+          if git diff --cached --quiet; then
+            echo "No new results to commit."
+          else
+            git commit -m "chore(pricing-scraper): results for $(date -u +%F)"
+            git push
+          fi
