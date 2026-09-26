@@ -7,6 +7,20 @@ bot hit (blocked sites, no new results, ambiguous data).
 
 ---
 
+## 2026-09-26 01:19 UTC — hourly run
+
+**Alerts sent:** none (no alert rule matched).
+
+**New contracts found:** 0. All 28 queries returned only tracked items. Latest gevernova.com press release still 2026-09-22 (SGE/Samsung BWRX-300 MoU); latest 8-K still the Q2 release.
+
+**Close calls:** none new. One wind detail surfaced worth noting: the Greenvolt Romania Gurbanesti deal was the second 42-turbine order there within two months (Ialomița was the first) — both already counted in the Greenvolt Romania row.
+
+**Look into:** nothing new. Standing: SGE Poland firm-order path; Venezuela payment terms; Q2 10-Q geographic revenue split; Qatalum AGP date.
+
+**Issues:** none. Quiet weekend expected. Next scheduled run 02:17 UTC.
+
+---
+
 ## 2026-09-26 00:19 UTC — hourly run
 
 **Alerts sent:** none (no alert rule matched).
