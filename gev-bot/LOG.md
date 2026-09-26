@@ -5,6 +5,23 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-26 11:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. All 28 queries returned only tracked items. Latest gevernova.com press release still 2026-09-22 (SGE/Samsung MoU); latest 8-K still Q2 (Jul 22).
+
+**Close calls:**
+- gasturbineworld.com "GE brings in US and worldwide turbine orders" resurfaced — WebFetch shows May 20 2024 (Iraq, OPG hydro, LG&E MC5, KOWEPO). All old / already tracked.
+- ZAWYA repost of Qurayyah IPP expansion — already tracked.
+- OPG Niagara hydro refurbishment (Canada) — hydro services, not a turbine equipment contract.
+
+**Look into:** unchanged — Chevron/Kilby SRA-to-firm status; Xcel F-class siting; SGE Poland firm-order path; Venezuela payment terms; Q2 10-Q geographic split; Qatalum AGP date; Eneva Azulão order date.
+
+**Issues:** none. Next run 12:17 UTC.
+
+---
+
 ## 2026-09-26 10:19 UTC — hourly run
 
 **Alerts sent:** none.
