@@ -5,6 +5,18 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-26 07:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. All 28 queries returned only already-tracked items (Crusoe, Q2 disclosures, ESB Chleansaid, Egypt RLE, Quang Trach II, Taiba/Qassim, Duke, SGE/Samsung MoU, Venezuela). Latest gevernova.com press release is still 2026-09-22; latest 8-K is still the Q2 release.
+
+**Close calls:** none new this hour.
+
+**Look into:** standing items unchanged (SGE Poland firm-order path; Venezuela payment terms; Q2 10-Q geographic split; Qatalum AGP deal date; Eneva Azulão order date).
+
+**Issues:** none. Next run 08:17 UTC.
+
 ---
 
 ## 2026-09-26 06:19 UTC — hourly run
