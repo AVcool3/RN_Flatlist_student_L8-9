@@ -5,6 +5,20 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-26 23:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. All 28 queries returned only tracked items (Crusoe, Q1/Q2 disclosures, Duke, LG&E, Kansai, Taiba/Qassim, Qurayyah, KOWEPO Gongju, Quang Trach II, Egypt RLE/Banha, Venezuela Sept 2, Chevron/Kilby, Hawaiian Electric, TVA/Springfield/WFEC (old aeros), wind: ESB, Eurus, Prokon, Enertrag, Aula, Greenvolt, IVPC, Powerica, Enfinity, Taipower repower; nuclear: SGE MoU Sept 23, Velan, Blue Energy NRC Sept 16, SE Asia MoU, AFRY MSA). Latest gevernova.com press release still 2026-09-23 / 09-22; latest 8-K still Q2 (Jul 22).
+
+**Close calls:** none new. Same resurfaced 2024–2025 items (TVA Kingston, Springfield, WFEC Anadarko, China 9HA, Kozienice fulfilment, Jafurah COD) — all previously ruled out by dateline. Note for the pitch: search summaries now consistently quote Q1 = 21 GW signed (19 SRA + 2 firm) and Q2 = 20 GW (18 SRA + 2 firm, 10 GW SRA→firm), i.e. ~37 GW of SRAs in H1 2026 vs 4 GW of direct firm orders — SRA conversion pace is the number to watch into Jan 2027.
+
+**Look into:** unchanged — Studsvik exclusivity period / Sweden SMR financing framework; Duke 20-unit firm vs reservation split (Duke Q2 10-Q); Chevron/Kilby SRA-to-firm status; Xcel F-class siting; SGE Poland firm-order path; Venezuela payment terms; Q2 10-Q geographic revenue split; Qatalum AGP deal date; Eneva Azulão original order date.
+
+**Issues:** none. No WebFetch needed this hour. Next run 00:17 UTC (Sept 27).
+
+---
+
 ## 2026-09-26 22:19 UTC — hourly run
 
 **Alerts sent:** none.
