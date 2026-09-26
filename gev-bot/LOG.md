@@ -5,6 +5,20 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-26 13:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. All 28 queries returned only tracked items. Latest gevernova.com press release still 2026-09-22 (SGE/Samsung MoU); latest 8-K still Q2 (Jul 22).
+
+**Close calls:** none new. Same resurfaced set as prior hours (Kozienice fulfilment, Jafurah COD, TVA Kingston, Springfield, Eurus Aomori 2025, China 9HA, Gas Turbine World May-2024 roundup). Note for the pitch: Pennsylvania switchgear expansion ($100M+, 700 jobs) is a capacity investment, not a contract.
+
+**Look into:** unchanged — Chevron/Kilby SRA-to-firm status; Xcel F-class siting; SGE Poland firm-order path; Venezuela payment terms; Q2 10-Q geographic split; Qatalum AGP date; Eneva Azulão order date.
+
+**Issues:** none. Next run 14:17 UTC.
+
+---
+
 ## 2026-09-26 12:19 UTC — hourly run
 
 **Alerts sent:** none.
