@@ -5,6 +5,24 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-26 17:19 UTC — hourly run
+
+**Alerts sent:** none (tracker updates on already-known contracts, not new announcements).
+
+**New contracts found:** 0 new; 2 tracker rows updated:
+- Eneva Azulão I (Brazil): GEV press release Aug 19 2026 confirms commercial operation — 1x 7HA.02 + H65, 295 MW contracted to the SIN for 15 years, Silves/Amazonas. Row moved from "date unverified" to COD Aug 19 2026 (original order date still unverified). A Sept 21 Portuguese-language GEV article on the same plant also surfaced.
+- Duke Energy: GEV's May 26 2026 "HA fleet surpasses 4M hours" release states Duke has secured 20 HA units (vs the 8 firm + up to 11 framework in the Apr 2025 announcement). WRAL Jul 23 2026: first unit delivered to Person County Energy Complex (4 units, 2 CCGT blocks). Row updated to 20 units.
+
+**Close calls:** GEV Gas Power news listing (fetched directly) shows only two September items — Sept 23 Egypt RLE (tracked) and Sept 21 Azulão feature. Nothing else new. Latest 8-K still Q2.
+
+**Look into:**
+- Duke: confirm whether the 20 HA figure is all firm backlog or includes reservation slots; check Duke's Q2 2026 10-Q capex commitments.
+- Standing: Chevron/Kilby SRA-to-firm; Xcel F-class siting; SGE Poland firm-order path; Venezuela payment terms; Q2 10-Q geographic split; Qatalum AGP date; Eneva Azulão original order date.
+
+**Issues:** none. Next run 18:17 UTC.
+
+---
+
 ## 2026-09-26 16:19 UTC — hourly run
 
 **Alerts sent:** none.
