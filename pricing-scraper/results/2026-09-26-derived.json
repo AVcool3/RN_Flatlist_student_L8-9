@@ -1,13 +1,32 @@
 {
   "source_file": "2026-09-26.json",
-  "generated_at": "2026-09-26T21:07:07.839Z",
+  "generated_at": "2026-09-26T21:20:51.537Z",
   "fx": {
     "provider": "https://www.exchangerate-api.com",
     "as_of": "Sat, 26 Sep 2026 00:02:32 +0000",
     "url": "https://open.er-api.com/v6/latest/USD",
     "base": "USD"
   },
-  "corrections_applied": [],
+  "corrections_applied": [
+    {
+      "country": "IE",
+      "service": "Spotify Premium",
+      "tier": "Duo",
+      "from": 17.99,
+      "to": 18.99,
+      "currency": "EUR",
+      "verified_from": "https://www.spotify.com/ie/duo/"
+    },
+    {
+      "country": "IE",
+      "service": "Spotify Premium",
+      "tier": "Family",
+      "from": 21.99,
+      "to": 22.99,
+      "currency": "EUR",
+      "verified_from": "https://www.spotify.com/ie/family/"
+    }
+  ],
   "suspect_prices": [],
   "derived_metrics": [
     {
@@ -477,7 +496,7 @@
   ],
   "summary": {
     "rows": 118,
-    "corrected": 0,
+    "corrected": 2,
     "suspect": 0,
     "countries_with_spotify_individual": 29,
     "countries_compared_vs_apple": 1,

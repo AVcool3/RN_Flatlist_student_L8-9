@@ -26,9 +26,13 @@ export const services = ["Spotify", "Apple", "YouTube"];
 // takes longer. The baseline does the heavy lifting (24 months of history,
 // filings, analyst notes), so it gets "high"; daily runs only need to spot
 // what changed, so "medium" keeps them fast.
+// NOTE 2026-09-26: the first daily run at "medium" captured Apple/YouTube for
+// the US only, no consumer reaction and no price history, so the day-over-day
+// comparison was mostly empty. Daily is now "high" too; drop it back to
+// "medium" if credit cost matters more than comparison coverage.
 export const effort = {
   baseline: "high",
-  daily: "medium",
+  daily: "high",
 };
 
 // ---------------------------------------------------------------------------

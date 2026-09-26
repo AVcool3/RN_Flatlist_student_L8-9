@@ -7,19 +7,173 @@
     "Add an entry here whenever derive.mjs flags a suspect price and you have verified it on the official page."
   ],
   "corrections": [
-    { "country": "CO", "service": "Spotify Premium", "tier": "Individual", "currency": "COP", "wrong_price": 18.5,   "correct_price": 18500, "verified_on": "2026-09-26", "verified_from": "https://www.spotify.com/co-es/premium/", "evidence": "page text: 'Después, cuesta $ 18.500 al mes'", "cause": "thousands separator '.' read as decimal point" },
-    { "country": "CO", "service": "Spotify Premium", "tier": "Duo",        "currency": "COP", "wrong_price": 24.5,   "correct_price": 24500, "verified_on": "2026-09-26", "verified_from": "https://www.spotify.com/co-es/premium/", "evidence": "page text: 'Premium Duo ... $ 24.500 AL MES'", "cause": "thousands separator '.' read as decimal point" },
-    { "country": "CO", "service": "Spotify Premium", "tier": "Family",     "currency": "COP", "wrong_price": 30.5,   "correct_price": 30500, "verified_on": "2026-09-26", "verified_from": "https://www.spotify.com/co-es/premium/", "evidence": "page text: '$ 30.500 por 1 mes'", "cause": "thousands separator '.' read as decimal point" },
-    { "country": "CO", "service": "Spotify Premium", "tier": "Student",    "currency": "COP", "wrong_price": 10.1,   "correct_price": 10100, "verified_on": "2026-09-26", "verified_from": "https://www.spotify.com/co-es/premium/", "evidence": "page text: 'Después, cuesta $ 10.100 al mes'", "cause": "thousands separator '.' read as decimal point" },
-    { "country": "CO", "service": "Apple Music",     "tier": "Individual", "currency": "COP", "wrong_price": 18.5,   "correct_price": 18500, "verified_on": "2026-09-26", "verified_from": "https://www.apple.com/co/apple-music/", "evidence": "page text: 'El plan Individual cuesta sólo $18.500 al mes'", "cause": "thousands separator '.' read as decimal point" },
-
-    { "country": "JP", "service": "Spotify Premium", "tier": "Standard",   "currency": "JPY", "wrong_price": 1.08,   "correct_price": 1080,  "verified_on": "2026-09-26", "verified_from": "https://www.spotify.com/jp/premium/", "evidence": "page text: '￥1,080'", "cause": "thousands separator ',' read as decimal point" },
-    { "country": "JP", "service": "Spotify Premium", "tier": "Duo",        "currency": "JPY", "wrong_price": 1.48,   "correct_price": 1480,  "verified_on": "2026-09-26", "verified_from": "https://www.spotify.com/jp/premium/", "evidence": "page text: '￥1,480、Premium Familyプラン'", "cause": "thousands separator ',' read as decimal point" },
-    { "country": "JP", "service": "Spotify Premium", "tier": "Family",     "currency": "JPY", "wrong_price": 1.88,   "correct_price": 1880,  "verified_on": "2026-09-26", "verified_from": "https://www.spotify.com/jp/premium/", "evidence": "page text: '￥1,880、Premium Student'", "cause": "thousands separator ',' read as decimal point" },
-
-    { "country": "KR", "service": "Spotify Premium", "tier": "Individual", "currency": "KRW", "wrong_price": 11.99,  "correct_price": 11990, "verified_on": "2026-09-26", "verified_from": "https://www.spotify.com/kr-ko/premium/", "evidence": "page text: '₩11,990(부가세 포함)'", "cause": "thousands separator ',' read as decimal point" },
-    { "country": "KR", "service": "Spotify Premium", "tier": "Duo",        "currency": "KRW", "wrong_price": 17.985, "correct_price": 17985, "verified_on": "2026-09-26", "verified_from": "https://www.spotify.com/kr-ko/premium/", "evidence": "page text: '₩17,985 (부가세 포함)'", "cause": "thousands separator ',' read as decimal point" },
-    { "country": "KR", "service": "Spotify Premium", "tier": "Basic",      "currency": "KRW", "wrong_price": 8.69,   "correct_price": 8690,  "verified_on": "2026-09-26", "verified_from": "https://www.spotify.com/kr-ko/premium/", "evidence": "page text: '₩8,690 (부가세 포함)'", "cause": "thousands separator ',' read as decimal point" },
-    { "country": "KR", "service": "Spotify Premium", "tier": "Student",    "currency": "KRW", "wrong_price": 6.6,    "correct_price": 6600,  "verified_on": "2026-09-26", "verified_from": "https://www.spotify.com/kr-ko/premium/", "evidence": "page text: '₩6,600(부가세 포함)'", "cause": "thousands separator ',' read as decimal point" }
+    {
+      "country": "CO",
+      "service": "Spotify Premium",
+      "tier": "Individual",
+      "currency": "COP",
+      "wrong_price": 18.5,
+      "correct_price": 18500,
+      "verified_on": "2026-09-26",
+      "verified_from": "https://www.spotify.com/co-es/premium/",
+      "evidence": "page text: 'Después, cuesta $ 18.500 al mes'",
+      "cause": "thousands separator '.' read as decimal point"
+    },
+    {
+      "country": "CO",
+      "service": "Spotify Premium",
+      "tier": "Duo",
+      "currency": "COP",
+      "wrong_price": 24.5,
+      "correct_price": 24500,
+      "verified_on": "2026-09-26",
+      "verified_from": "https://www.spotify.com/co-es/premium/",
+      "evidence": "page text: 'Premium Duo ... $ 24.500 AL MES'",
+      "cause": "thousands separator '.' read as decimal point"
+    },
+    {
+      "country": "CO",
+      "service": "Spotify Premium",
+      "tier": "Family",
+      "currency": "COP",
+      "wrong_price": 30.5,
+      "correct_price": 30500,
+      "verified_on": "2026-09-26",
+      "verified_from": "https://www.spotify.com/co-es/premium/",
+      "evidence": "page text: '$ 30.500 por 1 mes'",
+      "cause": "thousands separator '.' read as decimal point"
+    },
+    {
+      "country": "CO",
+      "service": "Spotify Premium",
+      "tier": "Student",
+      "currency": "COP",
+      "wrong_price": 10.1,
+      "correct_price": 10100,
+      "verified_on": "2026-09-26",
+      "verified_from": "https://www.spotify.com/co-es/premium/",
+      "evidence": "page text: 'Después, cuesta $ 10.100 al mes'",
+      "cause": "thousands separator '.' read as decimal point"
+    },
+    {
+      "country": "CO",
+      "service": "Apple Music",
+      "tier": "Individual",
+      "currency": "COP",
+      "wrong_price": 18.5,
+      "correct_price": 18500,
+      "verified_on": "2026-09-26",
+      "verified_from": "https://www.apple.com/co/apple-music/",
+      "evidence": "page text: 'El plan Individual cuesta sólo $18.500 al mes'",
+      "cause": "thousands separator '.' read as decimal point"
+    },
+    {
+      "country": "JP",
+      "service": "Spotify Premium",
+      "tier": "Standard",
+      "currency": "JPY",
+      "wrong_price": 1.08,
+      "correct_price": 1080,
+      "verified_on": "2026-09-26",
+      "verified_from": "https://www.spotify.com/jp/premium/",
+      "evidence": "page text: '￥1,080'",
+      "cause": "thousands separator ',' read as decimal point"
+    },
+    {
+      "country": "JP",
+      "service": "Spotify Premium",
+      "tier": "Duo",
+      "currency": "JPY",
+      "wrong_price": 1.48,
+      "correct_price": 1480,
+      "verified_on": "2026-09-26",
+      "verified_from": "https://www.spotify.com/jp/premium/",
+      "evidence": "page text: '￥1,480、Premium Familyプラン'",
+      "cause": "thousands separator ',' read as decimal point"
+    },
+    {
+      "country": "JP",
+      "service": "Spotify Premium",
+      "tier": "Family",
+      "currency": "JPY",
+      "wrong_price": 1.88,
+      "correct_price": 1880,
+      "verified_on": "2026-09-26",
+      "verified_from": "https://www.spotify.com/jp/premium/",
+      "evidence": "page text: '￥1,880、Premium Student'",
+      "cause": "thousands separator ',' read as decimal point"
+    },
+    {
+      "country": "KR",
+      "service": "Spotify Premium",
+      "tier": "Individual",
+      "currency": "KRW",
+      "wrong_price": 11.99,
+      "correct_price": 11990,
+      "verified_on": "2026-09-26",
+      "verified_from": "https://www.spotify.com/kr-ko/premium/",
+      "evidence": "page text: '₩11,990(부가세 포함)'",
+      "cause": "thousands separator ',' read as decimal point"
+    },
+    {
+      "country": "KR",
+      "service": "Spotify Premium",
+      "tier": "Duo",
+      "currency": "KRW",
+      "wrong_price": 17.985,
+      "correct_price": 17985,
+      "verified_on": "2026-09-26",
+      "verified_from": "https://www.spotify.com/kr-ko/premium/",
+      "evidence": "page text: '₩17,985 (부가세 포함)'",
+      "cause": "thousands separator ',' read as decimal point"
+    },
+    {
+      "country": "KR",
+      "service": "Spotify Premium",
+      "tier": "Basic",
+      "currency": "KRW",
+      "wrong_price": 8.69,
+      "correct_price": 8690,
+      "verified_on": "2026-09-26",
+      "verified_from": "https://www.spotify.com/kr-ko/premium/",
+      "evidence": "page text: '₩8,690 (부가세 포함)'",
+      "cause": "thousands separator ',' read as decimal point"
+    },
+    {
+      "country": "KR",
+      "service": "Spotify Premium",
+      "tier": "Student",
+      "currency": "KRW",
+      "wrong_price": 6.6,
+      "correct_price": 6600,
+      "verified_on": "2026-09-26",
+      "verified_from": "https://www.spotify.com/kr-ko/premium/",
+      "evidence": "page text: '₩6,600(부가세 포함)'",
+      "cause": "thousands separator ',' read as decimal point"
+    },
+    {
+      "country": "IE",
+      "service": "Spotify Premium",
+      "tier": "Duo",
+      "currency": "EUR",
+      "wrong_price": 17.99,
+      "correct_price": 18.99,
+      "verified_on": "2026-09-26",
+      "verified_from": "https://www.spotify.com/ie/duo/",
+      "evidence": "page text: '€18.99/month. Cancel anytime.'; /ie/premium/ also shows '€18.99 / month'",
+      "cause": "agent read 17.99 from /ie/premium/ on 2026-09-26; page shows 18.99"
+    },
+    {
+      "country": "IE",
+      "service": "Spotify Premium",
+      "tier": "Family",
+      "currency": "EUR",
+      "wrong_price": 21.99,
+      "correct_price": 22.99,
+      "verified_on": "2026-09-26",
+      "verified_from": "https://www.spotify.com/ie/family/",
+      "evidence": "page text: '€22.99/month. Cancel anytime.'; /ie/premium/ also shows '€22.99 / month'",
+      "cause": "agent read 21.99 from /ie/premium/ on 2026-09-26; page shows 22.99"
+    }
   ]
 }
