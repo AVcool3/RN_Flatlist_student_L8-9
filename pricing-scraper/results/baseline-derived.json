@@ -1,122 +1,13 @@
 {
   "source_file": "baseline.json",
-  "generated_at": "2026-09-26T20:23:59.302Z",
+  "generated_at": "2026-09-26T20:25:52.697Z",
   "fx": {
     "provider": "https://www.exchangerate-api.com",
     "as_of": "Sat, 26 Sep 2026 00:02:32 +0000",
     "url": "https://open.er-api.com/v6/latest/USD",
     "base": "USD"
   },
-  "corrections_applied": [
-    {
-      "country": "CO",
-      "service": "Spotify Premium",
-      "tier": "Duo",
-      "from": 24.5,
-      "to": 24500,
-      "currency": "COP",
-      "verified_from": "https://www.spotify.com/co-es/premium/"
-    },
-    {
-      "country": "CO",
-      "service": "Spotify Premium",
-      "tier": "Family",
-      "from": 30.5,
-      "to": 30500,
-      "currency": "COP",
-      "verified_from": "https://www.spotify.com/co-es/premium/"
-    },
-    {
-      "country": "CO",
-      "service": "Spotify Premium",
-      "tier": "Individual",
-      "from": 18.5,
-      "to": 18500,
-      "currency": "COP",
-      "verified_from": "https://www.spotify.com/co-es/premium/"
-    },
-    {
-      "country": "CO",
-      "service": "Spotify Premium",
-      "tier": "Student",
-      "from": 10.1,
-      "to": 10100,
-      "currency": "COP",
-      "verified_from": "https://www.spotify.com/co-es/premium/"
-    },
-    {
-      "country": "JP",
-      "service": "Spotify Premium",
-      "tier": "Duo",
-      "from": 1.48,
-      "to": 1480,
-      "currency": "JPY",
-      "verified_from": "https://www.spotify.com/jp/premium/"
-    },
-    {
-      "country": "JP",
-      "service": "Spotify Premium",
-      "tier": "Family",
-      "from": 1.88,
-      "to": 1880,
-      "currency": "JPY",
-      "verified_from": "https://www.spotify.com/jp/premium/"
-    },
-    {
-      "country": "JP",
-      "service": "Spotify Premium",
-      "tier": "Standard",
-      "from": 1.08,
-      "to": 1080,
-      "currency": "JPY",
-      "verified_from": "https://www.spotify.com/jp/premium/"
-    },
-    {
-      "country": "KR",
-      "service": "Spotify Premium",
-      "tier": "Basic",
-      "from": 8.69,
-      "to": 8690,
-      "currency": "KRW",
-      "verified_from": "https://www.spotify.com/kr-ko/premium/"
-    },
-    {
-      "country": "KR",
-      "service": "Spotify Premium",
-      "tier": "Duo",
-      "from": 17.985,
-      "to": 17985,
-      "currency": "KRW",
-      "verified_from": "https://www.spotify.com/kr-ko/premium/"
-    },
-    {
-      "country": "KR",
-      "service": "Spotify Premium",
-      "tier": "Individual",
-      "from": 11.99,
-      "to": 11990,
-      "currency": "KRW",
-      "verified_from": "https://www.spotify.com/kr-ko/premium/"
-    },
-    {
-      "country": "KR",
-      "service": "Spotify Premium",
-      "tier": "Student",
-      "from": 6.6,
-      "to": 6600,
-      "currency": "KRW",
-      "verified_from": "https://www.spotify.com/kr-ko/premium/"
-    },
-    {
-      "country": "CO",
-      "service": "Apple Music",
-      "tier": "Individual",
-      "from": 18.5,
-      "to": 18500,
-      "currency": "COP",
-      "verified_from": "https://www.apple.com/co/apple-music/"
-    }
-  ],
+  "corrections_applied": [],
   "suspect_prices": [
     {
       "country": "CL",
@@ -645,7 +536,7 @@
   ],
   "summary": {
     "rows": 189,
-    "corrected": 12,
+    "corrected": 0,
     "suspect": 1,
     "countries_with_spotify_individual": 32,
     "countries_compared_vs_apple": 19,
