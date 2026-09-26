@@ -5,6 +5,22 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-26 10:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. All 28 queries returned only tracked items (Crusoe, Q2 disclosures, Duke, LG&E, Kansai, Taiba/Qassim, Qurayyah, KOWEPO, Quang Trach II, Egypt, Venezuela MoU, Xcel, Chevron/Kilby, wind orders, SGE/Samsung MoU). Latest gevernova.com press release still 2026-09-22; latest 8-K still Q2 (Jul 22).
+
+**Close calls:**
+- naturalgasintel.com "Eyeing Surge in Gas Turbine, Electrification Commitments Through '26" resurfaced — cites 62 GW commitments / 33 GW backlog, i.e. Q3 2025 earnings coverage. Old; not added. Site returns 405 to WebFetch.
+- nuclear-news.net repost (Sept 26) of the SGE/Samsung/Hitachi MoU — already tracked (Sept 22).
+
+**Look into:** unchanged — Chevron/Kilby SRA-to-firm status; Xcel F-class siting; SGE Poland firm-order path; Venezuela payment terms; Q2 10-Q geographic split; Qatalum AGP date; Eneva Azulão order date.
+
+**Issues:** naturalgasintel.com blocks WebFetch (405). Next run 11:17 UTC.
+
+---
+
 ## 2026-09-26 09:19 UTC — hourly run
 
 **Alerts sent:** none (both finds are backfills of older announcements, not new news).
