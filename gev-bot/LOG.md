@@ -5,6 +5,23 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-26 12:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. All 28 queries returned only tracked items. Latest gevernova.com press release still 2026-09-22 (SGE/Samsung MoU); latest 8-K still Q2 (Jul 22).
+
+**Close calls:**
+- Turbomachinery "GE Vernova fulfills H-class order for Kozienice station" (Poland) — a delivery/fulfilment milestone on an older order, not a new contract.
+- Jafurah ISPP (Saudi, 7HA.01) commercial operation — COD milestone, not new order.
+- Repeat resurfacing of TVA Kingston, Springfield, Eurus Aomori 2025, China 9HA.
+
+**Look into:** unchanged — Chevron/Kilby SRA-to-firm status; Xcel F-class siting; SGE Poland firm-order path; Venezuela payment terms; Q2 10-Q geographic split; Qatalum AGP date; Eneva Azulão order date.
+
+**Issues:** none. Next run 13:17 UTC.
+
+---
+
 ## 2026-09-26 11:19 UTC — hourly run
 
 **Alerts sent:** none.
