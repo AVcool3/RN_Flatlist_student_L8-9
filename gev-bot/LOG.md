@@ -5,6 +5,20 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-26 16:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. All 28 queries returned only tracked items. Latest gevernova.com press release still 2026-09-22 (SGE/Samsung MoU); latest 8-K still Q2 (Jul 22).
+
+**Close calls:** none new. GEV's Americas regional page confirms Eneva Azulão (Brazil) is a single 7HA.02, up to 350 MW reserve power — supports the existing tracker row but still no order date. Q2 detail re-surfaced: 3 GW shipped in Q2 vs 20 GW of new contracts signed (SRA 63 GW at Q2-end).
+
+**Look into:** unchanged — Chevron/Kilby SRA-to-firm status; Xcel F-class siting; SGE Poland firm-order path; Venezuela payment terms; Q2 10-Q geographic split; Qatalum AGP date; Eneva Azulão order date.
+
+**Issues:** none. Next run 17:17 UTC.
+
+---
+
 ## 2026-09-26 15:19 UTC — hourly run
 
 **Alerts sent:** none.
