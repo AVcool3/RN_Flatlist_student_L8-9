@@ -5,6 +5,20 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-26 18:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. All 28 queries returned only tracked items. Latest gevernova.com press release still 2026-09-22 (SGE/Samsung MoU) with Sept 23 Egypt RLE on the Gas Power listing; latest 8-K still Q2 (Jul 22).
+
+**Close calls:** none new. Eurus Hiyamizutouge (Sept 15) resurfaced via energiesmedia with the added detail of a 2-year service agreement + 2-year option — already tracked. MarketScreener repost of the Egypt RLE deal — tracked.
+
+**Look into:** unchanged — Duke 20-unit firm/reservation split; Chevron/Kilby SRA-to-firm; Xcel F-class siting; SGE Poland firm-order path; Venezuela payment terms; Q2 10-Q geographic split; Qatalum AGP date; Eneva Azulão original order date.
+
+**Issues:** none. Next run 19:17 UTC.
+
+---
+
 ## 2026-09-26 17:19 UTC — hourly run
 
 **Alerts sent:** none (tracker updates on already-known contracts, not new announcements).
