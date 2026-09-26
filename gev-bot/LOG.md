@@ -5,6 +5,22 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-26 14:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. All 28 queries returned only tracked items. Latest gevernova.com press release still 2026-09-22 (SGE/Samsung MoU); latest 8-K still Q2 (Jul 22).
+
+**Close calls:**
+- GS Power (Korea) "second 7HA.02 + clutched steam turbine for Anyang CCGT" surfaced from GEV's 7HA product page. Untracked, but it is an undated product-page reference (Anyang phase-2 dates to ~2020) — not added. If a dated release turns up it goes in as a backfill.
+- Same resurfaced set as prior hours (Kozienice/Enea 2x 9HA.01 booked Q4 2025 — already tracked; Jafurah COD; TVA Kingston; Springfield; Eurus Aomori 2025; China 9HA).
+
+**Look into:** unchanged — Chevron/Kilby SRA-to-firm status; Xcel F-class siting; SGE Poland firm-order path; Venezuela payment terms; Q2 10-Q geographic split; Qatalum AGP date; Eneva Azulão order date.
+
+**Issues:** none. Next run 15:17 UTC.
+
+---
+
 ## 2026-09-26 13:19 UTC — hourly run
 
 **Alerts sent:** none.
