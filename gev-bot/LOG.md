@@ -5,6 +5,23 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-26 08:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. All 28 queries ran; every gas-turbine hit is already tracked (KOWEPO Gongju, Kansai Nanko, Qurayyah, LG&E Mill Creek, Taiba/Qassim, Quang Trach II, Egypt Banha/Nubaria + RLE, Duke, Crusoe, Hawaiian Electric, Venezuela MoU). Wind hits also tracked (ESB Chleansaid, Eurus Hiyamizutouge 09-15, Powerica, IVPC Fortore, Greenvolt, Aula, Prokon/Enertrag, Taiwan Power repower). Latest gevernova.com press release still 2026-09-22 (SGE/Samsung MoU); latest 8-K still Q2.
+
+**Close calls:**
+- Eurus Energy Iwaya/Shitsukari (14x 4.2MW, 58.8 MW, Aomori) resurfaced as "recent" — WebFetch shows Jan 9 2025. Not added (distinct from the Sept 15 2026 Hiyamizutouge order already tracked).
+- GE Vernova Hitachi / Velan valve collaboration (Jun 17 2026) — supplier agreement where GEVH is the buyer, not a customer contract. Not added.
+- Zhoushan / Guangdong 9HA China orders resurfaced — pre-2020, ignored.
+
+**Look into:** standing items unchanged (SGE Poland firm-order path; Venezuela payment terms; Q2 10-Q geographic split; Qatalum AGP deal date; Eneva Azulão order date).
+
+**Issues:** none. Next run 09:17 UTC.
+
+---
+
 ## 2026-09-26 07:19 UTC — hourly run
 
 **Alerts sent:** none.
