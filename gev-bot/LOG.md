@@ -7,6 +7,20 @@ bot hit (blocked sites, no new results, ambiguous data).
 
 ---
 
+## 2026-09-26 00:19 UTC — hourly run
+
+**Alerts sent:** none (no alert rule matched).
+
+**New contracts found:** 0. All 28 queries returned only tracked items. Latest gevernova.com press release still 2026-09-22 (SGE/Samsung BWRX-300 MoU); latest 8-K still the Q2 release.
+
+**Close calls:** none new. Nuclear queries resurfaced the AFRY main services agreement (2026-04-07) and the Southeast Asia BWRX-300 MoU (2026-03-14); both older than the window, both nuclear, not added. Competitor note: Tallgrass / Mitsubishi Power turbine allocation for the Cheyenne Power Hub (May 2026) — a reminder that Mitsubishi is winning some US data-center-adjacent slots.
+
+**Look into:** nothing new. Standing: SGE Poland firm-order path; Venezuela payment terms; Q2 10-Q geographic revenue split; Qatalum AGP date.
+
+**Issues:** first run of the weekend; expect quiet until Monday. Next scheduled run 01:17 UTC.
+
+---
+
 ## 2026-09-25 23:19 UTC — hourly run
 
 **Alerts sent:** none (no alert rule matched).
