@@ -5,6 +5,25 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-26 09:19 UTC — hourly run
+
+**Alerts sent:** none (both finds are backfills of older announcements, not new news).
+
+**New contracts found:** 0 new announcements; 2 backfills added to CONTRACTS.md:
+- Xcel Energy Strategic Alliance (Feb 3 2026): Reservation Agreement for 5 F-class gas turbines + Capacity Reservation Agreement for "multiple GW" of wind + grid equipment. Utility segment, 8-state footprint, tied to Xcel's 6 GW data-center pipeline. Xcel's own release notes the 5 F-class units were NOT in the 83 GW YE25 figure, so they land in 1H26 SRA growth.
+- Chevron / Engine No. 1 Project Kilby (SRA for 7x 7HA disclosed Jan 2025; Microsoft 20-yr PPA + ~2.67 GW West Texas site confirmed Jun 23 2026). Data-center segment, first power 2028. Surfaced via the hyperscaler query; had been missing from the tracker.
+
+**Close calls:** none new. Same resurfaced old items as prior hours (TVA Kingston, Springfield, Western Farmers, Eurus Aomori 2025, China 9HA). Latest gevernova.com press release still 2026-09-22; latest 8-K still Q2.
+
+**Look into:**
+- Whether the Chevron/Engine No.1 seven 7HA units are the "seven 7HA.02 SRA (Apr 2 2025) converted to firm in Q3 2025" cited in GEV's Q3-25 release — if so Kilby is already firm backlog, not SRA. Would firm up data-center segment conviction.
+- Xcel: which states / plants get the 5 F-class units (likely Colorado or Minnesota IRP filings).
+- Standing: SGE Poland firm-order path; Venezuela payment terms; Q2 10-Q geographic split; Qatalum AGP deal date; Eneva Azulão order date.
+
+**Issues:** Chevron newsroom returns 403 to WebFetch; used power-eng.com coverage instead. Next run 10:17 UTC.
+
+---
+
 ## 2026-09-26 08:19 UTC — hourly run
 
 **Alerts sent:** none.
