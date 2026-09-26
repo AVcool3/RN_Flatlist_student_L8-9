@@ -5,6 +5,23 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-26 19:19 UTC — hourly run
+
+**Alerts sent:** none (nuclear item; per alert rules nuclear/SMR never triggers a phone alert).
+
+**New contracts found:** 1 backfill added to CONTRACTS.md:
+- Studsvik (Sweden) ReFirm program — Sept 3 2026 GEV press release: exclusive strategic collaboration with GE Vernova Hitachi + Samsung C&T + DS Investment Partners + GEV Financial Services for a 4x BWRX-300 (~1.2 GW) project at Nyköping or Valdemarsvik, first unit mid-2030s. Explicitly not an FID. Missed for 3 weeks — surfaced only now via the BWRX-300 query; the nuclear queries added Sept 25 are earning their keep.
+
+**Close calls:** none new otherwise. Latest gas-turbine press release still Sept 23 (Egypt RLE); latest 8-K still Q2.
+
+**Look into:**
+- Studsvik: exclusivity period length; whether Sweden's 2026 SMR financing framework (state risk-sharing) applies — would move this toward a firm nuclear order for the pitch's optionality section.
+- Standing: Duke 20-unit firm/reservation split; Chevron/Kilby SRA-to-firm; Xcel F-class siting; SGE Poland firm-order path; Venezuela payment terms; Q2 10-Q geographic split; Qatalum AGP date; Eneva Azulão original order date.
+
+**Issues:** none. Next run 20:17 UTC.
+
+---
+
 ## 2026-09-26 18:19 UTC — hourly run
 
 **Alerts sent:** none.
