@@ -33,7 +33,7 @@ Spotify Individual rows captured in `pricing_baseline` but with no USD conversio
 | BR | Latin America | Individual | 23.9 | BRL | month | not stated | 1 month for 0 | 2026-09-25 | [source](https://www.spotify.com/br-pt/premium/) |
 | CA | North America | Individual | 13.99 | CAD | month | not stated | 1 month for $0; then $13.99/month; users who have not tried Premium before | 2026-09-25 | [source](https://www.spotify.com/ca-en/premium/) |
 | CH | Europe | Individual | 15.95 | CHF | month | not stated | 1 month free | 2026-09-25 | [source](https://www.spotify.com/ch-de/premium/) |
-| CO | Latin America | Individual | 18.5 | COP | month | not stated | 1 month for 0 | 2026-09-25 | [source](https://www.spotify.com/co-es/premium/) |
+| CO | Latin America | Individual | 18500 (corrected from 18.5, verified 2026-09-26) | COP | month | not stated | 1 month for 0 | 2026-09-25 | [source](https://www.spotify.com/co-es/premium/) |
 | DE | Europe | Individual | 12.99 | EUR | month | not stated | n/a | 2026-09-25 | [source](https://www.spotify.com/de/premium/) |
 | DK | Europe | Individual | 119 | DKK | month | not stated | n/a | 2026-09-25 | [source](https://www.spotify.com/dk/premium/) |
 | EG | Rest of World | Individual | 79 | EGP | month | not stated | n/a | 2026-09-25 | [source](https://www.spotify.com/eg-en/premium/) |
@@ -44,8 +44,8 @@ Spotify Individual rows captured in `pricing_baseline` but with no USD conversio
 | IE | Europe | Individual | 12.99 | EUR | month | not stated | 1 month free | 2026-09-25 | [source](https://www.spotify.com/ie/premium/) |
 | IN | Rest of World | Standard | 139 | INR | month | not stated | n/a | 2026-09-25 | [source](https://www.spotify.com/in-en/premium/) |
 | IT | Europe | Individual | 11.99 | EUR | month | not stated | n/a | 2026-09-25 | [source](https://www.spotify.com/it/premium/) |
-| JP | Rest of World | Standard | 1.08 | JPY | month | not stated | n/a | 2026-09-25 | [source](https://www.spotify.com/jp/premium/) |
-| KR | Rest of World | Individual | 11.99 | KRW | month | yes | n/a | 2026-09-25 | [source](https://www.spotify.com/kr-ko/premium/) |
+| JP | Rest of World | Standard | 1080 (corrected from 1.08, verified 2026-09-26) | JPY | month | not stated | n/a | 2026-09-25 | [source](https://www.spotify.com/jp/premium/) |
+| KR | Rest of World | Individual | 11990 (corrected from 11.99, verified 2026-09-26) | KRW | month | yes | n/a | 2026-09-25 | [source](https://www.spotify.com/kr-ko/premium/) |
 | MX | North America | Individual | 139 | MXN | month | not stated | 1 month for $0; then $139/month; new/eligible users only | 2026-09-25 | [source](https://www.spotify.com/mx/premium/) |
 | NL | Europe | Individual | 13.99 | EUR | month | not stated | n/a | 2026-09-25 | [source](https://www.spotify.com/nl/premium/) |
 | NO | Europe | Individual | 139 | NOK | month | not stated | n/a | 2026-09-25 | [source](https://www.spotify.com/no/premium/) |
@@ -195,3 +195,31 @@ Lag is computed here as days from the closest earlier Spotify effective date, or
 - No analyst note with a sourced price target and explicit Spotify pricing assumption was found in the fetched pages.
 
 Overall confidence: **medium**
+
+## Post-run corrections (2026-09-26)
+
+`derive.mjs` flagged 13 prices as implausible for their currency. Twelve were verified by
+re-reading the cited official pages and corrected in `baseline.json` (the agent's raw value is
+kept in each row's `original_price`; the evidence is in `corrections.json`):
+
+| Country | Service | Tier | Agent value | Verified value | Source |
+|---|---|---|---|---|---|
+| CO | Spotify Premium | Individual | 18.5 | 18,500 COP | https://www.spotify.com/co-es/premium/ |
+| CO | Spotify Premium | Duo | 24.5 | 24,500 COP | https://www.spotify.com/co-es/premium/ |
+| CO | Spotify Premium | Family | 30.5 | 30,500 COP | https://www.spotify.com/co-es/premium/ |
+| CO | Spotify Premium | Student | 10.1 | 10,100 COP | https://www.spotify.com/co-es/premium/ |
+| CO | Apple Music | Individual | 18.5 | 18,500 COP | https://www.apple.com/co/apple-music/ |
+| JP | Spotify Premium | Standard | 1.08 | ¥1,080 | https://www.spotify.com/jp/premium/ |
+| JP | Spotify Premium | Duo | 1.48 | ¥1,480 | https://www.spotify.com/jp/premium/ |
+| JP | Spotify Premium | Family | 1.88 | ¥1,880 | https://www.spotify.com/jp/premium/ |
+| KR | Spotify Premium | Individual | 11.99 | ₩11,990 (VAT incl.) | https://www.spotify.com/kr-ko/premium/ |
+| KR | Spotify Premium | Duo | 17.985 | ₩17,985 (VAT incl.) | https://www.spotify.com/kr-ko/premium/ |
+| KR | Spotify Premium | Basic | 8.69 | ₩8,690 (VAT incl.) | https://www.spotify.com/kr-ko/premium/ |
+| KR | Spotify Premium | Student | 6.6 | ₩6,600 (VAT incl.) | https://www.spotify.com/kr-ko/premium/ |
+
+Cause in every case: the localized thousands separator was read as a decimal point.
+Still unverified and excluded from USD metrics: CL Apple Music Individual, recorded as 4.99 CLP.
+
+With the corrections, Spotify Individual converts to USD 5.68 in Colombia (exact parity with
+Apple Music at 18,500 COP), USD 6.86 in Japan and USD 8.83 in South Korea, using the
+open.er-api.com rate of 2026-09-26.

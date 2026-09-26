@@ -21,6 +21,15 @@
 //   node derive.mjs results/baseline.json        -> results/baseline-derived.json
 //   node derive.mjs results/2026-09-26.json      -> results/2026-09-26-derived.json
 //   node derive.mjs <file> --no-network          -> skip FX (checks only)
+//   node derive.mjs <file> --write-back          -> also save verified corrections
+//                                                   INTO <file> (with provenance)
+//
+// CORRECTIONS
+//   corrections.json (next to this script) lists prices that were verified by
+//   hand on the official page after derive.mjs flagged them. A correction is
+//   applied only when country + service + tier match AND the row's price equals
+//   the exact wrong value, so a real new price is never overwritten. Corrected
+//   rows keep the original under `original_price` plus a `correction` object.
 //
 // OUTPUT (<name>-derived.json)
 //   {
@@ -32,8 +41,9 @@
 //   }
 // ============================================================================
 
-import { readFileSync, writeFileSync } from "node:fs";
+import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { basename, dirname, join } from "node:path";
+import { fileURLToPath } from "node:url";
 
 // ---------------------------------------------------------------------------
 // 1. Plausible MONTHLY price range per currency for a single-user music plan.
@@ -58,6 +68,7 @@ const PLAUSIBLE_MONTHLY = {
 const args = process.argv.slice(2);
 const inputPath = args.find((a) => !a.startsWith("--"));
 const noNetwork = args.includes("--no-network");
+const writeBack = args.includes("--write-back");
 if (!inputPath) {
   console.error("usage: node derive.mjs <results/file.json> [--no-network]");
   process.exit(1);
@@ -75,6 +86,36 @@ const isIndividual = (r) => /^(individual|standard)\b/i.test(r.tier || "");
 const isSpotify = (r) => /spotify/i.test(r.service || "");
 const isAppleMusic = (r) => /apple music/i.test(r.service || "");
 const isYouTubePremium = (r) => /youtube premium/i.test(r.service || "") && !/lite/i.test(r.tier || "");
+
+// ---------------------------------------------------------------------------
+// 2b. Apply verified corrections BEFORE the sanity check, so a known parsing
+//     error is fixed (with provenance) instead of just flagged again.
+// ---------------------------------------------------------------------------
+const correctionsPath = join(dirname(fileURLToPath(import.meta.url)), "corrections.json");
+const corrections = existsSync(correctionsPath)
+  ? JSON.parse(readFileSync(correctionsPath, "utf8")).corrections ?? []
+  : [];
+const applied = [];
+for (const r of rows) {
+  const c = corrections.find(
+    (c) =>
+      cc(c.country) === cc(r.country) &&
+      c.service.toLowerCase() === String(r.service).toLowerCase() &&
+      c.tier.toLowerCase() === String(r.tier).toLowerCase() &&
+      cc(c.currency) === cc(r.currency) &&
+      Number(r.price) === Number(c.wrong_price)
+  );
+  if (!c) continue;
+  r.original_price = r.price;          // keep the agent's raw value for audit
+  r.price = c.correct_price;
+  r.correction = {
+    verified_on: c.verified_on,
+    verified_from: c.verified_from,
+    evidence: c.evidence,
+    cause: c.cause,
+  };
+  applied.push({ country: cc(r.country), service: r.service, tier: r.tier, from: r.original_price, to: r.price, currency: r.currency, verified_from: c.verified_from });
+}
 
 // ---------------------------------------------------------------------------
 // 3. Sanity-check every row
@@ -166,10 +207,12 @@ const out = {
   source_file: basename(inputPath),
   generated_at: new Date().toISOString(),
   fx: { provider: fx.provider, as_of: fx.as_of, url: fx.url, base: fx.base },
+  corrections_applied: applied,
   suspect_prices: suspect,
   derived_metrics: derived,
   summary: {
     rows: rows.length,
+    corrected: applied.length,
     suspect: suspect.length,
     countries_with_spotify_individual: spot.size,
     countries_compared_vs_apple: derived.filter((d) => d.spotify_vs_apple_pct != null).length,
@@ -178,9 +221,22 @@ const out = {
 };
 writeFileSync(outPath, JSON.stringify(out, null, 2));
 
+// Optionally persist the corrected rows into the source file so downstream
+// consumers (the daily brief, day-over-day diffs) see verified values. The raw
+// value survives in each row's original_price, and the CLI wrapper (id,
+// creditsUsed, etc.) is preserved untouched.
+if (writeBack && applied.length) {
+  writeFileSync(inputPath, JSON.stringify(raw, null, 2));
+  console.log(`[derive] wrote ${applied.length} verified correction(s) back into ${inputPath}`);
+}
+
 // Console report so the daily session can paste it into the brief.
 console.log(`[derive] ${outPath}`);
-console.log(`[derive] rows=${rows.length} suspect=${suspect.length} spotify_countries=${spot.size} fx=${fx.as_of ?? "none"}`);
+console.log(`[derive] rows=${rows.length} corrected=${applied.length} suspect=${suspect.length} spotify_countries=${spot.size} fx=${fx.as_of ?? "none"}`);
+if (applied.length) {
+  console.log("\nCORRECTIONS APPLIED (verified on official pages; see corrections.json):");
+  for (const a of applied) console.log(`  ${a.country} ${a.service} ${a.tier}: ${a.from} -> ${a.to} ${a.currency}  (${a.verified_from})`);
+}
 if (suspect.length) {
   console.log("\nSUSPECT PRICES (kept in data, excluded from metrics; verify by hand):");
   for (const s of suspect) console.log(`  ${s.country} ${s.service} ${s.tier}: ${s.price} ${s.currency} -> ${s.reason}`);

@@ -23,7 +23,8 @@ field has a description explaining what counts as evidence for it.
 | `config.mjs` | Countries by region, services, research mandate, preferred sources, per-mode effort, run window | you want different countries / services / dates, or a different investment question |
 | `schema.json` | The JSON schema the agent's answer must match; each field's `description` is the evidence rule | you want extra signals in the output |
 | `run.mjs` | Builds the prompt from `config.mjs` and runs the `firecrawl agent` CLI | you want to change how the CLI is called |
-| `derive.mjs` | Post-processing: flags implausible prices (mis-parsed thousands), fetches a dated USD FX rate, computes Spotify vs Apple/YouTube in USD | you add a currency, or want a different FX source |
+| `derive.mjs` | Post-processing: applies verified corrections, flags implausible prices (mis-parsed thousands), fetches a dated USD FX rate, computes Spotify vs Apple/YouTube in USD | you add a currency, or want a different FX source |
+| `corrections.json` | Hand-verified fixes for prices the agent mis-parsed, each with the page it was read from and the date | derive.mjs flags a suspect price and you have checked the official page |
 | `results/` | Output. `baseline.json` plus one `YYYY-MM-DD.json` per daily run | never by hand |
 | `../.github/workflows/pricing-scraper.yml` | GitHub Actions cron for the 5-day window + manual button | you change the dates in `config.mjs` |
 
@@ -53,8 +54,10 @@ node pricing-scraper/run.mjs
 # See the exact prompt + CLI command without spending credits
 node pricing-scraper/run.mjs --dry-run --baseline
 
-# ALWAYS run after a scrape: sanity-check prices + USD-normalize with a cited FX rate
-node pricing-scraper/derive.mjs pricing-scraper/results/baseline.json
+# ALWAYS run after a scrape: apply verified corrections, sanity-check prices,
+# USD-normalize with a cited FX rate. --write-back saves corrections into the
+# source file (raw value kept in original_price).
+node pricing-scraper/derive.mjs pricing-scraper/results/baseline.json --write-back
 #   -> pricing-scraper/results/baseline-derived.json
 ```
 
