@@ -5,6 +5,20 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-26 20:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. All 28 queries returned only tracked items. Latest gevernova.com press release still 2026-09-23 (Egypt RLE) / 09-22 (SGE MoU); latest 8-K still Q2 (Jul 22).
+
+**Close calls:** none new. One detail worth keeping: GEV states it booked 339 MW of wind orders in Japan in 2025 across utilities and IPPs — context for the Eurus rows, not a new contract.
+
+**Look into:** unchanged — Studsvik exclusivity/financing; Duke 20-unit firm/reservation split; Chevron/Kilby SRA-to-firm; Xcel F-class siting; SGE Poland firm-order path; Venezuela payment terms; Q2 10-Q geographic split; Qatalum AGP date; Eneva Azulão original order date.
+
+**Issues:** none. Next run 21:17 UTC.
+
+---
+
 ## 2026-09-26 19:19 UTC — hourly run
 
 **Alerts sent:** none (nuclear item; per alert rules nuclear/SMR never triggers a phone alert).
