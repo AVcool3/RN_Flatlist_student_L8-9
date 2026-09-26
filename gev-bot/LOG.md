@@ -5,6 +5,22 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-26 22:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. All 28 queries returned only tracked items (Crusoe, Q1/Q2 disclosures, Duke, LG&E, Kansai, Taiba/Qassim, Qurayyah, KOWEPO Gongju, Quang Trach II, Egypt RLE/Banha, Venezuela, Chevron/Kilby, Hawaiian Electric, Lincoln ES, wind: ESB Chleansaid, Eurus, Prokon, Enertrag, Aula, Greenvolt, IVPC Fortore, Powerica, Enfinity; nuclear: SGE MoU, Velan, Blue Energy, SE Asia MoU). Latest gevernova.com press release still 2026-09-23 (Egypt RLE) / 09-22 (SGE MoU); latest 8-K still Q2 (Jul 22).
+
+**Updates:** 1 — Spain wind row now names the developer (Renovalia Energy Group) and the article date (2026-04-27, energiesmedia); 15x 6.1 MW-158m, 91.5 MW. Cosmetic, no alert.
+
+**Close calls:** none new. Resurfaced old items again (TVA Kingston May 2024, Springfield MO Mar 2025, China 9HA, Kozienice fulfilment, Jafurah COD) — all previously ruled out by dateline. Competitor context: Mitsubishi large-frame backlog 35 GW (up from 23 GW), 10 large-frame orders in FQ1 (4 US, 6 Japan); Siemens Energy ~60 GW backlog, ~25% data-center linked, booked out to FY2028. Useful for the pitch's share-of-market slide, not GEV contracts.
+
+**Look into:** unchanged — Studsvik exclusivity period / Sweden SMR financing framework; Duke 20-unit firm vs reservation split (Duke Q2 10-Q); Chevron/Kilby SRA-to-firm status; Xcel F-class siting; SGE Poland firm-order path; Venezuela payment terms; Q2 10-Q geographic revenue split; Qatalum AGP deal date; Eneva Azulão original order date.
+
+**Issues:** none. One WebFetch (energiesmedia Spain article) to confirm the Renovalia dateline. Next run 23:17 UTC.
+
+---
+
 ## 2026-09-26 21:19 UTC — hourly run
 
 **Alerts sent:** none.
