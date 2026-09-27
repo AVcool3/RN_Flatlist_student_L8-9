@@ -5,6 +5,20 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-27 22:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. All 28 queries returned only tracked items (Crusoe, Q1/Q2/Q4-25 disclosures, Duke, LG&E, Kansai, Taiba/Qassim, Qurayyah, Jafurah, EVN Quang Trach II, KOWEPO, TVA Kingston, Hawaiian Electric, Springfield MO, Lincoln NE, Egypt MDEPC/RLE, Sonelgaz 2024, Venezuela MoU/framework, Chleansaid, Greenvolt, BBWind, Santa Maria de las Fuentes, Powerica, Enfinity, Prokon/Enertrag, IVPC, Taiwan repower, Dogger Bank B, Blue Energy NRC filing, SGE/Samsung BWRX-300 MoU). Latest gevernova.com press release still Sept 23; latest 8-K still Q2 (Jul 22).
+
+**Close calls:** none new. Note: the search engine's "2 days ago" tag on the LG&E/KU 7HA.03 (Mill Creek MC5) item is a re-crawl artifact — that order is already tracked with its original date; not re-alerted. Q4-25 unit detail resurfaced: 41 heavy-duty + 18 aero orders that quarter (vs 52 + 61 in Q2-26) — the aero jump in Q2 is a useful data-center/peaker demand signal.
+
+**Look into:** Studsvik exclusivity / Sweden SMR financing; Duke 20-unit firm vs reservation split (Q2 10-Q); Chevron/Kilby SRA-to-firm status; Xcel F-class siting; SGE Poland firm-order path; Venezuela payment terms (PDVSA vs Corpoelec); Q2 10-Q geographic revenue split; Qatalum AGP deal date; Eneva Azulão original order date; Blue Energy 7HA.02 unit count / SRA status; Vineyard Wind settlement terms; Hsinta blocks 2-3 COD.
+
+**Issues:** none. 28/28 searches completed; no WebFetch needed. Next run 23:17 UTC.
+
+---
+
 ## 2026-09-27 21:19 UTC — hourly run
 
 **Alerts sent:** none.
