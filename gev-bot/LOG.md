@@ -5,6 +5,20 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-27 08:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. All 28 queries returned only tracked items (Crusoe, Q1/Q2 disclosures, Duke, LG&E, Kansai, Taiba/Qassim, Qurayyah, Jafurah COD, KOWEPO Gongju, Quang Trach II, Egypt RLE/Banha, Venezuela Sept 2, Chevron/Kilby, Xcel, Hawaiian Electric, TVA/Springfield (old aeros), Topolobampo III; wind: ESB, Eurus, Prokon, Enertrag, BBWind/Greenvolt Germany, Aula, Renovalia, IVPC, Powerica, Enfinity, Taipower, Vineyard Wind settlement; nuclear: SGE MoU Sept 23, Velan, Blue Energy NRC Sept 16, SE Asia MoU, AFRY MSA, BWXT/OPG Darlington). Latest gevernova.com press release still 2026-09-23 / 09-22; latest 8-K still Q2 (Jul 22).
+
+**Close calls:** the Vineyard Wind / GE Vernova litigation settlement resurfaced via a Sept 23 greentechlead roundup ("turbine performance and payments" dispute, no dollar amount) — already tracked as row 18 from the New Bedford Light report; WebFetch confirmed no new detail. Other resurfaced 2023–2025 items previously ruled out by dateline.
+
+**Look into:** unchanged — Studsvik exclusivity period / Sweden SMR financing framework; Duke 20-unit firm vs reservation split (Duke Q2 10-Q); Chevron/Kilby SRA-to-firm status; Xcel F-class siting; SGE Poland firm-order path; Venezuela payment terms; Q2 10-Q geographic revenue split; Qatalum AGP deal date; Eneva Azulão original order date; Blue Energy 7HA.02 unit count / SRA status; Vineyard Wind settlement terms (any charge/reserve in Q3?).
+
+**Issues:** none. One WebFetch (greentechlead) to check the Vineyard settlement item. Weekend lull continues (Sunday). Next run 09:17 UTC.
+
+---
+
 ## 2026-09-27 07:19 UTC — hourly run
 
 **Alerts sent:** none.
