@@ -5,6 +5,20 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-27 01:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. All 28 queries returned only tracked items (Crusoe, Q1/Q2 disclosures, Duke, LG&E, Kansai, Taiba/Qassim, Qurayyah, Jafurah COD, KOWEPO Gongju, Quang Trach II, Egypt RLE/Banha, Venezuela Sept 2, Chevron/Kilby, Xcel, Hawaiian Electric, TVA/Springfield/WFEC (old aeros), wind: ESB, Eurus, Prokon, Enertrag, Aula, Greenvolt, Renovalia, IVPC, Powerica, Enfinity, Taipower; nuclear: SGE MoU Sept 23, Velan, Blue Energy NRC Sept 16, SE Asia MoU, AFRY MSA). Latest gevernova.com press release still 2026-09-23 / 09-22; latest 8-K still Q2 (Jul 22).
+
+**Close calls:** none new. Same resurfaced 2024–2025 items — all previously ruled out by dateline. Pitch datapoint from Electrification coverage: GEV books roughly $200–300M of electrification content (substations, grid software, transmission gear) per GW of data-center capacity served, on top of any turbine sale.
+
+**Look into:** unchanged — Studsvik exclusivity period / Sweden SMR financing framework; Duke 20-unit firm vs reservation split (Duke Q2 10-Q); Chevron/Kilby SRA-to-firm status; Xcel F-class siting; SGE Poland firm-order path; Venezuela payment terms; Q2 10-Q geographic revenue split; Qatalum AGP deal date; Eneva Azulão original order date.
+
+**Issues:** none. No WebFetch needed this hour. Weekend lull continues. Next run 02:17 UTC.
+
+---
+
 ## 2026-09-27 00:19 UTC — hourly run
 
 **Alerts sent:** none.
