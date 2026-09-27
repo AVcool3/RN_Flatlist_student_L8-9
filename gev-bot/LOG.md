@@ -5,6 +5,20 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-27 14:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. All 28 queries returned only tracked items (Crusoe, Q1/Q2 disclosures, Duke, LG&E, Kansai, Taiba/Qassim, Qurayyah, Jafurah COD, EVN Quang Trach II, KOWEPO, TVA Kingston, Hawaiian Electric, Springfield MO, Lincoln NE, Egypt MDEPC/RLE, Sonelgaz Algeria 2024, Venezuela MoU/framework, Chleansaid, Eurus Hiyamizutouge, Greenvolt, Santa Maria de las Fuentes, Powerica, Enfinity, Prokon/Enertrag, IVPC, Taiwan repower, Dogger Bank B, Blue Energy NRC filing, SGE/Samsung BWRX-300 MoU). Latest gevernova.com press release still Sept 23; latest 8-K still Q2 (Jul 22).
+
+**Close calls:** (1) Siemens Energy–Babcock & Wilcox deal for 20 steam turbine-generator sets (~1 GW) for B&W's FastPower data-center program — competitor item, worth noting as evidence that data-center buyers are now also contracting steam-cycle kit; not a GEV contract. (2) Chevron/Engine No.1/Microsoft turbine supply resurfaced — already tracked (Kilby). (3) Mitsubishi Qatar Facility E (Jan 2026) — competitor context.
+
+**Look into:** Studsvik exclusivity / Sweden SMR financing; Duke 20-unit firm vs reservation split (Q2 10-Q); Chevron/Kilby SRA-to-firm status; Xcel F-class siting; SGE Poland firm-order path; Venezuela payment terms (PDVSA vs Corpoelec); Q2 10-Q geographic revenue split; Qatalum AGP deal date; Eneva Azulão original order date; Blue Energy 7HA.02 unit count / SRA status; Vineyard Wind settlement terms.
+
+**Issues:** none. 28/28 searches completed; no WebFetch needed. Next run 15:17 UTC.
+
+---
+
 ## 2026-09-27 13:19 UTC — hourly run
 
 **Alerts sent:** none.
