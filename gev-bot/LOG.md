@@ -5,6 +5,20 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-27 13:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. All 28 queries returned only tracked items (Crusoe, Q1/Q2 disclosures, Duke, LG&E, Kansai, Taiba/Qassim, Qurayyah, EVN Quang Trach II, KOWEPO, TVA Kingston, Hawaiian Electric, Springfield MO, Egypt MDEPC/RLE, Venezuela MoU/framework, Chleansaid, Eurus Hiyamizutouge, Greenvolt, Santa Maria de las Fuentes, Powerica, Enfinity, Prokon/Enertrag, IVPC Fortore, Taiwan repower, Dogger Bank B, Blue Energy NRC filing, SGE/Samsung BWRX-300 MoU). Latest gevernova.com press release still Sept 23; latest 8-K still Q2 (Jul 22).
+
+**Close calls:** (1) Q3-25 8-K line resurfaced: "seven 7HA.02 units announced as SRAs on Apr 2 2025 moved to secured order in 3Q25" — a 2025 conversion example, useful as SRA→firm precedent for the pitch, not new. (2) Sonelgaz Algeria 134-substation grid order (July 2024) — old Electrification item, not a turbine contract. (3) Mitsubishi Qatar Facility E IWPP (Jan 14 2026) — competitor context.
+
+**Look into:** Studsvik exclusivity / Sweden SMR financing; Duke 20-unit firm vs reservation split (Q2 10-Q); Chevron/Kilby SRA-to-firm status; Xcel F-class siting; SGE Poland firm-order path; Venezuela payment terms (PDVSA vs Corpoelec); Q2 10-Q geographic revenue split; Qatalum AGP deal date; Eneva Azulão original order date; Blue Energy 7HA.02 unit count / SRA status; Vineyard Wind settlement terms.
+
+**Issues:** none. 28/28 searches completed; no WebFetch needed. Next run 14:17 UTC.
+
+---
+
 ## 2026-09-27 12:19 UTC — hourly run
 
 **Alerts sent:** none.
