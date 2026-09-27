@@ -1,6 +1,6 @@
 {
   "source_file": "2026-09-27.json",
-  "generated_at": "2026-09-27T13:20:15.872Z",
+  "generated_at": "2026-09-27T13:37:36.070Z",
   "fx": {
     "provider": "https://www.exchangerate-api.com",
     "as_of": "Sun, 27 Sep 2026 00:02:31 +0000",
@@ -8,18 +8,7 @@
     "base": "USD"
   },
   "corrections_applied": [],
-  "suspect_prices": [
-    {
-      "country": "AU",
-      "service": "Apple One",
-      "tier": "Premier",
-      "price": 52.95,
-      "currency": "AUD",
-      "period": "month",
-      "reason": "above plausible AUD range (5-50)",
-      "price_citation": "https://www.apple.com/au/apple-one/"
-    }
-  ],
+  "suspect_prices": [],
   "derived_metrics": [
     {
       "country": "AE",
@@ -489,7 +478,7 @@
   "summary": {
     "rows": 165,
     "corrected": 0,
-    "suspect": 1,
+    "suspect": 0,
     "countries_with_spotify_individual": 29,
     "countries_compared_vs_apple": 14,
     "countries_compared_vs_youtube": 1
