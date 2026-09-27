@@ -5,6 +5,20 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-27 20:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. All 28 queries returned only tracked items (Crusoe, Q1/Q2 disclosures, Duke, LG&E, Kansai, Taiba/Qassim, Qurayyah, Jafurah, EVN Quang Trach II, KOWEPO, TVA Kingston, Hawaiian Electric, Springfield MO, WFEC Anadarko, Eneva Azulão, Egypt MDEPC/RLE, Venezuela MoU/framework, Chleansaid, Greenvolt, Santa Maria de las Fuentes, Powerica, Enfinity, Prokon/Enertrag, IVPC, Taiwan wind repower, Dogger Bank B, Blue Energy NRC filing, SGE/Samsung BWRX-300 MoU). Latest gevernova.com press release still Sept 23; latest 8-K still Q2 (Jul 22).
+
+**Close calls:** (1) Modern Power Systems "7HA.03 powers coal-to-gas transition in Taiwan" — WebFetch-dated Sept 30 2025; a progress update on Taipower's Hsinta plant (6x 7HA.03 across 3 blocks, first block in operation, blocks 2-3 due 2025-26). Original order is pre-2021; installed-base context for the Taiwan/Asia shipments slide, not a new contract. (2) Q1 call line resurfaced: HA orders also placed in Kuwait, Malaysia, Poland — all previously known.
+
+**Look into:** Studsvik exclusivity / Sweden SMR financing; Duke 20-unit firm vs reservation split (Q2 10-Q); Chevron/Kilby SRA-to-firm status; Xcel F-class siting; SGE Poland firm-order path; Venezuela payment terms (PDVSA vs Corpoelec); Q2 10-Q geographic revenue split; Qatalum AGP deal date; Eneva Azulão original order date; Blue Energy 7HA.02 unit count / SRA status; Vineyard Wind settlement terms; Hsinta blocks 2-3 COD (shipment-timing datapoint).
+
+**Issues:** none. 28/28 searches completed; 1 WebFetch (modernpowersystems.com, OK). Next run 21:17 UTC.
+
+---
+
 ## 2026-09-27 19:19 UTC — hourly run
 
 **Alerts sent:** none.
