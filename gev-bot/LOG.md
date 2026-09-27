@@ -5,6 +5,20 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-27 12:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. All 28 queries returned only tracked items (Crusoe, Q1/Q2 disclosures, Duke, LG&E, Kansai, Taiba/Qassim, Qurayyah, EVN Quang Trach II, KOWEPO, TVA Kingston, Hawaiian Electric, Springfield MO, Lincoln NE, Egypt MDEPC/RLE, Venezuela MoU/framework, Chleansaid, Eurus Hiyamizutouge, Greenvolt, Santa Maria de las Fuentes, Powerica, Enfinity, Prokon/Enertrag, Taiwan repower, Dogger Bank B, Blue Energy NRC filing, SGE/Samsung BWRX-300 MoU). Latest gevernova.com press release still Sept 23; latest 8-K still Q2 (Jul 22).
+
+**Close calls:** (1) Mitsubishi Power "Qatar Facility E IWPP" order resurfaced — competitor item, already noted as context, not a GEV contract. (2) GVH–Velan valve collaboration (June 2026) — nuclear supply-chain MoU, not an equipment order; no alert. (3) Motley Fool Sept 24 SMR-Europe piece — commentary on the tracked Sept 22 SGE MoU.
+
+**Look into:** Studsvik exclusivity / Sweden SMR financing; Duke 20-unit firm vs reservation split (Q2 10-Q); Chevron/Kilby SRA-to-firm status; Xcel F-class siting; SGE Poland firm-order path; Venezuela payment terms (PDVSA vs Corpoelec); Q2 10-Q geographic revenue split; Qatalum AGP deal date; Eneva Azulão original order date; Blue Energy 7HA.02 unit count / SRA status; Vineyard Wind settlement terms.
+
+**Issues:** none. 28/28 searches completed; no WebFetch needed (all candidates previously dated). Next run 13:17 UTC.
+
+---
+
 ## 2026-09-27 11:19 UTC — hourly run
 
 **Alerts sent:** none.
