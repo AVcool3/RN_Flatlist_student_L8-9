@@ -85,7 +85,10 @@ const isMonthly = (r) => /month/i.test(r.period || "");
 const isIndividual = (r) => /^(individual|standard)\b/i.test(r.tier || "");
 const isSpotify = (r) => /spotify/i.test(r.service || "");
 const isAppleMusic = (r) => /apple music/i.test(r.service || "");
-const isYouTubePremium = (r) => /youtube premium/i.test(r.service || "") && !/lite/i.test(r.tier || "");
+// "Lite" can appear in the tier ("YouTube Premium" / "Lite") or in the service
+// name ("YouTube Premium Lite" / "Individual", as on 2026-09-28); exclude both so
+// the cheaper Lite plan never replaces the real Premium Individual row.
+const isYouTubePremium = (r) => /youtube premium/i.test(r.service || "") && !/lite/i.test(r.tier || "") && !/lite/i.test(r.service || "");
 
 // ---------------------------------------------------------------------------
 // 2b. Apply verified corrections BEFORE the sanity check, so a known parsing
