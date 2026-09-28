@@ -5,6 +5,22 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-28 15:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. **Updates:** 0. All 28 queries ran; every result resolved to a tracked row (Crusoe, Duke, LG&E MC5, Taiba/Qassim, Qurayyah, Hamriyah, Kansai Nanko, KOWEPO, EVN Quang Trach II, TVA Kingston, Hawaiian Electric, Springfield, Lincoln NE, Egypt MDEPC + RLE, Venezuela, Jafurah, Qatalum, Blue Energy (Aug 13 framework / Sept 16 NRC filing), ESB Chleansaid, IVPC Fortore, Renovalia, Aula, Greenvolt Romania, Powerica, Enfinity, Prokon/Enertrag, Eurus, Taipower repower, US 1.1 GW repower, Dogger Bank B, SGE/Samsung BWRX-300 MoU, AFRY/Velan nuclear supply chain) or a previously rejected historical item (China 9HA orders, GE-era).
+
+**Close calls:**
+- Search re-surfaced the "HA orders in Kuwait, Malaysia, Mexico and Poland" phrasing (Natural Gas Intelligence, Q4-25 call coverage). Mexico = Topolobampo III and Poland = Enea Kozienice are tracked; Kuwait and Malaysia still have no named-customer source. Kept on the look-into list, not added as rows.
+- gevernova.com press-release feed still shows Sept 23 (Egypt RLE) as latest; Sept 16 Blue Energy NRC item is already tracked. No new 8-K on EDGAR (latest Q2, Jul 22).
+
+**Look into:** unchanged standing list. Pitch note this hour: Siemens Energy has raised its industry outlook to 110–120 GW/yr of gas additions with ~25% of its own book data-center linked, versus GEV's ~20% DC share of contracted GW — GEV's book is more utility/IPP-weighted, which matters for conversion risk (regulated utilities are less likely to walk from SRAs than DC developers). Worth one slide.
+
+**Issues:** none. Bash sync worked first try this run (landed on d6991ff). Next run 16:17 UTC.
+
+---
+
 ## 2026-09-28 14:19 UTC — hourly run
 
 **Alerts sent:** none.
