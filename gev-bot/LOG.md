@@ -5,6 +5,22 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-28 21:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. **Updates:** 0. All 28 queries ran; every hit resolved to a tracked row (incl. Studsvik ReFirm, KOWEPO 500 MW / 30% H2 detail, Tallgrass Cheyenne for Mitsubishi) or a rejected GE-era China item. No new gevernova.com press release (latest Sept 23 Egypt RLE); no new 8-K (latest Q2, Jul 22).
+
+**Close calls:**
+- Search summary repeated the Q1-26 conversion detail: 6 GW SRA→order converted and 4 GW shipped in Q1, vs 10 GW converted and 3 GW shipped in Q2. Already in the baseline; noting the Q1 shipment figure (4 GW) was previously logged only as "6 GW converted."
+- Kuwait/Malaysia HA references: unchanged.
+
+**Look into:** standing list. Pitch note this hour: H1-26 shipments (4 + 3 = 7 GW) vs the 20 GW annualized Q3 run-rate implies a very back-half-weighted 2026 delivery schedule — H2 would need ~10+ GW to land the year near the implied ~17–20 GW. If the Jan 2027 print shows FY26 shipments below ~15 GW, the ramp is slipping; above ~17 GW confirms the 20 GW run-rate was hit. This is a clean, checkable number for the pitch's "execution" slide.
+
+**Issues:** none. Bash sync worked first try (landed on 1282c26). Next run 22:17 UTC.
+
+---
+
 ## 2026-09-28 20:19 UTC — hourly run
 
 **Alerts sent:** none.
