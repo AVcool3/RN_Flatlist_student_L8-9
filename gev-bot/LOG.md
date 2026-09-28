@@ -5,6 +5,20 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-28 11:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. All 28 queries run; every hit is a previously tracked item (Crusoe, Duke, LG&E MC5, Taiba/Qassim, Qurayyah, Kansai Nanko, KOWEPO Gongju, EVN Quang Trach II, TVA Kingston, Hawaiian Electric, Springfield, Lincoln NE, Egypt MDEPC/RLE/Nubaria, Venezuela MoU + Sept 2 agreement, Jafurah, Qatalum AGP, Enea Kozienice, Hamriyah, Chevron/Engine No. 1, Prolec GE; wind: ESB Chleansaid, Aula, Renovalia, Greenvolt, Eurus Aomori, Powerica, Enfinity, Prokon/Enertrag, BBWind/Greenvolt Germany, IVPC, Taipower repower, 1.1 GW US repower, Dogger Bank B; nuclear: SGE/Samsung MoU, Velan, SE Asia MoU, Blue Energy, UK MoUs, SaskPower 2023). Latest gevernova.com press release still Sept 23 (Egypt RLE). Latest 8-K still Q2 (Jul 22).
+
+**Close calls:** (1) India query surfaced "3.5 GW of orders to-date for 2.7-132 wind turbines made in India" — cumulative installed-base stat from the tracked Powerica release, not a new order. (2) Asia region page "1,070 gas turbines and 187 CSA units installed base" — fleet statistic, not a contract. (3) Siemens Energy €162bn / 194 units / 50→80 mid-size GT capacity all restated — already logged Aug 15.
+
+**Look into:** standing list unchanged — Duke 20-unit firm vs reservation split (Q2 10-Q); Chevron/Kilby SRA-to-firm status; Xcel F-class siting; SGE Poland firm-order path; Venezuela payment terms (PDVSA vs Corpoelec); Q2 10-Q geographic revenue split; Qatalum AGP deal date; Eneva Azulão original order date; Blue Energy 7HA.02 unit count / SRA status; Vineyard Wind settlement terms; Hsinta blocks 2-3 COD; Iraq 2024 3 GW framework conversion status; "$200–300M electrification content per GW of DC capacity" source check; Kuwait/Malaysia HA order backfill. Pitch note: the Asia installed base (1,070 GTs, 187 CSA units) plus Egypt (140 units, 15.5 GW) and Nigeria (10.7 GW) are the kind of services-annuity numbers that support the "installed base = recurring Power Services revenue" leg of the thesis.
+
+**Issues:** none. All searches succeeded; no WebFetch needed this hour. Next run 12:17 UTC.
+
+---
+
 ## 2026-09-28 10:19 UTC — hourly run
 
 **Alerts sent:** none.
