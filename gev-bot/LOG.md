@@ -5,6 +5,22 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-28 20:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. **Updates:** 0. All 28 queries ran; every hit resolved to a tracked row or a rejected GE-era China item. No new gevernova.com press release (latest Sept 23 Egypt RLE). EDGAR: the Q2 8-K PDF surfaced as a new URL but it is the same Jul 22 filing — no new 8-K.
+
+**Close calls:**
+- Siemens Energy raised its industry outlook from 90–100 GW/yr to 110–120 GW/yr of annual gas additions (S&P, Jun 30). Contrasts with Mitsubishi's CEO framing 2026 at 70–100 GW vs ~100 GW in 2025. The two largest competitors disagree on whether the unit cycle has peaked; GEV's 125 GW YE26 target sits comfortably inside either view.
+- Kuwait/Malaysia/Mexico/Poland HA phrasing resurfaced again — unchanged, still no Kuwait/Malaysia customer names.
+
+**Look into:** standing list. Pitch note this hour: GEV manufacturing ramp confirmed again as 20 GW annualized in Q3-26 → 24 GW 2028 → 30 GW by 2030, "largely within the existing footprint." With 116 GW contracted and ~20 GW/yr output, the book is ~5.8 years of production; even at 30 GW/yr it is ~3.9 years. That is the single cleanest slide for "visibility" — the only way it shrinks materially is SRA cancellation, not demand softening.
+
+**Issues:** none. Bash sync worked first try (landed on 8419b70). Next run 21:17 UTC.
+
+---
+
 ## 2026-09-28 19:19 UTC — hourly run
 
 **Alerts sent:** none.
