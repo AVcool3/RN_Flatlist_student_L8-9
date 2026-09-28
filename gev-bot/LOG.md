@@ -5,6 +5,20 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-28 06:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. All 28 queries run; every hit is a previously tracked item (Crusoe, Duke, LG&E MC5, Taiba/Qassim, Qurayyah, Kansai Nanko, KOWEPO Gongju, EVN Quang Trach II, TVA Kingston, Hawaiian Electric, Springfield, Egypt MDEPC/RLE, Venezuela MoU + Sept 2 agreement, Jafurah, Qatalum AGP, Topolobampo III, Enea Kozienice, Hamriyah, Chevron/Engine No. 1; wind: ESB Chleansaid, Aula, Renovalia, Greenvolt, Eurus, Powerica, Enfinity, Prokon/Enertrag, BBWind/Greenvolt Germany, IVPC, Taipower repower, 1.1 GW US repower, Dogger Bank B; nuclear: SGE/Samsung MoU, Studsvik ReFirm, Velan, SE Asia MoU, Blue Energy, UK MoUs, TVA Clinch River). Latest gevernova.com press release still Sept 23 (Egypt RLE). Latest 8-K still Q2 (Jul 22).
+
+**Close calls:** (1) RWE Biblis 11x LM2500XPRESS grid-reserve plant (Germany) surfaced under the Europe query and is not in CONTRACTS.md — follow-up search dates the order to Nov/Dec 2020 with COD March 2023; historical, not added. (2) Studsvik/Samsung/DS Investment "ReFirm" 4x BWRX-300 agreement resurfaced — already tracked (row dated 2026-09-03, backfilled). (3) Mitsubishi H-25 second order for Chang Chun Petrochemical Taiwan (Nov 2025) — competitor small-frame industrial order, not GEV; noted only.
+
+**Look into:** standing list unchanged — Duke 20-unit firm vs reservation split (Q2 10-Q); Chevron/Kilby SRA-to-firm status; Xcel F-class siting; SGE Poland firm-order path; Venezuela payment terms (PDVSA vs Corpoelec); Q2 10-Q geographic revenue split; Qatalum AGP deal date; Eneva Azulão original order date; Blue Energy 7HA.02 unit count / SRA status; Vineyard Wind settlement terms; Hsinta blocks 2-3 COD; Iraq 2024 3 GW framework conversion status. Pitch note: Biblis is a useful "aero as grid-reserve" European precedent — LM2500XPRESS sells into TSO-contracted reserve capacity, a segment distinct from data-center aeros (Crusoe) and utility peakers (TVA/Hawaiian Electric).
+
+**Issues:** none. All searches succeeded; one WebFetch (GEV Europe region page) returned no order detail, resolved via a follow-up search. Next run 07:17 UTC.
+
+---
+
 ## 2026-09-28 05:19 UTC — hourly run
 
 **Alerts sent:** none.
