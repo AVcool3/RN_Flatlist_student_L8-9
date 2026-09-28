@@ -5,6 +5,23 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-28 23:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. **Updates:** 0. All 28 queries ran; every hit resolved to a tracked row or a rejected GE-era China item. No new gevernova.com press release (latest Sept 23 Egypt RLE); no new 8-K (latest Q2, Jul 22). Day 3 of the watch (Sept 28) closes with zero new turbine contracts or SRA announcements.
+
+**Close calls:**
+- Q4-25 unit detail resurfaced: 41 heavy-duty + 18 aero booked, up 74% from 34 total a year earlier — matches baseline.
+- Siemens capacity detail: ~30 additional mid-size GT units online since 2025, +20 more planned by 2028, +15 large-frame units by 2027. Competitor supply expansion is real but still small next to GEV's 20→30 GW ramp.
+- Kuwait/Malaysia HA references: unchanged.
+
+**Look into:** standing list. End-of-day summary for the pitch: after 72+ hours of hourly monitoring the tracked contract set is stable; GEV's last turbine-contract press release remains Sept 23 (services) and the last new-unit turbine order release remains June 23 (EVN). The quiet tape ahead of Q3 earnings (late Oct) is normal — GEV typically batches order disclosure into the quarterly print rather than per-deal releases, which is itself worth stating in the pitch when explaining why the SRA book is best tracked via the 10-Q rather than headlines.
+
+**Issues:** none. Bash sync worked first try (landed on f0d997b). Next run 00:17 UTC Sept 29.
+
+---
+
 ## 2026-09-28 22:19 UTC — hourly run
 
 **Alerts sent:** none.
