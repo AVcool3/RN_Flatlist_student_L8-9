@@ -5,6 +5,23 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-28 18:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. **Updates:** 0. All 28 queries ran; every hit resolved to a tracked row (incl. the Turbomachinery "7HA.02 for coal-plant conversion" item = KOWEPO Gongju, and the Power Engineering Xcel/NextEra piece = tracked Xcel row) or to a rejected GE-era China 9HA item. No new gevernova.com press release (latest Sept 23 Egypt RLE); no new 8-K (latest Q2, Jul 22).
+
+**Close calls:**
+- The April 2, 2025 → 3Q25 firming of the 7x 7HA.02 SRA resurfaced in a search summary; already the tracker's canonical SRA-to-firm precedent, nothing new.
+- Kuwait/Malaysia HA references: unchanged.
+- Venezuela PDVSA co-signatory claim from the 17:19 run: not re-surfaced this hour; still needs a primary-source check.
+
+**Look into:** standing list unchanged. Pitch note this hour: one article framed hyperscalers as absorbing a 10–20% per-kW turbine premium via non-refundable SRA deposits and out-bidding regulated utilities for 2029–30 slots. If true, DC-linked SRAs carry both higher price AND higher walk-away risk, while utility SRAs carry lower price but rate-base backing — worth modeling as two conversion cohorts rather than one blended 46% firm ratio.
+
+**Issues:** none. Bash sync worked first try (landed on 5e09216). Next run 19:17 UTC.
+
+---
+
 ## 2026-09-28 17:19 UTC — hourly run
 
 **Alerts sent:** none.
