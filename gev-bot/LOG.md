@@ -5,6 +5,23 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-28 14:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. **Updates:** 0. All 28 queries ran; every hit resolved to a tracked row (Crusoe, Duke, LG&E MC5, Taiba/Qassim, Qurayyah, Kansai Nanko, KOWEPO, EVN Quang Trach II, TVA Kingston, Hawaiian Electric, Springfield, Lincoln NE, Egypt MDEPC + RLE, Venezuela MoU/Sept 2 agreement, Jafurah, Qatalum, Sonelgaz, Topolobampo III, ESB Chleansaid, IVPC Fortore, Renovalia, Aula, Powerica, Enfinity, Prokon/Enertrag, Eurus, Taipower repower, Dogger Bank B, SGE/Samsung BWRX-300 MoU) or to a previously dated-and-rejected historical item (China 9HA orders at Zhoushan/Guangdong are GE-era, pre-spin).
+
+**Close calls:**
+- Search again surfaced the "Chevron + Engine No. 1 / Microsoft" data-center plants under GEV supply; still no firm-order press release on gevernova.com — remains the SRA-to-firm conversion case to watch.
+- Velan (valves) and AFRY (services) BWRX-300 supply-chain agreements resurfaced; nuclear supply chain, not a turbine contract, not tracked as contract rows.
+- Latest gevernova.com press release still the Sept 23 Egypt RLE item; latest 8-K still Q2 (Jul 22). Nothing new on EDGAR.
+
+**Look into:** unchanged standing list (Duke 20-unit firm/reservation split; Chevron/Kilby SRA status; Xcel F-class siting; SGE Poland firm path; Venezuela payment terms; Q2 10-Q geographic split; Qatalum AGP date; Eneva Azulão order date; Blue Energy 7HA.02 count; Vineyard Wind settlement; Hsinta blocks 2-3 COD; Iraq 3 GW framework; DC electrification $/GW source; Kuwait/Malaysia HA backfill). Pitch note this hour: Mitsubishi's FY26-Q1 large-frame bookings (4 US, 6 Japan) show Japan replacement demand is real — GEV's Kansai Nanko 7HA.03 win is the only tracked Japan HA order; worth checking if GEV has other Japanese utility SRAs (JERA, Kyushu, Tohoku) before the Jan 2027 print.
+
+**Issues:** Bash was blocked by the safety classifier for the whole 13:17 run and the first two attempts at 14:17; this run's sync succeeded on the third try and landed on 7d70b92. No search or fetch failures. Next run 15:17 UTC.
+
+---
+
 ## 2026-09-28 13:19 UTC — hourly run
 
 **Alerts sent:** none.
