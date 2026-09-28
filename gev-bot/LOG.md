@@ -5,6 +5,20 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-28 05:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. All 28 queries run; every hit is a previously tracked item (Crusoe, Duke, LG&E MC5, Taiba/Qassim, Qurayyah, Kansai Nanko, KOWEPO Gongju, EVN Quang Trach II, TVA Kingston, Hawaiian Electric, Springfield, Lincoln NE, Egypt MDEPC/RLE, Venezuela MoU + Sept 2 agreement, Jafurah, Qatalum AGP, Topolobampo III, Enea Kozienice, Chevron/Engine No. 1; wind: ESB Chleansaid, Aula, Greenvolt, Eurus, Powerica, Enfinity, Prokon/Enertrag, IVPC, Taipower repower, 1.1 GW US repower, Dogger Bank B; nuclear: SGE/Samsung MoU, Velan, SE Asia MoU, Blue Energy, UK MoUs 2024–25, TVA Clinch River). Latest gevernova.com press release still Sept 23 (Egypt RLE). Latest 8-K still Q2 (Jul 22).
+
+**Close calls:** (1) infinityturbine.com "reserve now, pay upfront" page surfaced under the hyperscaler query — vendor marketing commentary, no dated contract; ignored. (2) Search summary restated Q1/Q2 SRA figures (56 GW → 63 GW) — consistent with tracked baseline, no change. (3) ADNOC Ruwais hydrogen/ammonia/CCS "roadmap" mention under the UAE query is a pre-existing decarbonization MoU, not a turbine order.
+
+**Look into:** standing list unchanged — Duke 20-unit firm vs reservation split (Q2 10-Q); Chevron/Kilby SRA-to-firm status; Xcel F-class siting; SGE Poland firm-order path; Venezuela payment terms (PDVSA vs Corpoelec); Q2 10-Q geographic revenue split; Qatalum AGP deal date; Eneva Azulão original order date; Blue Energy 7HA.02 unit count / SRA status; Vineyard Wind settlement terms; Hsinta blocks 2-3 COD; Iraq 2024 3 GW framework conversion status. Pitch note: the "7x 7HA.02 SRA announced Apr 2 2025 → firm 3Q25" precedent (≈5-month conversion) keeps resurfacing as the cleanest single data point for SRA-to-firm timing.
+
+**Issues:** none. All searches succeeded; no WebFetch needed this hour. Next run 06:17 UTC.
+
+---
+
 ## 2026-09-28 04:19 UTC — hourly run
 
 **Alerts sent:** none.
