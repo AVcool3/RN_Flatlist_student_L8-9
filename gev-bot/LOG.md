@@ -5,6 +5,22 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-28 16:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. **Updates:** 0. All 28 queries ran. One unfamiliar gevernova.com PDF node ("GE Vernova inks milestone aeroderivative order to help enhance the stability of the energy grid in the Tennessee region") was fetched and resolved to the May 2024 TVA Kingston 16x LM6000VELOX release — already tracked. Every other hit resolved to a tracked row (Crusoe, Duke, LG&E MC5, Taiba/Qassim, Qurayyah, Kansai Nanko, KOWEPO, EVN Quang Trach II, Hawaiian Electric, Springfield, Egypt MDEPC + RLE, Venezuela, Jafurah, Qatalum, Enea Kozienice, Blue Energy, ESB Chleansaid, IVPC Fortore/Montefalcone, Renovalia, Aula, Greenvolt Romania, Powerica, Enfinity, Prokon/Enertrag, Eurus x2, Taipower repower, US 1.1 GW repower, Dogger Bank B, SGE/Samsung BWRX-300 MoU, OPG Darlington, Velan) or to a rejected GE-era China 9HA item.
+
+**Close calls:**
+- Nothing new on gevernova.com (latest still Sept 23 Egypt RLE) or EDGAR (latest 8-K still Q2, Jul 22).
+- The "HA orders in Kuwait, Malaysia, Mexico, Poland" line resurfaced again without a named Kuwait/Malaysia customer. Unchanged.
+
+**Look into:** unchanged standing list. Pitch note this hour: Mitsubishi's CEO framed 2026 global GT demand at 70–100 GW vs ~100 GW in 2025, i.e. the industry order rate may have peaked in unit terms even as GEV's contracted GW keeps climbing via SRAs. If the Jan 2027 print shows GEV still adding ~20 GW/quarter of SRA+orders against a flat-to-down industry, that is share gain, not just cycle — a useful framing against the "peak orders" bear case.
+
+**Issues:** none. Bash sync worked first try (landed on 5a0f9dc). WebFetch of the gevernova.com print-PDF node returned raw PDF markup; title was still readable from the metadata. Next run 17:17 UTC.
+
+---
+
 ## 2026-09-28 15:19 UTC — hourly run
 
 **Alerts sent:** none.
