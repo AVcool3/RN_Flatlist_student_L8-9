@@ -5,6 +5,20 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-28 02:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. All 28 queries run; every hit is a previously tracked item (Crusoe 29-unit, Duke 11x 7HA, LG&E Mill Creek MC5, Taiba/Qassim, Qurayyah, Kansai Nanko, KOWEPO Gongju, EVN Quang Trach II, TVA Kingston 16x LM6000VELOX, Hawaiian Electric, Springfield MO, Lincoln NE, Egypt MDEPC + RLE, Venezuela MoU, Jafurah, Qatalum AGP, ESB Chleansaid, Aula Carmody's Hill, Powerica Botad, Enfinity, Greenvolt, IVPC Fortore, Eurus Aomori, Taipower repower, Dogger Bank B, Blue Energy, SGE/Samsung MoU, Velan, AFRY). Latest gevernova.com press release still Sept 23 (Egypt RLE). Latest 8-K still Q2 (Jul 22).
+
+**Close calls:** (1) Siemens Energy "order book tops €162bn" (ad-hoc-news) resurfaced — WebFetch dates it Aug 15 2026, already logged; only named deal is the B&W 20 steam-set FastPower order. (2) gevernova.com/news front page now leads with feature stories (Salzbergen wind, India HVDC) rather than press releases — no new release behind them. (3) Motley Fool Sept 24 SMR piece is commentary on the Sept 22 SGE MoU, not a new agreement.
+
+**Look into:** unchanged standing list — Duke 20-unit firm vs reservation split (Q2 10-Q); Chevron/Kilby SRA-to-firm status; Xcel F-class siting; SGE Poland firm-order path; Venezuela payment terms (PDVSA vs Corpoelec); Q2 10-Q geographic revenue split; Qatalum AGP deal date; Eneva Azulão original order date; Blue Energy 7HA.02 unit count / SRA status; Vineyard Wind settlement terms; Hsinta blocks 2-3 COD. Pitch note: Siemens' own count (60% of this FY's 14 GW DC-linked) vs GEV ~20% DC remains the cleanest "GEV is the utility-weighted play" comparison for the segmentation slide.
+
+**Issues:** none. All searches and both WebFetches succeeded. Next run 03:17 UTC.
+
+---
+
 ## 2026-09-28 01:19 UTC — hourly run
 
 **Alerts sent:** none.
