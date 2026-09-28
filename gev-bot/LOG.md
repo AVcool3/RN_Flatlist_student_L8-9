@@ -5,6 +5,22 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-28 19:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. **Updates:** 0. All 28 queries ran; every hit resolved to a tracked row or a rejected GE-era China item. No new gevernova.com press release (latest Sept 23 Egypt RLE); no new 8-K (latest Q2, Jul 22).
+
+**Close calls:**
+- Venezuela PDVSA co-signatory: a second search summary repeated that the Sept 2 agreement was "signed with both PDVSA and Corpoelec." Fetched the energynews.pro Sept 4 article to check — it names only "Venezuela's government" and "the public electricity operator," no PDVSA, no payment terms. Claim remains UNVERIFIED; do not use in the pitch until the Bloomberg/BNamericas Sept 2 pieces are read directly.
+- IHI + GE Vernova 100% ammonia combustion test on F-class surfaced in the gevernova.com feed — technology milestone, not a contract; not tracked.
+
+**Look into:** standing list. Pitch note this hour: Siemens Energy's CEO was quoted that reservations are "more or less one to one converting into effective orders." That is a direct competitor datapoint on SRA conversion — if Siemens sees ~100% conversion, GEV's ~15–20%/quarter run-rate on its SRA balance (≈ full conversion over 5–6 quarters) is consistent, and the bear case of mass SRA cancellations has no observed precedent at either OEM yet. Cite it alongside the April-2025 7x 7HA.02 firming.
+
+**Issues:** none. Bash sync worked first try (landed on e95ebe8). Next run 20:17 UTC.
+
+---
+
 ## 2026-09-28 18:19 UTC — hourly run
 
 **Alerts sent:** none.
