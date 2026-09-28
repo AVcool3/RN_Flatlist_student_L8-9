@@ -5,6 +5,22 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-28 17:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. **Updates:** 0. All 28 queries ran; every hit resolved to a tracked row or a previously rejected historical item. No new gevernova.com press release (latest still Sept 23 Egypt RLE) and no new 8-K on EDGAR (latest Q2, Jul 22).
+
+**Close calls:**
+- Venezuela: one search summary stated the Sept 2 Caracas agreement was signed with both PDVSA and Corpoelec. That would partly answer the standing "PDVSA vs Corpoelec payment terms" look-into (PDVSA as co-signatory implies oil-backed or oil-company funding rather than pure Corpoelec credit). Not confirmed against a primary source this hour — flagged for a manual check of the BNamericas / Bloomberg Sept 2 pieces before it goes into the pitch.
+- Kuwait/Malaysia HA references: unchanged, still no named customer.
+
+**Look into:** standing list, plus the Venezuela co-signatory check above. Pitch note this hour: Q1-26 disclosed customer countries for new gas agreements were US, Vietnam, Mexico, Brazil, Canada; Q2-26 commentary shifted to US, Brazil, Qatar, Taiwan, Saudi, Mexico. Brazil and Mexico appear in both quarters' lists with no public named GEV order beyond Eneva Azulão and Topolobampo III — the Latin America SRA pipeline is probably the least-documented part of the 116 GW and a fair question to put to IR ahead of January.
+
+**Issues:** none. Bash sync worked first try (landed on a61eb99). Next run 18:17 UTC.
+
+---
+
 ## 2026-09-28 16:19 UTC — hourly run
 
 **Alerts sent:** none.
