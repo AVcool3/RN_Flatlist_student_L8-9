@@ -5,6 +5,20 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-28 10:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. All 28 queries run; every hit is a previously tracked item (Crusoe, Duke, LG&E MC5, Taiba/Qassim, Qurayyah, Kansai Nanko, KOWEPO Gongju, EVN Quang Trach II, TVA Kingston, Hawaiian Electric, Springfield, Egypt MDEPC/RLE, Venezuela MoU + Sept 2 agreement, Jafurah, Qatalum AGP, Eneva Azulão, Enea Kozienice, Hamriyah, Xcel, Chevron/Engine No. 1; wind: ESB Chleansaid, Aula, Renovalia, Greenvolt, Eurus Hiyamizutouge + Aomori, Powerica, Enfinity, Prokon/Enertrag, IVPC, Taipower repower, 1.1 GW US repower, Dogger Bank B; nuclear: SGE/Samsung MoU, Velan, SE Asia MoU, Blue Energy, UK MoUs, SaskPower 2023, OPG Darlington). Latest gevernova.com press release still Sept 23 (Egypt RLE). Latest 8-K still Q2 (Jul 22).
+
+**Close calls:** (1) "Japan: 339 MW of orders in 2025 across utilities and IPPs" surfaced under the secures-order query — this is the cumulative-Japan-wind line from the tracked Sept 15 Eurus Hiyamizutouge release, not a new order. (2) Blockspace "Siemens Energy Q3 earnings" surfaced as a new URL — restates the Aug 2026 results (15 GW orders, mid-size GT capacity 50→80 units/yr); already logged. (3) SEC 8-K query returned the Apr 25 2024 Q1-24 filing as a "new" URL — historical.
+
+**Look into:** standing list unchanged — Duke 20-unit firm vs reservation split (Q2 10-Q); Chevron/Kilby SRA-to-firm status; Xcel F-class siting; SGE Poland firm-order path; Venezuela payment terms (PDVSA vs Corpoelec); Q2 10-Q geographic revenue split; Qatalum AGP deal date; Eneva Azulão original order date; Blue Energy 7HA.02 unit count / SRA status; Vineyard Wind settlement terms; Hsinta blocks 2-3 COD; Iraq 2024 3 GW framework conversion status; "$200–300M electrification content per GW of DC capacity" source check; Kuwait/Malaysia HA order backfill. Pitch note: Siemens' mid-size GT capacity ramp (50→80 units/yr) is the closest competitor analogue to GEV's aero ramp (18→61 units/quarter) — both point to the sub-100 MW "fast power" segment being the fastest-growing slice of the market.
+
+**Issues:** none. All searches succeeded; no WebFetch needed this hour. Next run 11:17 UTC.
+
+---
+
 ## 2026-09-28 09:19 UTC — hourly run
 
 **Alerts sent:** none.
