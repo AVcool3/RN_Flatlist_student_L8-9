@@ -5,6 +5,20 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-28 07:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. All 28 queries run; every hit is a previously tracked item (Crusoe, Duke, LG&E MC5, Taiba/Qassim, Qurayyah, Kansai Nanko, KOWEPO Gongju, EVN Quang Trach II, TVA Kingston, Hawaiian Electric, Springfield, Egypt MDEPC/RLE, Sonelgaz Algeria 2024 grid order, Venezuela MoU + Sept 2 agreement, Jafurah, Qatalum AGP, Enea Kozienice, Hamriyah, Chevron/Engine No. 1; wind: ESB Chleansaid, Aula, Renovalia, Greenvolt, Eurus, Powerica, Enfinity, Prokon/Enertrag, IVPC, Taipower repower, 1.1 GW US repower, Dogger Bank B; nuclear: SGE/Samsung MoU, Velan, SE Asia MoU, Blue Energy, UK MoUs, SaskPower 2023 MoU, TVA Clinch River). Latest gevernova.com press release still Sept 23 (Egypt RLE). Latest 8-K still Q2 (Jul 22).
+
+**Close calls:** (1) Sonelgaz Algeria "major order for grid equipment" (134 substations by 2028) resurfaced under the "secures order" query — July 2024 Electrification order, already tracked, not turbines. (2) MarketWise commentary quotes "$200–300M of electrification content per GW of data-center capacity" and ">$5B of H1-2026 data-center electrification orders" — analyst synthesis of Q2 call, useful pitch numbers but not a contract. (3) Siemens Energy backlog restated at €146bn in one summary vs €162bn (Aug 15) elsewhere — different quarter-end snapshots, no new order.
+
+**Look into:** standing list unchanged — Duke 20-unit firm vs reservation split (Q2 10-Q); Chevron/Kilby SRA-to-firm status; Xcel F-class siting; SGE Poland firm-order path; Venezuela payment terms (PDVSA vs Corpoelec); Q2 10-Q geographic revenue split; Qatalum AGP deal date; Eneva Azulão original order date; Blue Energy 7HA.02 unit count / SRA status; Vineyard Wind settlement terms; Hsinta blocks 2-3 COD; Iraq 2024 3 GW framework conversion status. Pitch note: the "$200–300M electrification content per GW of DC capacity" ratio is worth verifying against the Q2 transcript — if company-sourced, it lets the pitch convert the 20% DC share of the gas backlog into an implied Electrification order tailwind.
+
+**Issues:** the initial git sync was blocked twice by a transient permission-classifier error; searches ran first and the sync succeeded on the third attempt with no data loss. Next run 08:17 UTC.
+
+---
+
 ## 2026-09-28 06:19 UTC — hourly run
 
 **Alerts sent:** none.
