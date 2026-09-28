@@ -5,6 +5,20 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-28 12:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. All 28 queries run; every hit is a previously tracked item (Crusoe, Duke, LG&E MC5, Taiba/Qassim, Qurayyah, Kansai Nanko, KOWEPO Gongju, EVN Quang Trach II, TVA Kingston, Hawaiian Electric, Springfield, Lincoln NE, Egypt MDEPC/RLE, Venezuela MoU + Sept 2 agreement, Jafurah, Qatalum AGP, Topolobampo III, Enea Kozienice, ADNOC roadmap, Chevron/Engine No. 1; wind: ESB Chleansaid, Aula, Renovalia, Greenvolt, Eurus Hiyamizutouge + Aomori, Powerica, Enfinity, Prokon/Enertrag, IVPC, Taipower repower, 1.1 GW US repower, Dogger Bank B; nuclear: SGE/Samsung MoU, Velan, AFRY MSA, SE Asia MoU, Blue Energy, UK MoUs, TVA Clinch River, OPG Darlington). Latest gevernova.com press release still Sept 23 (Egypt RLE). Latest 8-K still Q2 (Jul 22).
+
+**Close calls:** (1) MarketScreener and African Review re-syndications of the Sept 23 Egypt RLE services deal surfaced as new URLs — same tracked release. (2) Insider Monkey re-syndication of the Apr 29 MDEPC Banha/Nubaria order — tracked. (3) Search summary restated Q1 SRA figures (43→56 GW) alongside Q2 (56→63 GW) — consistent with baseline, no change.
+
+**Look into:** standing list unchanged — Duke 20-unit firm vs reservation split (Q2 10-Q); Chevron/Kilby SRA-to-firm status; Xcel F-class siting; SGE Poland firm-order path; Venezuela payment terms (PDVSA vs Corpoelec); Q2 10-Q geographic revenue split; Qatalum AGP deal date; Eneva Azulão original order date; Blue Energy 7HA.02 unit count / SRA status; Vineyard Wind settlement terms; Hsinta blocks 2-3 COD; Iraq 2024 3 GW framework conversion status; "$200–300M electrification content per GW of DC capacity" source check; Kuwait/Malaysia HA order backfill. Pitch note: SRA balance path 43 → 56 → 63 GW (YE25 → Q1 → Q2) with 6 GW and 10 GW converted in Q1/Q2 gives a rough 15–20%/quarter conversion rate off the opening SRA balance — useful for modelling firm-backlog growth into the Jan 2027 print.
+
+**Issues:** none. All searches succeeded; no WebFetch needed this hour. Next run 13:17 UTC.
+
+---
+
 ## 2026-09-28 11:19 UTC — hourly run
 
 **Alerts sent:** none.
