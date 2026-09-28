@@ -5,6 +5,23 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-28 22:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. **Updates:** 0. All 28 queries ran; every hit resolved to a tracked row or a rejected GE-era China item. No new gevernova.com press release (latest Sept 23 Egypt RLE); no new 8-K (latest Q2, Jul 22).
+
+**Close calls:**
+- IVPC Fortore detail surfaced: 17-turbine deliveries scheduled to begin Q2 2027 with a customized O&M package — consistent with the tracked row, no change needed.
+- Q2-26 Power segment orders quoted at $16.7B (+134% organic) — matches the baseline.
+- Kuwait/Malaysia HA references: unchanged.
+
+**Look into:** standing list. Pitch note this hour: Q4-25 was the largest quarter of direct hyperscaler orders in Electrification, and Q1-26 DC electrification orders ($2.4B) exceeded all of FY25. Combined with the ~20% DC share of gas GW, GEV's DC exposure is now two-segment: turbines (long-cycle, SRA-gated) and grid gear (shorter-cycle, direct-to-hyperscaler). The grid piece converts to revenue faster and is the nearer-term earnings lever into the Jan print.
+
+**Issues:** none. Bash sync worked first try (landed on b4a05fc). Next run 23:17 UTC.
+
+---
+
 ## 2026-09-28 21:19 UTC — hourly run
 
 **Alerts sent:** none.
