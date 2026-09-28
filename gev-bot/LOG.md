@@ -5,6 +5,20 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-28 08:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. All 28 queries run; every hit is a previously tracked item (Crusoe, Duke, LG&E MC5, Taiba/Qassim, Qurayyah, Kansai Nanko, KOWEPO Gongju, EVN Quang Trach II, TVA Kingston, Hawaiian Electric, Springfield, Lincoln NE, Egypt MDEPC/RLE, Venezuela MoU + Sept 2 agreement, Jafurah, Qatalum AGP, Eneva Azulão, Enea Kozienice, Hamriyah, Chevron/Engine No. 1; wind: ESB Chleansaid, Aula, Renovalia, Greenvolt, Eurus Hiyamizutouge + Aomori, Powerica, Enfinity, Prokon/Enertrag, IVPC, Taipower repower, 1.1 GW US repower, Dogger Bank B; nuclear: SGE/Samsung MoU, Velan, AFRY MSA, SE Asia MoU, Blue Energy, UK MoUs, SaskPower 2023, TVA Clinch River). Latest gevernova.com press release still Sept 23 (Egypt RLE). Latest 8-K still Q2 (Jul 22).
+
+**Close calls:** (1) Eneva Azulão 7HA.02 (Brazil, up to 350 MW reserve power) resurfaced under the Brazil query — tracked; original order date still open. (2) Q2-call line "active discussions in U.S., Brazil, Qatar, Taiwan, Saudi Arabia, Mexico … stretching to 2032 and beyond" restated — pipeline commentary, not a contract. (3) Industrial Info "Siemens, GE Vernova increase U.S. investment" piece surfaced — capex/factory story (tracked $600M U.S. investment), not an order.
+
+**Look into:** standing list unchanged — Duke 20-unit firm vs reservation split (Q2 10-Q); Chevron/Kilby SRA-to-firm status; Xcel F-class siting; SGE Poland firm-order path; Venezuela payment terms (PDVSA vs Corpoelec); Q2 10-Q geographic revenue split; Qatalum AGP deal date; Eneva Azulão original order date; Blue Energy 7HA.02 unit count / SRA status; Vineyard Wind settlement terms; Hsinta blocks 2-3 COD; Iraq 2024 3 GW framework conversion status; "$200–300M electrification content per GW of DC capacity" source check. Pitch note: the six-country "discussions to 2032" list is the best single quote for the international-demand slide — Qatar and Taiwan are the two names with no tracked 2026 GEV turbine order yet, so any announcement there would be a fresh datapoint.
+
+**Issues:** none. All searches succeeded; no WebFetch needed this hour. Next run 09:17 UTC.
+
+---
+
 ## 2026-09-28 07:19 UTC — hourly run
 
 **Alerts sent:** none.
