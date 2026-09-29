@@ -5,6 +5,31 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-29 13:19 UTC — hourly run
+
+**Alerts sent:** none (one Electrification backfill and two corporate items; none is a turbine contract, none is this-week news).
+
+**New contracts found:** 1 (backfill). **Updates:** 0.
+- Chesterfield 400 kV GIS substation, UK — GEV chosen by Laing O'Rourke for National Grid's Great Grid Upgrade (release Aug 27, 2026, London). SF6-free g3 GIS; full EPC-style scope. No value disclosed. First UK Electrification row in the tracker.
+
+**Corporate (not contracts, but pitch-relevant):**
+- **CFO transition 8-K (Item 5.02), filed Aug 27, 2026.** Ken Parks retires Apr 2, 2027; Claire McDonough (Rivian CFO since 2021) joins Nov 1, 2026 as strategic advisor and becomes CFO Jan 1, 2027. Parks stays through the Q3 and Q4 calls and the 2026 10-K. Make-whole $14.5M + $5M sign-on + $1M base. Pitch read: the Jan 2027 print (the user's target event) will be Parks' last call and McDonough's first month; guidance framing could shift. **Correction to baseline:** latest 8-K is now Aug 27 (5.02), not Jul 22 — the Jul 22 filing remains the latest *earnings* 8-K. The sec.gov site: query never surfaced this filing; found via the gevernova.com/news query.
+- **LS Electric VSC-HVDC joint venture "Grid X Technology"** (Sept 23, 2026) — Korea, tied to the West Coast Energy Highway (Honam → Seoul). Equity JV, not an order; a pipeline for Electrification HVDC in Korea. Not a row.
+- GL316c 420 kV CO2-O2 live-tank breaker launch (CIGRE Paris 2026) — product launch, not a contract.
+
+**Close calls:**
+- BBWind + Greenvolt Germany 71.5 MW (booked Q4 2025) resurfaced — tracked.
+- Gaspé (Canada) 72 defective blades replaced — old offshore-blade story, not a contract.
+- Everything else resurfaced and tracked.
+
+**Look into:**
+- The gevernova.com/news query returned a different page slice this hour (financial-calendar releases), which is how the three corporate items surfaced. Worth re-running the sec.gov query with "8-K 5.02" or "Item" phrasing occasionally — the current query only surfaces earnings 8-Ks.
+- Still open: SRA deposit / cancellation terms in the Q2 10-Q; 2001–2003 cancellation history; gevernova.com print/pdf node sweep; regional split of non-HA units; Venezuela $/MW overhaul sizing.
+
+**Issues:** none. Next run 14:17 UTC.
+
+---
+
 ## 2026-09-29 12:19 UTC — hourly run
 
 **Alerts sent:** none.
