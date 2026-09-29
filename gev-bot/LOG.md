@@ -5,6 +5,22 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-29 03:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. **Updates:** 0. All 28 queries ran; every hit resolved to a tracked row (WFEC Anadarko now dedupes against the 02:19 backfill) or a rejected GE-era China item. No new gevernova.com press release (latest Sept 23 Egypt RLE); no new 8-K (latest Q2, Jul 22).
+
+**Close calls:**
+- Utility Dive framing resurfaced: utilities returning to "practices not seen since the early 2000s — upfront reservation fees and multi-year turbine procurement planning." Useful historical analogue for the SRA slide (the 2000–2002 US gas build was the last time OEMs sold slots ahead of firm orders; that cycle ended in cancellations when merchant power collapsed — the difference now is ~80% regulated-utility/IPP mix vs. the merchant-heavy 2001 book).
+- Kuwait/Malaysia HA references: unchanged.
+
+**Look into:** standing list unchanged. Add: pull the 2001–2003 GE Power Systems turbine-cancellation history (GE annual reports) as the explicit bear-case comparison for the SRA book — it is the one precedent for "reservations don't convert."
+
+**Issues:** none. Bash sync worked first try (landed on 68fdc47). Next run 04:17 UTC.
+
+---
+
 ## 2026-09-29 02:19 UTC — hourly run
 
 **Alerts sent:** none (backfill of a 2024 order; backfills never alert).
