@@ -5,6 +5,22 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-29 00:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. **Updates:** 0. All 28 queries ran; every hit resolved to a tracked row (incl. BBWind/Greenvolt Germany 71.5 MW booked Q4-25, Studsvik ReFirm, Egypt RLE ~1,250 MW combined) or a rejected GE-era China item. No new gevernova.com press release (latest Sept 23 Egypt RLE); no new 8-K (latest Q2, Jul 22).
+
+**Close calls:**
+- CNBC detail resurfaced: Greenville plant hired ~200 workers last year with ~300 more expected by year-end — labor ramp consistent with the 20 GW annualized Q3 target. Not a contract; noted for the execution slide.
+- Kuwait/Malaysia HA references: unchanged.
+
+**Look into:** standing list unchanged.
+
+**Issues:** none. Bash sync worked first try (landed on 48c532e). Next run 01:17 UTC.
+
+---
+
 ## 2026-09-28 23:19 UTC — hourly run
 
 **Alerts sent:** none.
