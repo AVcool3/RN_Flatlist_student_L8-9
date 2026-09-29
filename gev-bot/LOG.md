@@ -5,6 +5,28 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-29 19:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 2 (both backfills, not alerts). **Updates:** 0. All 28 queries ran. No new GEV turbine order, SRA, 8-K, or guidance item since last run. Latest gevernova.com new-unit gas turbine release still June 23 (EVN Quang Trach II); latest wind release Sept 15 (Eurus Hiyamizutouge, re-confirmed by decoding print/pdf node 144163); latest 8-K still Aug 27.
+
+**Rows added:**
+- Oglethorpe Power, Monroe County / Smarr CC, Georgia — 2x 7HA.03 + full combined-cycle island + 20-yr LTSA, >1,400 MW, May 21, 2025. Co-op G&T buyer: another public-power / co-op data point for the "lowest-cancellation-risk" slice of the HA book (alongside TVA, WFEC, Lincoln, Springfield). Was surfacing in the utility query for days but never dated until now.
+- Eurus Energy Iwaya & Shitsukari, Aomori, Japan — 14x 4.2MW-117m, 58.8 MW, booked Q4 2024, release Jan 9, 2025. Sister order to the tracked Sept 15, 2026 Hiyamizutouge row.
+
+**Close calls:**
+- WebFetch's summarizer reported node 144163 as dated "September 29, 2026"; the decoded PDF says September 15, 2026 (Hiyamizutouge, already tracked). Summarizer dates are not trustworthy — always decode or cross-check.
+- Search snippet: GEV "secured 339 MW of orders in 2025 across a diverse customer base in Japan" (utilities + emerging IPPs) — useful Japan segmentation figure; source not yet pinned to a release.
+- Caithness Energy Guernsey Station (Ohio) HA order resurfacing — 2019 legacy GE item, not tracked.
+- Same-as-last-hour non-turbine items (Upper Sileru PSP, Powergrid, Sterlite, Rio Tinto services) — not added.
+
+**Look into:** pin the "339 MW Japan 2025" figure to its source; successor to Zingoni as Power CEO; SRA deposit/cancellation terms in the Q2 10-Q; 2001–2003 GE cancellation analogue; continue print/pdf node sweep (143800–144170); regional split of non-HA heavy-duty units; Venezuela $/MW sizing; sec.gov query variant for non-earnings 8-Ks; Siemens 60% DC vs GEV ~20% reconciliation; Japanese utility SRAs beyond Kansai; Duke 20-unit split; Chevron/Kilby SRA status; Xcel F-class siting; Eneva Azulão date; Blue Energy 7HA.02 count; Kuwait/Malaysia HA backfill.
+
+**Issues:** none this run (Bash classifier stable). Next run 20:17 UTC.
+
+---
+
 ## 2026-09-29 18:19 UTC — hourly run
 
 **Alerts sent:** none.
