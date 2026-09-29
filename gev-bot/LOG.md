@@ -5,6 +5,28 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-29 09:19 UTC — hourly run
+
+**Alerts sent:** none (source confirmation on an already-tracked agreement; not a new contract).
+
+**New contracts found:** 0. **Updates:** 1.
+- Venezuela row: Turbomachinery Magazine (Sept 3) confirms the Sept 2 signing was two agreements, not one — PDVSA (self-generation at oil/gas operating sites) and Corpoelec (national grid) — preceded by a six-week technical audit. Scope language is services-heavy: deferred overhauls, OEM parts resupply for legacy GE gas turbines, >1,000 local hires. No turbine models, no dollar value. Pitch read: near-term Venezuela revenue is Power Services, not new-unit equipment; the "1 GW in 24 months" is mostly reinstating idle GE-legacy capacity. Fetch succeeded this time despite turbomachinerymag.com's usual 403.
+
+**Close calls:**
+- Mitsubishi Power turbine allocation for Tallgrass Cheyenne Power Hub (WY) — competitor win in a US data-center/industrial hub; note for peer read-across (MHI taking US DC-adjacent work).
+- secondwatt.com "$176B backlog buyer's guide" — blog aggregation of Q2 numbers; not a source.
+- Everything else resurfaced and tracked (TVA, Springfield, Lincoln, Hawaiian Electric, LG&E, Kansai, Taiba/Qassim, Qurayyah, KOWEPO, Quang Trach II, Duke, Crusoe, wind orders, BWRX-300 MoUs).
+
+**Look into:**
+- Still open: SRA deposit / cancellation terms in the Q2 10-Q contract-liabilities note.
+- Still open: 2001–2003 GE turbine-cancellation history. A search summary this hour explicitly framed today's reservation fees as "a return to practices not seen since the early 2000s" — the analogue is now being made in trade press, so worth getting the numbers.
+- Still open: sweep gevernova.com print/pdf nodes for untracked 2024–25 orders.
+- Still open: regional split of non-HA heavy-duty units.
+
+**Issues:** none. Next run 10:17 UTC.
+
+---
+
 ## 2026-09-29 08:19 UTC — hourly run
 
 **Alerts sent:** none.
