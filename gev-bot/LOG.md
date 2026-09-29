@@ -5,6 +5,22 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-29 02:19 UTC — hourly run
+
+**Alerts sent:** none (backfill of a 2024 order; backfills never alert).
+
+**New contracts found:** 1 (backfill). **Updates:** 0. All 28 queries ran. The aeroderivative query surfaced a Power Engineering item not in the tracker — **Western Farmers Electric Cooperative (WFEC), Anadarko Plant, Oklahoma: 2x LM6000VELOX packages** replacing aging steam turbines, plant to ~350 MW with seven LM6000s, COD late 2026. Power Engineering page was behind a bot-check, so dated via the gevernova.com release: **May 16, 2024, booked Q1 2024**. Historical → added as a backfilled row, no alert. Useful for the segmentation picture: another US co-op/muni aero order alongside Springfield, Lincoln NE, Hawaiian Electric and TVA — the aero fleet is disproportionately small-utility/co-op, which is the lowest-cancellation-risk cohort in the book.
+
+**Close calls:**
+- Everything else resolved to tracked rows or rejected GE-era China items. No new gevernova.com press release (latest Sept 23 Egypt RLE); no new 8-K (latest Q2, Jul 22).
+- Kuwait/Malaysia HA references: unchanged.
+
+**Look into:** WFEC plant-size discrepancy — GEV release says ~350 MW total post-expansion; a later report cited 650 MW. Row uses the GEV figure; check WFEC's own site if the number matters for the aero MW tally. Rest of standing list unchanged.
+
+**Issues:** power-eng.com blocked WebFetch with a "verifying your request" interstitial (add to the known-blocked list alongside chevron.com, naturalgasintel.com, turbomachinerymag.com). Worked around via the GEV press release. Bash sync worked first try (landed on abd7cf9). Next run 03:17 UTC.
+
+---
+
 ## 2026-09-29 01:19 UTC — hourly run
 
 **Alerts sent:** none (source confirmation on an already-tracked framework, not a new contract).
