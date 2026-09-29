@@ -5,6 +5,22 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-29 01:19 UTC — hourly run
+
+**Alerts sent:** none (source confirmation on an already-tracked framework, not a new contract).
+
+**New contracts found:** 0. **Updates:** 1. All 28 queries ran. One previously unseen source surfaced — Venezuela Energy Week (Sept 24, 2026), "GE Vernova Agreement Targets 6 GW of New Capacity in Venezuela's Power Sector." Fetched: it names **Corpoelec, PDVSA and the Ministry of Hydrocarbons** as counterparties, names the **Guri dam** rehab as a priority (currently ~half of rated output), restates 1 GW / 24 mo + 5 GW / 4 yrs, and cites GEV's ~11 GW installed base in-country. No contract value or payment mechanism disclosed. CONTRACTS.md Venezuela row updated with the confirming source. This closes the standing "PDVSA co-signatory — unverified" item from the Sept 28 17:19 and 19:19 runs.
+
+**Close calls:**
+- Everything else resolved to tracked rows or rejected GE-era China items. No new gevernova.com press release (latest Sept 23 Egypt RLE); no new 8-K (latest Q2, Jul 22).
+- Kuwait/Malaysia HA references: unchanged.
+
+**Look into:** Venezuela payment terms remain the open question — PDVSA as a named counterparty makes oil-linked or offtake-backed payment plausible but still unconfirmed; watch for any 8-K or 10-Q risk-factor language on Venezuela receivables in the Q3 filing (late Oct). Rest of the standing list unchanged.
+
+**Issues:** none. Bash sync worked first try (landed on 9bbbfcc). Next run 02:17 UTC.
+
+---
+
 ## 2026-09-29 00:19 UTC — hourly run
 
 **Alerts sent:** none.
