@@ -5,6 +5,28 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-29 15:01 UTC — hourly run
+
+**Schedule note:** no 14:17 firing arrived; this run was scheduled 14:57 and fired 15:00. One hour skipped by the Routine, not by the bot.
+
+**Alerts sent:** none (one historical wind backfill; no turbine contract news).
+
+**New contracts found:** 1 (backfill). **Updates:** 0.
+- Powerica Devbhumi Dwarka, Gujarat — 19x 2.7MW-132, 51.3 MW, SECI XVI (GEV release Sept 30, 2024; booked Q2 2024). Surfaced via the IPP query. Powerica now has two tracked rows (Dwarka 2024, Botad 2026), consistent with GEV's "third consecutive Gujarat project" claim.
+
+**Close calls:**
+- Siemens Energy new data points (Yahoo/Reuters): backlog €146bn; CEO Bruch says 60% of this year's ~14 GW of gas-turbine orders are data-centre linked; ~30 mid-size units added since 2025, +20 by 2028; +15 large units by 2027. Peer read-across: Siemens' DC mix (60% of new orders) is far above GEV's ~20% of book — GEV's mix is the more utility-heavy, lower-cancellation-risk one. Not a GEV row.
+- Enfinity Fatehgarh 43 units resurfaced — tracked (row 35).
+- Everything else resurfaced and tracked (Chesterfield now in tracker; CFO 8-K logged last hour).
+
+**Look into:**
+- Reconcile Siemens' "14 GW this year, 60% DC" with GEV's Q1+Q2 41 GW signed at ~20% DC — the two OEMs are being sold into very different customer mixes. Good slide for the segmentation section.
+- Still open: SRA deposit / cancellation terms in the Q2 10-Q; 2001–2003 cancellation history; gevernova.com print/pdf node sweep; regional split of non-HA units; Venezuela $/MW overhaul sizing; sec.gov query variant for non-earnings 8-Ks.
+
+**Issues:** none in the bot. Routine skipped the 14:17 slot (see schedule note). Next run ~15:57 UTC.
+
+---
+
 ## 2026-09-29 13:19 UTC — hourly run
 
 **Alerts sent:** none (one Electrification backfill and two corporate items; none is a turbine contract, none is this-week news).
