@@ -5,6 +5,23 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-29 22:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. **Updates:** 0. All 28 queries ran; result set identical to the 21:19 run except ordering. Every GEV hit matched a tracked row. Latest gevernova.com new-unit gas turbine release still June 23 (Quang Trach II); latest 8-K still Aug 27.
+
+**Close calls:**
+- "339 MW of Japan orders in 2025" snippet re-surfaced under the Japan query. Checked the decoded Hiyamizutouge PDF (node 144163): the figure is NOT in that release, so the snippet is stitched from another source (probably a Jan/Feb 2026 Japan wind release or the Q4-25 wind commentary). Still unpinned; kept on the look-into list.
+- Siemens/B&W: earlier 300 MW steam-set deal for Applied Digital campuses now cited alongside the 1 GW FastPower deal — competitor colour only.
+- Quiet US evening; no new 8-K, no new gevernova.com nodes above 144171.
+
+**Look into:** pin "339 MW Japan 2025" to its release; unit-count vs GW comparison across OEMs; which part of the $14.2B Saudi package is inside the 116 GW figure; successor to Zingoni as Power CEO; SRA deposit/cancellation terms in the Q2 10-Q; 2001–2003 GE cancellation analogue; continue print/pdf node sweep; regional split of non-HA heavy-duty units; Venezuela $/MW sizing; sec.gov query variant for non-earnings 8-Ks; Siemens 60% DC vs GEV ~20% reconciliation; Japanese utility SRAs beyond Kansai; Duke 20-unit split; Chevron/Kilby SRA status; Xcel F-class siting; Eneva Azulão date; Blue Energy 7HA.02 count; Kuwait/Malaysia HA backfill.
+
+**Issues:** none. Next run 23:17 UTC.
+
+---
+
 ## 2026-09-29 21:19 UTC — hourly run
 
 **Alerts sent:** none.
