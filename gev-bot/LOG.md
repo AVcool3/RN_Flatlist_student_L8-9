@@ -5,6 +5,29 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-29 10:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. **Updates:** 0. All 28 queries ran; every hit matched an existing CONTRACTS.md row. Latest gevernova.com press release still Sept 23 (Egypt RLE); latest new-unit turbine order release still June 23 (EVN Quang Trach II); latest 8-K still Q2 (Jul 22).
+
+**Close calls:**
+- Turbomachinery Venezuela piece resurfaced with one new number: GEV installed base in Venezuela ~11 GW, mostly hydro plus some gas. Useful sizing for the services opportunity; folded into notes, not a row change.
+- Mitsubishi Power / Tallgrass Cheyenne Power Hub allocation dated to May 2026 — competitor item, noted last hour.
+- "GE Vernova marked the 100th HA installation at Shin-Sejong (KOSPO?), with 60 more on order globally" — old milestone (2023-era), not a contract. Ignore.
+- Everything else resurfaced and tracked.
+
+**Look into:**
+- Still open: SRA deposit / cancellation terms in the Q2 10-Q contract-liabilities note.
+- Still open: 2001–2003 GE turbine-cancellation history (trade press now drawing the analogue).
+- Still open: sweep gevernova.com print/pdf nodes for untracked 2024–25 orders.
+- Still open: regional split of non-HA heavy-duty units.
+- Venezuela: with ~11 GW installed base and <40% of ~36 GW national capacity operating, the near-term revenue is Power Services (overhauls, parts). Size a rough $/MW overhaul estimate for the pitch's LatAm services slide.
+
+**Issues:** none. Next run 11:17 UTC.
+
+---
+
 ## 2026-09-29 09:19 UTC — hourly run
 
 **Alerts sent:** none (source confirmation on an already-tracked agreement; not a new contract).
