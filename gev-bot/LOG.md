@@ -5,6 +5,30 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-29 12:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. **Updates:** 0. All 28 queries ran; every hit matched an existing CONTRACTS.md row. Latest gevernova.com press release still Sept 23 (Egypt RLE); latest new-unit turbine order release still June 23 (EVN Quang Trach II); latest 8-K still Q2 (Jul 22).
+
+**Close calls:**
+- Studsvik ReFirm (Sweden, 4x BWRX-300, ~1.2 GW) resurfaced in the BWRX-300 query — tracked; nuclear, never alerts.
+- Xcel Energy "five heavy-duty gas turbines" resurfaced — tracked (F-class siting still an open look-into).
+- Crusoe 29x LM2500XPRESS resurfaced at the top of the general order query — tracked (Jul 2025).
+- Siemens Energy quote of the hour: market is "supply-constrained rather than demand-constrained"; 2029–2030 slots "filling up very quickly". Consistent with GEV's own 2030/2031 commentary.
+- Everything else resurfaced and tracked.
+
+**Look into:**
+- Still open: SRA deposit / cancellation terms in the Q2 10-Q contract-liabilities note.
+- Still open: 2001–2003 GE turbine-cancellation history.
+- Still open: sweep gevernova.com print/pdf nodes for untracked 2024–25 orders.
+- Still open: regional split of non-HA heavy-duty units.
+- Still open: Venezuela $/MW overhaul sizing.
+
+**Issues:** none. Next run 13:17 UTC.
+
+---
+
 ## 2026-09-29 11:19 UTC — hourly run
 
 **Alerts sent:** none.
