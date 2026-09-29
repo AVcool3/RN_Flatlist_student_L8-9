@@ -1,6 +1,6 @@
 {
   "source_file": "2026-09-29.json",
-  "generated_at": "2026-09-29T13:22:40.738Z",
+  "generated_at": "2026-09-29T13:42:06.444Z",
   "fx": {
     "provider": "https://www.exchangerate-api.com",
     "as_of": "Tue, 29 Sep 2026 00:02:31 +0000",
@@ -8,18 +8,7 @@
     "base": "USD"
   },
   "corrections_applied": [],
-  "suspect_prices": [
-    {
-      "country": "BR",
-      "service": "Apple One",
-      "tier": "Premier",
-      "price": 104.9,
-      "currency": "BRL",
-      "period": "month",
-      "reason": "above plausible BRL range (8-100)",
-      "price_citation": "https://www.apple.com/br/apple-one/"
-    }
-  ],
+  "suspect_prices": [],
   "derived_metrics": [
     {
       "country": "AE",
@@ -281,7 +270,7 @@
   "summary": {
     "rows": 137,
     "corrected": 0,
-    "suspect": 1,
+    "suspect": 0,
     "countries_with_spotify_individual": 16,
     "countries_compared_vs_apple": 12,
     "countries_compared_vs_youtube": 1
