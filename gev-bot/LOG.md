@@ -5,6 +5,27 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-29 04:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. **Updates:** 0. All 28 queries ran; every hit matched an existing CONTRACTS.md row. Latest gevernova.com press release still Sept 23 (Egypt RLE); latest new-unit turbine order release still June 23 (EVN Quang Trach II); latest 8-K still Q2 (Jul 22).
+
+**Close calls:**
+- Search engine labelled the LG&E/KU Mill Creek MC5 7HA.03 order as "3 days ago" — it is the May 2024 order already tracked (row 41). Dateline artifact, not news.
+- Kansai Nanko 3x 7HA.03 resurfaced as "2 weeks ago" — tracked (row 45).
+- Hawaiian Electric Waiau 6x LM6000VELOX, Springfield CU 3x LM6000VELOX, KOWEPO Gongju, Qurayyah expansion, Taiba/Qassim, Crusoe 29x LM2500XPRESS — all tracked.
+- SGE/Samsung C&T BWRX-300 Europe MoU (Sept 23) and Motley Fool Sept 24 write-up — nuclear, tracked, never alerts.
+
+**Look into:**
+- Still open: 2001–2003 GE turbine-cancellation history as bear-case comparison for the SRA book.
+- Siemens Energy "194 units sold in 2025 vs 100 in 2024" (Energy Intelligence) — unit-count framing is a useful cross-check for GEV's Q4-25 41 HD + 18 aero; confirm whether Siemens count is heavy-duty only.
+- Mitsubishi FY26-Q1 10 large-frame orders (4 US, 6 Japan) — Japan share suggests Japanese utilities are ordering; GEV's only disclosed Japanese HA order is Kansai Nanko. Watch for JERA/Tohoku/Kyushu.
+
+**Issues:** none. turbomachinerymag.com still 403 for WebFetch; dated LG&E via existing tracker row instead. Next run 05:17 UTC.
+
+---
+
 ## 2026-09-29 03:19 UTC — hourly run
 
 **Alerts sent:** none.
