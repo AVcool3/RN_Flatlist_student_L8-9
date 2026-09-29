@@ -5,6 +5,28 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-29 11:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. **Updates:** 0. All 28 queries ran; every hit matched an existing CONTRACTS.md row. Latest gevernova.com press release still Sept 23 (Egypt RLE); latest new-unit turbine order release still June 23 (EVN Quang Trach II); latest 8-K still Q2 (Jul 22 — the sec.gov query surfaced the Q2 8-K PDF directly this hour, confirming nothing newer is indexed).
+
+**Close calls:**
+- Venezuela: Turbomachinery piece attributes the "~11 GW installed base" figure to the CEO in July — i.e. GEV was sizing Venezuela publicly a month before the June 15 framework became the Sept 2 agreements. Consistent with tracked row; no change.
+- Insider Monkey "$176B backlog — durable growth?" — commentary, not a source.
+- Everything else resurfaced and tracked (TVA, Springfield, Lincoln, Hawaiian Electric, WFEC, LG&E, Kansai, Taiba/Qassim, Qurayyah, KOWEPO, Quang Trach II, Duke, Crusoe, Eneva Azulão, Egypt RLE/AGP, wind orders, BWRX-300 MoUs, ADNOC roadmap).
+
+**Look into:**
+- Still open: SRA deposit / cancellation terms in the Q2 10-Q contract-liabilities note.
+- Still open: 2001–2003 GE turbine-cancellation history.
+- Still open: sweep gevernova.com print/pdf nodes for untracked 2024–25 orders.
+- Still open: regional split of non-HA heavy-duty units.
+- Still open: Venezuela $/MW overhaul sizing for the LatAm services slide.
+
+**Issues:** none. Next run 12:17 UTC.
+
+---
+
 ## 2026-09-29 10:19 UTC — hourly run
 
 **Alerts sent:** none.
