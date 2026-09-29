@@ -5,6 +5,25 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-29 16:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. **Updates:** 0. All 28 queries ran; every hit matched an existing CONTRACTS.md row. Latest gevernova.com turbine-order release still June 23 (EVN Quang Trach II); latest earnings 8-K still Jul 22; latest 8-K of any kind Aug 27 (CFO, Item 5.02).
+
+**Close calls:**
+- NDPHC Nigeria detail: the 9E service interventions at Calabar and Sapele restore up to 360 MW — services, not a contract row.
+- Everything else resurfaced and tracked (TVA, Springfield, WFEC, Hawaiian Electric, LG&E, Kansai, KOWEPO, Taiba/Qassim, Qurayyah, Quang Trach II, Duke, Crusoe, Egypt RLE/AGP, wind orders, BWRX-300 MoUs, ADNOC roadmap).
+- sec.gov query this hour reverted to the earnings-only slice (no Zingoni or CFO filing shown) — confirms that query is unreliable for 5.02 filings.
+
+**Look into:**
+- Successor to Zingoni as Power segment CEO.
+- Still open: SRA deposit / cancellation terms in the Q2 10-Q; 2001–2003 cancellation history; gevernova.com print/pdf node sweep; regional split of non-HA units; Venezuela $/MW overhaul sizing; sec.gov query variant for non-earnings 8-Ks.
+
+**Issues:** none. Next run 17:17 UTC.
+
+---
+
 ## 2026-09-29 15:19 UTC — hourly run
 
 **Schedule note:** second firing this hour (15:00 was the delayed 14:17 slot; this is the on-time 15:17 slot). Full procedure run anyway.
