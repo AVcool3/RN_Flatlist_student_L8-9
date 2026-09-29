@@ -5,6 +5,31 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-29 06:19 UTC — hourly run
+
+**Alerts sent:** none (both additions are historical backfills, not new contracts — backfills never alert).
+
+**New contracts found:** 2 (backfills). **Updates:** 0.
+- TVA Kingston Energy Complex, TN — 16x LM6000VELOX, up to 850 MW, COD 2028 (GEV release May 6, 2024). Surfaced via a gevernova.com print/pdf node; decoded the PDF text streams locally to confirm title/date, then matched to the HTML release.
+- Springfield City Utilities, MO — 3x LM6000VELOX, ~150 MW added at McCartney, COD 2027 (GEV release Mar 28, 2025).
+- Correction: an earlier LOG note (Sept 28 16:19) described the TVA release as "tracked". It was not in CONTRACTS.md — the grep this hour found no TVA/Kingston row. Fixed now.
+
+**Close calls:**
+- LG&E Mill Creek, Kansai Nanko, Taiba/Qassim, Hawaiian Electric Waiau, Lincoln NE, Crusoe, Quang Trach II, Egypt RLE/AGP, ESB, Greenvolt, Aula, Powerica, Enfinity, IVPC, Enertrag/Prokon, Eurus, Taipower repower — all tracked.
+- Mitsubishi Power / LNGPH "long-term gas turbine deal" (June 2026) — competitor item, not GEV; noted for the peer read-across only.
+- SGE/Samsung BWRX-300 MoU and AFRY services agreement — nuclear, tracked, never alerts.
+
+**Pitch note:** the aero book keeps skewing to public power — TVA (federal), Springfield CU (municipal), Lincoln (municipal), WFEC (co-op), Hawaiian Electric (IOU). Four of five US aero orders in the tracker are non-IOU public power. Lowest cancellation risk cohort; most of it is coal-replacement or peaking, not data-center speculative.
+
+**Look into:**
+- Still open: SRA deposit / cancellation terms in the Q2 10-Q contract-liabilities note (the crux for the 63 GW SRA book).
+- Still open: 2001–2003 GE turbine-cancellation history as bear-case comparison.
+- Sweep the remaining gevernova.com print/pdf nodes surfaced by search (node IDs ~143xxx–144xxx) for other 2024–25 aero orders that never got a tracker row.
+
+**Issues:** gevernova.com print/pdf nodes return raw PDF to WebFetch; worked around by zlib-decoding the text streams in Python (no pypdf installed). Next run 07:17 UTC.
+
+---
+
 ## 2026-09-29 05:19 UTC — hourly run
 
 **Alerts sent:** none.
