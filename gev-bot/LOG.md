@@ -5,6 +5,28 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-29 05:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. **Updates:** 0. All 28 queries ran; every hit matched an existing CONTRACTS.md row. Latest gevernova.com press release still Sept 23 (Egypt RLE); latest new-unit turbine order release still June 23 (EVN Quang Trach II); latest 8-K still Q2 (Jul 22).
+
+**Close calls:**
+- Renovalia Santa Maria de las Fuentes (Spain, 15x 6.1MW) resurfaced via energiesmedia — tracked (row 47).
+- Eurus Hiyamizutouge (Japan, 7x 4.2MW) resurfaced — tracked (row 17).
+- Jafurah Cogeneration ISPP (Saudi, 7HA.01) "start of operations" at ADIPEC 2025 — plant COD, not an order; the unit is already installed base. Not added.
+- Iberdrola Topolobampo III (Mexico, 7HA.01) — operating plant, tracked (row 49).
+- Search summary line "customers span ~100 entities in 26 countries, ~80% traditional / ~20% DC" (Q1-26 call) — matches baseline, useful pitch phrasing.
+
+**Look into:**
+- Still open: 2001–2003 GE turbine-cancellation history as bear-case comparison for the SRA book.
+- One search summary described SRAs as "can be deferred or cancelled if demand forecasts soften" while another says deposits are non-refundable. Pin down the actual SRA deposit/cancellation terms from the Q2 10-Q (contract liabilities note) — this is the crux of the bear/bull argument on the 63 GW of SRAs.
+- "~10 GW/yr heavy-duty capacity vs 100 GW contracted" framing (Manufacturing Mag) understates GEV's stated 20 GW annualized run-rate; treat that source as unreliable for capacity numbers.
+
+**Issues:** none. Next run 06:17 UTC.
+
+---
+
 ## 2026-09-29 04:19 UTC — hourly run
 
 **Alerts sent:** none.
