@@ -5,6 +5,29 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-29 08:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. **Updates:** 0. All 28 queries ran; every hit matched an existing CONTRACTS.md row. Latest gevernova.com press release still Sept 23 (Egypt RLE); latest new-unit turbine order release still June 23 (EVN Quang Trach II); latest 8-K still Q2 (Jul 22).
+
+**Close calls:**
+- ADNOC / GE Vernova Ruwais decarbonization roadmap (hydrogen, ammonia, CCS on existing GTs) — services/R&D roadmap, not an order. Not added.
+- BNamericas Venezuela write-up resurfaced — same Sept 2 agreement, tracked.
+- Eurus Hiyamizutouge detail refresh: 2-yr service agreement + 2-yr option (energiesmedia). Minor; row already carries the order. Not counted as an update.
+- Usual resurfacing: TVA, Springfield, Lincoln, Hawaiian Electric, LG&E, Kansai, Taiba/Qassim, Qurayyah, KOWEPO, Quang Trach II, wind orders (ESB, Aula, Greenvolt, Renovalia, Enertrag, Prokon, IVPC, Powerica, Enfinity, Taipower) — all tracked.
+
+**Look into:**
+- Still open: SRA deposit / cancellation terms in the Q2 10-Q contract-liabilities note.
+- Still open: 2001–2003 GE turbine-cancellation history.
+- Still open: sweep gevernova.com print/pdf nodes for untracked 2024–25 orders.
+- Still open: which regions absorb the ~37 non-HA heavy-duty units per quarter.
+- Search summary phrasing "reservations four to five years out, like Siemens and MHI" — consistent with 2030/2031 slot commentary; no new data.
+
+**Issues:** none. Next run 09:17 UTC.
+
+---
+
 ## 2026-09-29 07:19 UTC — hourly run
 
 **Alerts sent:** none.
