@@ -5,6 +5,23 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-29 23:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. **Updates:** 0. All 28 queries ran; result set identical to the 21:19 and 22:19 runs. Every GEV hit matched a tracked row (Taiba/Qassim, Duke, Chevron/Engine No. 1, Quang Trach II, TVA, WFEC, Hawaiian Electric, Oglethorpe, Qurayyah, Jafurah, Hsinta, Taipower repower, Eurus x2, Powerica x2, O2 Power, IVPC x2, BBWind/Greenvolt, Kosovo, Forestalia, Egypt AGP + RLE, Venezuela). Latest gevernova.com new-unit gas turbine release still June 23; latest 8-K still Aug 27.
+
+**Close calls:**
+- Utility query re-surfaced the Greenville SC capacity line ("up to 80 gas turbines annually") next to the Duke agreement — consistent with the 20 GW annualized Q3-26 / 24 GW 2028 capacity path already in the baseline; no change.
+- Venezuela snippet adds "EPC contracts for part of the generation fleet" to the scope language — still no $ or unit disclosure; the tracked row already reads as a services-first framework.
+- Day closes with zero new gevernova.com nodes above 144171 and no non-earnings 8-K. Sept 29 total: 9 backfill/framework rows added (TVA-era aero already in; today: Chesterfield, Powerica Dwarka, Kosovo, Forestalia, Oglethorpe, Eurus Iwaya, Saudi $14.2B package), 1 source-confirmation update (Venezuela), 0 alerts.
+
+**Look into:** pin "339 MW Japan 2025" to its release; unit-count vs GW comparison across OEMs; which part of the $14.2B Saudi package is inside the 116 GW figure; successor to Zingoni as Power CEO; SRA deposit/cancellation terms in the Q2 10-Q; 2001–2003 GE cancellation analogue; continue print/pdf node sweep; regional split of non-HA heavy-duty units; Venezuela $/MW sizing; sec.gov query variant for non-earnings 8-Ks; Siemens 60% DC vs GEV ~20% reconciliation; Japanese utility SRAs beyond Kansai; Duke 20-unit split; Chevron/Kilby SRA status; Xcel F-class siting; Eneva Azulão date; Blue Energy 7HA.02 count; Kuwait/Malaysia HA backfill.
+
+**Issues:** none. Next run 00:17 UTC (Sept 30).
+
+---
+
 ## 2026-09-29 22:19 UTC — hourly run
 
 **Alerts sent:** none.
