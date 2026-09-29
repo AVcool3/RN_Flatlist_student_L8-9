@@ -5,6 +5,26 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-29 20:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 1 (May 2025 framework backfill, not an alert). **Updates:** 0. All 28 queries ran. No new GEV turbine order, SRA, 8-K, or guidance item since last run. Latest gevernova.com new-unit gas turbine release still June 23 (Quang Trach II); latest 8-K still Aug 27.
+
+**Row added:**
+- Saudi "up to $14.2B" package (May 13, 2025, state-visit announcement): SEC gas turbines + synchronous condensers + parts/MRO (firm-ish, ~$2B in backlog/reservation at Q1-25), SPPC MoUs, ACWA framework, Aramco services. Logged as a framework row, not a turbine order — the Qurayyah 5x HA (May 28, 2025) and Taiba/Qassim rows are the firm Saudi units. Pitch use: KSA is GEV's largest single international installed base (~50 GW) and the anchor of the ~20% non-US HA book.
+
+**Close calls:**
+- gevernova.com print/pdf node 143962 = Jafurah ISPP start of operations (ADIPEC, Nov 2025) — milestone, already known; not a row.
+- Turbomachinery (June 2, 2025) Qurayyah detail confirms tracked row (3x 7HA.03 + 2x 7HA.02, Hajr Two = ACWA/SEC/Alireza). Ansaldo 1 GW Al Dhafra (UAE) is a competitor win — note that GEV has no tracked UAE new-unit HA order; UAE is a Siemens/Ansaldo/Mitsubishi market on current evidence.
+- Search snippet reiterates "roughly 80% of the 100 GW under contract is utility/IPP/industrial, 20% explicitly data-center" (Q1-26) — matches the baseline.
+
+**Look into:** which part of the $14.2B is in the 116 GW backlog+SRA figure (SEC reservations?) — check Q2-26 10-Q geographic backlog note; pin "339 MW Japan 2025" to source; successor to Zingoni as Power CEO; SRA deposit/cancellation terms in the Q2 10-Q; 2001–2003 GE cancellation analogue; continue print/pdf node sweep; regional split of non-HA heavy-duty units; Venezuela $/MW sizing; sec.gov query variant for non-earnings 8-Ks; Siemens 60% DC vs GEV ~20% reconciliation; Japanese utility SRAs beyond Kansai; Duke 20-unit split; Chevron/Kilby SRA status; Xcel F-class siting; Eneva Azulão date; Blue Energy 7HA.02 count; Kuwait/Malaysia HA backfill.
+
+**Issues:** none. Next run 21:17 UTC.
+
+---
+
 ## 2026-09-29 19:19 UTC — hourly run
 
 **Alerts sent:** none.
