@@ -55,7 +55,7 @@ const PLAUSIBLE_MONTHLY = {
   USD: [3, 40],     CAD: [4, 50],     MXN: [60, 500],
   GBP: [3, 40],     EUR: [3, 40],     SEK: [40, 400],   NOK: [40, 400],
   DKK: [40, 400],   PLN: [10, 100],   CHF: [4, 50],     TRY: [30, 800],
-  BRL: [8, 150],   // ceiling covers Apple One Premier at R$104.90    ARS: [1000, 50000], COP: [8000, 80000], CLP: [2000, 20000],
+  BRL: [8, 150],    ARS: [1000, 50000], COP: [8000, 80000], CLP: [2000, 20000], // BRL ceiling covers Apple One Premier at R$104.90
   PEN: [8, 80],     JPY: [400, 4000], KRW: [4000, 40000], AUD: [5, 80],   // AUD ceiling covers Apple One Premier at A$52.95
   INR: [50, 700],   IDR: [20000, 200000], PHP: [60, 600], THB: [60, 600],
   VND: [20000, 300000], NGN: [500, 20000], ZAR: [30, 300], EGP: [30, 400],
