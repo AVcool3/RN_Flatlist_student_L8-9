@@ -5,6 +5,32 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-29 15:19 UTC — hourly run
+
+**Schedule note:** second firing this hour (15:00 was the delayed 14:17 slot; this is the on-time 15:17 slot). Full procedure run anyway.
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. **Updates:** 0. All 28 queries ran; every hit matched an existing CONTRACTS.md row (incl. the Powerica Dwarka and Chesterfield backfills). Latest gevernova.com turbine-order release still June 23 (EVN Quang Trach II); latest earnings 8-K still Jul 22; latest 8-K of any kind Aug 27 (CFO, Item 5.02).
+
+**Corporate:**
+- Mavi Zingoni resigned as CEO of the Power segment — 8-K dated Jan 21, 2026 (advisor through Jun 30, 2026). NOT previously logged. Surfaced only because the sec.gov query returned a different slice this hour. Pitch note: the Power segment (the gas turbine business the whole thesis rests on) changed leadership in Jan 2026, and the CFO changes Jan 2027 — two of the three key seats turn over inside the thesis window. Look into who succeeded Zingoni and whether the Q1/Q2 calls named them.
+
+**Close calls:**
+- Pricing datapoint (Utility Dive 116 GW piece): new gas-turbine orders in H1-26 priced 10–20 points higher $/kW than Q4-25 orders. Already implicit in the Q2 baseline; worth a line on the margin slide.
+- Pennsylvania grid factories: >$100M over two years, ~700 jobs for HV switchgear — capex, not a contract.
+- Mitsubishi Power "gas + steam turbines for a combined-cycle plant" (Turbomachinery) — competitor, unidentified customer; not chased.
+- Siemens Energy backlog now quoted as €146bn (Yahoo/Reuters) vs €162bn (ad-hoc-news Aug 15) — different dates/definitions; use the €162bn Aug figure as latest.
+- Everything else resurfaced and tracked.
+
+**Look into:**
+- Successor to Zingoni as Power CEO (see Corporate).
+- Still open: SRA deposit / cancellation terms in the Q2 10-Q; 2001–2003 cancellation history; gevernova.com print/pdf node sweep; regional split of non-HA units; Venezuela $/MW overhaul sizing; sec.gov query variant for non-earnings 8-Ks (this hour shows the query does occasionally surface 5.02 filings, but not reliably).
+
+**Issues:** none. Next run 16:17 UTC.
+
+---
+
 ## 2026-09-29 15:01 UTC — hourly run
 
 **Schedule note:** no 14:17 firing arrived; this run was scheduled 14:57 and fired 15:00. One hour skipped by the Routine, not by the bot.
