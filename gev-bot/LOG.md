@@ -5,6 +5,22 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-29 17:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. **Updates:** 0. All 28 queries ran; every GEV hit matched a tracked row (Quang Trach II, Duke, Crusoe, Chesterfield, Powerica, TVA Kingston, Venezuela, etc.). Latest gevernova.com new-unit turbine release still June 23 (EVN Quang Trach II); latest 8-K of any kind still Aug 27 (CFO transition).
+
+**Close calls:**
+- Siemens Energy + Babcock & Wilcox: 20 steam-turbine-generator sets (~1 GW) for the FastPower data-center program. Competitor item, not a GEV row; logged for the segmentation slide (Siemens keeps leaning harder into DC than GEV's ~20% of book).
+- gevernova.com query resurfaced "GE Vernova completes Prolec GE acquisition" (Feb 2, 2026, $5.275B, ~50/50 cash/debt). Corporate/Electrification, already implicit in the Q4-25 baseline; not a contract row.
+
+**Look into:** successor to Zingoni as Power CEO; SRA deposit/cancellation terms in the Q2 10-Q contract-liabilities note; 2001–2003 GE cancellation history analogue; sweep gevernova.com print/pdf nodes for untracked 2024–25 orders; regional split of non-HA heavy-duty units; Venezuela $/MW overhaul sizing; sec.gov query variant for non-earnings 8-Ks; reconcile Siemens 60% DC of new orders vs GEV ~20% of book; Japanese utility SRAs beyond Kansai; Duke 20-unit split; Chevron/Kilby SRA status; Xcel F-class siting; Eneva Azulão date; Blue Energy 7HA.02 count; Kuwait/Malaysia HA backfill.
+
+**Issues:** none. Next run 18:17 UTC.
+
+---
+
 ## 2026-09-29 16:19 UTC — hourly run
 
 **Alerts sent:** none.
