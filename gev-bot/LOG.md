@@ -5,6 +5,24 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-29 21:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. **Updates:** 0. All 28 queries ran; every GEV hit matched a tracked row (Taiba/Qassim, Duke, Chevron/Engine No. 1, Quang Trach II, TVA, WFEC, Hawaiian Electric, Oglethorpe, Qurayyah, Jafurah, Eurus x2, Powerica x2, O2 Power, IVPC x2, BBWind/Greenvolt, Kosovo, Forestalia, Egypt AGP + RLE, Venezuela). Latest gevernova.com new-unit gas turbine release still June 23; latest 8-K still Aug 27.
+
+**Close calls:**
+- gevernova.com "secure order modernize key power plants" = MDEPC Banha/Nubaria AGP + LTSA (Apr 29, 2026) — tracked row.
+- Siemens Energy: 179 gas turbine orders booked in 1H FY26 vs 194 for all of FY25 (Yahoo Finance) — competitor datapoint; Siemens unit count now running ~2x GEV's disclosed heavy-duty cadence (52 HD units in Q2-26) though GEV units skew larger (HA). Worth a line on the competitive slide.
+- Mitsubishi: 35 large-frame units / 16 GW sold in FY25; backlog 35 GW — unchanged.
+- No new print/pdf nodes above 144171 surfaced this hour.
+
+**Look into:** unit-count vs GW comparison across the three OEMs (Siemens 179 units 1H26 vs GEV ~52 HD + 61 aero per quarter vs MHI 35/yr); which part of the $14.2B Saudi package is inside the 116 GW figure; pin "339 MW Japan 2025" to source; successor to Zingoni as Power CEO; SRA deposit/cancellation terms in the Q2 10-Q; 2001–2003 GE cancellation analogue; continue print/pdf node sweep; regional split of non-HA heavy-duty units; Venezuela $/MW sizing; sec.gov query variant for non-earnings 8-Ks; Siemens 60% DC vs GEV ~20% reconciliation; Japanese utility SRAs beyond Kansai; Duke 20-unit split; Chevron/Kilby SRA status; Xcel F-class siting; Eneva Azulão date; Blue Energy 7HA.02 count; Kuwait/Malaysia HA backfill.
+
+**Issues:** none. Next run 22:17 UTC.
+
+---
+
 ## 2026-09-29 20:19 UTC — hourly run
 
 **Alerts sent:** none.
