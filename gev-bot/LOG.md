@@ -5,6 +5,28 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-29 18:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 2 (both 2025 wind backfills, not alerts). **Updates:** 0. All 28 queries ran. No new GEV turbine order, SRA, 8-K, or guidance item since last run. Latest gevernova.com new-unit turbine release still June 23 (EVN Quang Trach II; re-confirmed by decoding print/pdf node 144115); latest 8-K still Aug 27.
+
+**Rows added:**
+- Çalık Renewables Zatriq I & II, Kosovo — 12x 6.1MW-158m, 73 MW, booked Q1 2025, release June 18, 2025; first power Aug 2026. Turkish IPP's first project outside Türkiye.
+- Forestalia 49 MW, Aragón, Spain — 8x 6.1MW-158m, booked Q1 2025, release ~Apr 9, 2025; drawn from the Dec 2023 693 MW framework.
+
+**Close calls:**
+- gevernova.com print/pdf node 144171 decoded = Egypt Rotor Life Extension (Sept 23, 2026) — already tracked (row dated 2026-09-23). Node 144149 = Strazik Laguna conference notice (Sept 16), not a contract.
+- MEIL Upper Sileru 1.35 GW pumped-storage (9x 150 MW units, Andhra Pradesh, May 2026) — hydro, not gas-turbine scope; not added. Worth a row only if hydro is folded into the segmentation slide.
+- Powergrid 765 kV transformers/reactors (May 2025) and Sterlite Grid ₹400 crore (May 2026) — GE Vernova T&D India listed-sub orders; Electrification, not turbine; not added.
+- Search still surfacing the "90% traditional / 10% hyperscaler on orders; ~1/3 hyperscaler on paid reservations" split (Dec 2024 Bloomberg) — useful segmentation datapoint for the pitch alongside the current ~80/20 book.
+
+**Look into:** successor to Zingoni as Power CEO; SRA deposit/cancellation terms in the Q2 10-Q contract-liabilities note; 2001–2003 GE cancellation history analogue; continue sweeping gevernova.com print/pdf nodes (143800–144170 range still has undated wind/services items); regional split of non-HA heavy-duty units; Venezuela $/MW overhaul sizing; sec.gov query variant for non-earnings 8-Ks; reconcile Siemens 60% DC of new orders vs GEV ~20% of book; Japanese utility SRAs beyond Kansai; Duke 20-unit split; Chevron/Kilby SRA status; Xcel F-class siting; Eneva Azulão date; Blue Energy 7HA.02 count; Kuwait/Malaysia HA backfill.
+
+**Issues:** Bash auto-mode classifier returned no verdict several times this run (transient; retries succeeded). nacleanenergy.com and theenergyyear.com 403 for WebFetch; dated Kosovo/Forestalia via search snippets citing the gevernova.com releases. Next run 19:17 UTC.
+
+---
+
 ## 2026-09-29 17:19 UTC — hourly run
 
 **Alerts sent:** none.
