@@ -5,6 +5,28 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-29 07:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. **Updates:** 0. All 28 queries ran; every hit matched an existing CONTRACTS.md row (including TVA Kingston and Springfield CU, backfilled last hour). Latest gevernova.com press release still Sept 23 (Egypt RLE); latest new-unit turbine order release still June 23 (EVN Quang Trach II); latest 8-K still Q2 (Jul 22).
+
+**Close calls:**
+- IHI + GE Vernova 100% ammonia combustion test on F-class — R&D milestone, not an order. Not added.
+- GESAT Dammam "first H-class turbine completed" — manufacturing milestone (Jul 2024), not an order.
+- Mitsubishi Power / LNGPH (Philippines) — now confirmed as a parts-and-services deal, not new units. Competitor item only.
+- BWRX-300: SGE/Samsung MoU, AFRY MSA, UK MoUs (Aecon/AtkinsRéalis/Jacobs/Laing O'Rourke) — nuclear, tracked, never alerts.
+
+**Look into:**
+- Still open: SRA deposit / cancellation terms in the Q2 10-Q contract-liabilities note.
+- Still open: 2001–2003 GE turbine-cancellation history as bear-case comparison.
+- Still open: sweep gevernova.com print/pdf nodes (~143xxx–144xxx) for other 2024–25 orders without a tracker row.
+- Q2 split "52 heavy-duty incl. 15 HA + 61 aero" — the 37 non-HA heavy-duty units (F/E/B-class) are largely unnamed in press. Worth asking which regions absorb F-class (likely Middle East, Africa, LatAm) since these are the cheaper, faster-slot frames.
+
+**Issues:** none. Next run 08:17 UTC.
+
+---
+
 ## 2026-09-29 06:19 UTC — hourly run
 
 **Alerts sent:** none (both additions are historical backfills, not new contracts — backfills never alert).
