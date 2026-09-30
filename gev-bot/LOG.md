@@ -5,6 +5,22 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-30 09:19 UTC — hourly run
+
+**Alerts sent:** none (backfill only).
+
+**New contracts found:** 1 (backfill). **Updates:** 0. All 28 queries ran. New row: YTL PowerSeraya, Singapore — 1x 9HA.01 for a 600 MW hydrogen-ready CCGT at Pulau Seraya, announced Oct 28, 2024 (surfaced by the 9HA query; dated via the gevernova.com release and Turbomachinery Mag Oct 29, 2024). Segment: IPP/genco, international, single-unit HA. Not an alert: 2024 order, already inside the backlog series.
+
+**Dedupe notes:** print/pdf node 143926 decoded to the Enertrag Bonacker release (tracked); node 144088 is "GE Vernova secures order to modernize key power plants in Egypt" (tracked services row). Still no gevernova.com node above 144171 and no 8-K since Aug 27. Every other GEV hit matched an existing row.
+
+**Close calls:** Mitsubishi Power items surfaced this hour (Qatar Facility E 2.4 GW M701JAC, Morocco Al Wahda OCGT, Uzbekistan 2x M701JAC) — competitor wins in markets where GEV's tracked HA book is thin (Qatar, Morocco, Central Asia). Pitch note: the Gulf outside KSA keeps going to Siemens/Mitsubishi/Ansaldo.
+
+**Look into:** Singapore — did GEV win any share of the Sembcorp or Keppel H-class CCGTs (Keppel Sakra is Mitsubishi; Sembcorp Sakra is Siemens per prior knowledge — confirm) or is PowerSeraya GEV's only Singapore HA? Plus the standing list: Jan 2024 Mexico 9F / LM2500 XPRESS release; "339 MW Japan 2025" source; OEM unit-count vs GW comparison; $14.2B Saudi package share inside 116 GW; Zingoni successor; SRA deposit terms in Q2 10-Q; 2001-2003 cancellation analogue; print/pdf node sweep; non-HA heavy-duty regional split; Venezuela $/MW; sec.gov non-earnings 8-K query; Siemens ~60% DC vs GEV ~20%; Japanese utility SRAs; Duke 20-unit split; Chevron/Kilby SRA status; Xcel F-class siting; Eneva Azulao date; Blue Energy 7HA.02 count; Malaysia HA backfill.
+
+**Issues:** WebFetch on both print/pdf nodes returned raw PDF (summarizer could read only the title); titles were enough to dedupe. Next run 10:17 UTC.
+
+---
+
 ## 2026-09-30 08:19 UTC — hourly run
 
 **Alerts sent:** none.
