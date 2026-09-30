@@ -5,6 +5,23 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-30 04:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. **Updates:** 0. All 28 queries ran; result set unchanged apart from one hydro item below. Every GEV hit matched a tracked row. Latest gevernova.com new-unit gas turbine release still June 23 (Quang Trach II); latest 8-K still Aug 27; no new print/pdf nodes above 144171.
+
+**Close calls:**
+- Rio Tinto Isle Maligne (Quebec) — June 26, 2026 order to upgrade eight turbine-alternator units at the hydro plant. Hydro services, not gas-turbine scope; not added (same treatment as Upper Sileru PSP). Would join a hydro/services slide if one is built.
+- Siemens Energy detail: "data center operators and Middle East customers accounted for about half of Q3 gas turbine orders" — competitor colour only.
+- Nothing new from Asia-hours sources.
+
+**Look into:** locate the Jan 2024 Mexico 9F / LM2500 XPRESS order release; pin "339 MW Japan 2025" to its release; unit-count vs GW comparison across OEMs; which part of the $14.2B Saudi package is inside the 116 GW figure; successor to Zingoni as Power CEO; SRA deposit/cancellation terms in the Q2 10-Q; 2001–2003 GE cancellation analogue; continue print/pdf node sweep; regional split of non-HA heavy-duty units; Venezuela $/MW sizing; sec.gov query variant for non-earnings 8-Ks; Siemens 60% DC vs GEV ~20% reconciliation; Japanese utility SRAs beyond Kansai; Duke 20-unit split; Chevron/Kilby SRA status; Xcel F-class siting; Eneva Azulão date; Blue Energy 7HA.02 count; Kuwait/Malaysia HA backfill.
+
+**Issues:** none. Next run 05:17 UTC.
+
+---
+
 ## 2026-09-30 03:19 UTC — hourly run
 
 **Alerts sent:** none.
