@@ -5,6 +5,22 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-30 10:19 UTC — hourly run
+
+**Alerts sent:** none (backfill only).
+
+**New contracts found:** 1 (backfill). **Updates:** 0. All 28 queries ran. New row: BBWind 20th agreement, Germany — 3x 6.0MW-164m for Heiden (12 MW) + Dorsten (6 MW) community wind farms in NRW, announced Apr 9, 2025, booked Q1 2025. Distinct from the 71.5 MW BBWind + Greenvolt package (Q4 2025). Not an alert: 2025 order, small, already in the wind backlog.
+
+**Dedupe notes:** node 144091 = Bernstein Strategic Decisions conference notice (May 2026), not a contract. Topolobampo III (Iberdrola, Mexico 7HA.01) resurfaced as an operations item; already tracked. Eneva Azulão second H-class order resurfaced via ge.com taxonomy; row 59 still carries "order date unverified". No gevernova.com node above 144171; no 8-K since Aug 27.
+
+**Close calls:** BusinessWire item 20251118230769 (Nov 18, 2025) surfaced under the IPP query but returns 403 and a follow-up search found nothing; could be a Nov 2025 IPP/data-center 7HA announcement. Unresolved. Siemens Energy H1 FY26 count reconfirmed at 179 units vs 194 for all FY25.
+
+**Look into:** identify BusinessWire 20251118230769 via a different aggregator (Yahoo Finance / MarketScreener mirror); pin the Eneva Azulão II order date; the Singapore share question from 09:19; plus the standing list (Jan 2024 Mexico 9F / LM2500 XPRESS release; "339 MW Japan 2025" source; OEM unit-count vs GW; $14.2B Saudi share inside 116 GW; Zingoni successor; SRA deposit terms in Q2 10-Q; 2001-2003 cancellation analogue; print/pdf node sweep; non-HA heavy-duty regional split; Venezuela $/MW; sec.gov non-earnings 8-K query; Siemens ~60% DC vs GEV ~20%; Japanese utility SRAs; Duke 20-unit split; Chevron/Kilby SRA status; Xcel F-class siting; Blue Energy 7HA.02 count; Malaysia HA backfill).
+
+**Issues:** businesswire.com 403 (add to the blocked list); transformer-magazine.com timed out once, succeeded on retry. Next run 11:17 UTC.
+
+---
+
 ## 2026-09-30 09:19 UTC — hourly run
 
 **Alerts sent:** none (backfill only).
