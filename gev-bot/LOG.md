@@ -5,6 +5,22 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-30 11:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. **Updates:** 0. All 28 queries ran; every GEV hit matched an existing row. No gevernova.com node above 144171; no 8-K since Aug 27.
+
+**Resolved from last hour:** the BusinessWire item 20251118230769 is "GE Vernova Secures First Onshore Wind Repower Upgrade Contract Outside the United States with Taiwan Power Company" (Nov 18, 2025; 25 repower kits for 1.5MW-70.5m units, booked Q3 2025, 5-yr O&M). Already tracked as the Taipower repower row. Closed.
+
+**Close calls:** Mitsubishi Power's full-turnkey 2.8 GW Tung Hsiao CCGT in Taiwan resurfaced alongside its Qatar Facility E, Morocco and Uzbekistan wins. Pitch note: GEV's Taiwan footprint is wind repower only; Taiwan's large-frame gas build-out (Tung Hsiao, Taichung, Datan) has gone to Mitsubishi and Siemens. Siemens H1 FY26 = 179 units reconfirmed.
+
+**Look into:** pin the Eneva Azulão II order date; the Singapore share question (Keppel/Sembcorp Sakra vs PowerSeraya); plus the standing list (Jan 2024 Mexico 9F / LM2500 XPRESS release; "339 MW Japan 2025" source; OEM unit-count vs GW; $14.2B Saudi share inside 116 GW; Zingoni successor; SRA deposit terms in Q2 10-Q; 2001-2003 cancellation analogue; print/pdf node sweep; non-HA heavy-duty regional split; Venezuela $/MW; sec.gov non-earnings 8-K query; Siemens ~60% DC vs GEV ~20%; Japanese utility SRAs; Duke 20-unit split; Chevron/Kilby SRA status; Xcel F-class siting; Blue Energy 7HA.02 count; Malaysia HA backfill).
+
+**Issues:** none. Next run 12:17 UTC.
+
+---
+
 ## 2026-09-30 10:19 UTC — hourly run
 
 **Alerts sent:** none (backfill only).
