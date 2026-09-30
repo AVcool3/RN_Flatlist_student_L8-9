@@ -5,6 +5,24 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-30 14:19 UTC — hourly run
+
+**Alerts sent:** none (backfill only).
+
+**New contracts found:** 1 (backfill). **Updates:** 0. All 28 queries ran. New row: Taiwan Power Company Hsinta plant — six 7HA.03 across three combined-cycle blocks (~4 GW), block 1 dispatching 1.3 GW since Jul 7, 2025, blocks 2-3 due 2025-2026; EPC consortium with CTCI. Pre-2024 order surfaced via the Asia query as an operating milestone. Not an alert: legacy order already in the delivered/shipping base.
+
+**Correction:** the 11:19 pitch note said GEV's Taiwan footprint was wind repower only. Wrong — Hsinta is a six-unit HA site. Revised note: Taipower splits its large-frame build between GEV (Hsinta, 7HA.03) and Mitsubishi (Tung Hsiao 2.8 GW, Taichung). Taiwan is contested, not lost.
+
+**Also seen, no row by rule:** Shenzhen Energy Guangming, 3x 9HA.01 (~2 GW) — China HA goes through the Harbin JV channel.
+
+**Close calls:** none new. Siemens: DC + Middle East ~half of quarterly GT orders (reconfirmed). Mitsubishi list unchanged.
+
+**Look into:** Singapore H-class share; Hsinta original order date and whether the 2019-era Taipower awards (Hsinta, Datan?) are the only GEV HA in Taiwan; plus the standing list ("339 MW Japan 2025" source; OEM unit-count vs GW; $14.2B Saudi share inside 116 GW; Zingoni successor; SRA deposit terms in Q2 10-Q; 2001-2003 cancellation analogue; print/pdf node sweep; non-HA heavy-duty regional split; Venezuela $/MW; sec.gov non-earnings 8-K query; Siemens ~60% DC vs GEV ~20%; Japanese utility SRAs; Duke 20-unit split; Chevron/Kilby SRA status; Xcel F-class siting; Blue Energy 7HA.02 count; Malaysia HA backfill).
+
+**Issues:** none. Next run 15:17 UTC.
+
+---
+
 ## 2026-09-30 13:19 UTC — hourly run
 
 **Alerts sent:** none (backfill only).
