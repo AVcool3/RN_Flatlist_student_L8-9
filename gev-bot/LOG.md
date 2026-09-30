@@ -5,6 +5,23 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-30 02:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. **Updates:** 0. All 28 queries ran; result set unchanged from the last five runs apart from one resurfaced item below. Every GEV hit matched a tracked row. Latest gevernova.com new-unit gas turbine release still June 23 (Quang Trach II); latest 8-K still Aug 27; no new print/pdf nodes above 144171.
+
+**Close calls:**
+- 9HA query surfaced a June 2025 long-term service agreement via the GEV–Harbin Electric JV for two 9HA.01 units at the Daya Bay Petrochemical Zone integrated energy station (Huizhou, Guangdong; units in commercial operation since July 2024). Not tracked and not added: China HA items are deliberately outside the tracker (JV-channel, low read-through to the US/international new-unit book), and this is services, not new units. Noted for the services-installed-base slide.
+- Africa query resurfaced the legacy Geometric Power Aba 3x LM6000-PD SPRINT sale (Nigeria, pre-spin GE era) — not added.
+- Nothing new from Asia-hours sources (Japan, Korea, Taiwan, Vietnam, India).
+
+**Look into:** pin "339 MW Japan 2025" to its release; unit-count vs GW comparison across OEMs; which part of the $14.2B Saudi package is inside the 116 GW figure; successor to Zingoni as Power CEO; SRA deposit/cancellation terms in the Q2 10-Q; 2001–2003 GE cancellation analogue; continue print/pdf node sweep; regional split of non-HA heavy-duty units; Venezuela $/MW sizing; sec.gov query variant for non-earnings 8-Ks; Siemens 60% DC vs GEV ~20% reconciliation; Japanese utility SRAs beyond Kansai; Duke 20-unit split; Chevron/Kilby SRA status; Xcel F-class siting; Eneva Azulão date; Blue Energy 7HA.02 count; Kuwait/Malaysia HA backfill.
+
+**Issues:** none. Next run 03:17 UTC.
+
+---
+
 ## 2026-09-30 01:19 UTC — hourly run
 
 **Alerts sent:** none.
