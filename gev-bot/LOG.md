@@ -5,6 +5,22 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-30 23:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. **Updates:** 0. All 28 queries ran; the result set is essentially the same as the last several hours. Only new-looking hit was a POWER Magazine piece, "Xcel Energy inks dual alliances with GE Vernova, NextEra to support 6 GW data center outlook" (dated Feb 5, 2026). It describes the same Strategic Alliance Agreement already tracked in CONTRACTS.md (row dated 2026-02-03: 5x F-class gas turbine reservation + multi-GW workhorse wind capacity reservation), so it dedupes to the existing row. Useful colour from it: Xcel CEO Bob Frenzel said they engaged NextEra early specifically for data-center load; a good quote for the "utilities are pre-booking capacity" pitch point.
+
+**Close calls:**
+- Mitsubishi Power / Tung Hsiao (Taiwan) turnkey CCGT: ~EUR 4.44B, five units starting 2030-31. Competitor win, not a GEV row; keeps Taiwan as a contested market (GEV has Hsinta 6x 7HA.03, Mitsubishi has Tung Hsiao + Taichung).
+- Prolec GE 50% stake purchase (Feb 2026): ~$500M Q1 revenue at >20% EBITDA, ~$5B backlog. Corporate/Electrification item already known; no row.
+
+**Look into:** Singapore H-class share (Keppel/Sembcorp Sakra vs PowerSeraya); Hsinta original order date; "339 MW Japan 2025" source; OEM unit-count vs GW; $14.2B Saudi share inside 116 GW; Zingoni successor; SRA deposit terms in Q2 10-Q; 2001-2003 cancellation analogue; print/pdf node sweep; non-HA heavy-duty regional split; Venezuela $/MW; sec.gov non-earnings 8-K query; Siemens ~60% DC vs GEV ~20%; Japanese utility SRAs; Duke 20-unit split; Chevron/Kilby SRA status; Xcel F-class siting; Blue Energy 7HA.02 count; Malaysia HA backfill.
+
+**Issues:** none. Next run 00:17 UTC.
+
+---
+
 ## 2026-09-30 22:19 UTC — hourly run
 
 **Alerts sent:** none.
