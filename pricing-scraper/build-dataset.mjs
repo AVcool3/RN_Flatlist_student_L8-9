@@ -73,7 +73,9 @@ const num = (v) => (typeof v === "number" && Number.isFinite(v) ? v : null);
 // Tier names differ across services and countries; fold them to one label so
 // "Spotify Standard" lines up with "Apple Music Individual".
 const TIER_MAP = { standard: "Individual", premium: "Individual", "family 4": "Family", "family 6": "Family" };
-const tierOf = (r) => { const t = String(r.tier ?? "").trim(); return TIER_MAP[t.toLowerCase()] ?? t; };
+// A leading "Premium " ("Premium Individual", "Premium Standard" on 2026-09-30) is
+// stripped first: it is the same plan as "Individual" / "Standard" in earlier files.
+const tierOf = (r) => { const t = String(r.tier ?? "").trim().replace(/^premium\s+/i, ""); return TIER_MAP[t.toLowerCase()] ?? t; };
 
 // "1 month free", "3 months for $0", "Try 2 months free" -> months as a number.
 const trialMonths = (text) => { const m = String(text ?? "").match(/(\d+)\s*(?:-|\s)?(?:month|months|mo)\b/i); return m ? Number(m[1]) : null; };

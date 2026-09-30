@@ -82,7 +82,12 @@ const rows = data.pricing_baseline ?? [];
 // Normalise a few things the agent is inconsistent about.
 const cc = (s) => String(s || "").trim().toUpperCase();          // country code
 const isMonthly = (r) => /month/i.test(r.period || "");
-const isIndividual = (r) => /^(individual|standard)\b/i.test(r.tier || "");
+// 2026-09-30: the agent labelled the single-user plan "Premium Individual" /
+// "Premium Standard" (every earlier file: "Individual" / "Standard"). It is the
+// same plan on the same page, so strip a leading "Premium " before matching;
+// otherwise every Spotify country drops out of the USD comparison for a label.
+const tierLabel = (r) => String(r.tier || "").trim().replace(/^premium\s+/i, "");
+const isIndividual = (r) => /^(individual|standard)\b/i.test(tierLabel(r));
 const isSpotify = (r) => /spotify/i.test(r.service || "");
 const isAppleMusic = (r) => /apple music/i.test(r.service || "");
 // "Lite" can appear in the tier ("YouTube Premium" / "Lite") or in the service
@@ -104,7 +109,7 @@ for (const r of rows) {
     (c) =>
       cc(c.country) === cc(r.country) &&
       c.service.toLowerCase() === String(r.service).toLowerCase() &&
-      c.tier.toLowerCase() === String(r.tier).toLowerCase() &&
+      c.tier.toLowerCase() === tierLabel(r).toLowerCase() &&   // same "Premium " strip as isIndividual
       cc(c.currency) === cc(r.currency) &&
       Number(r.price) === Number(c.wrong_price)
   );
