@@ -5,6 +5,23 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-30 00:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. **Updates:** 0. All 28 queries ran; result set identical to the last three runs. Every GEV hit matched a tracked row. Latest gevernova.com new-unit gas turbine release still June 23 (Quang Trach II); latest 8-K still Aug 27. No new print/pdf nodes above 144171.
+
+**Close calls:**
+- Aero query added a WFEC detail: Anadarko plant to reach ~350 MW with seven LM6000s once the two new VELOX packages are in — confirms the tracked WFEC row (existing 5 + 2 new).
+- Data-center query re-surfaced the older "DC ~15% of a ~40 GW backlog" line (2024) next to the current "20% of 100 GW" (Q1-26) — useful for the pitch's DC-mix trend line: DC share of book rose ~5 pts while the book grew 2.5x.
+- Overnight US / early Asia session: nothing new from Japan, Korea, Taiwan, Vietnam, or India queries.
+
+**Look into:** pin "339 MW Japan 2025" to its release; unit-count vs GW comparison across OEMs; which part of the $14.2B Saudi package is inside the 116 GW figure; successor to Zingoni as Power CEO; SRA deposit/cancellation terms in the Q2 10-Q; 2001–2003 GE cancellation analogue; continue print/pdf node sweep; regional split of non-HA heavy-duty units; Venezuela $/MW sizing; sec.gov query variant for non-earnings 8-Ks; Siemens 60% DC vs GEV ~20% reconciliation; Japanese utility SRAs beyond Kansai; Duke 20-unit split; Chevron/Kilby SRA status; Xcel F-class siting; Eneva Azulão date; Blue Energy 7HA.02 count; Kuwait/Malaysia HA backfill.
+
+**Issues:** none. Next run 01:17 UTC.
+
+---
+
 ## 2026-09-29 23:19 UTC — hourly run
 
 **Alerts sent:** none.
