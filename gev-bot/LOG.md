@@ -5,6 +5,20 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-30 15:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. **Updates:** 0. All 28 queries ran; result set identical to 14:19. Every GEV hit matched an existing row (Taiba/Qassim, Duke, Chevron/Engine No. 1, Quang Trach II, TVA, WFEC, Hawaiian Electric, Oglethorpe, Qurayyah, Jafurah, Eurus x2, Powerica x2, O2 Power, IVPC x2, BBWind x2, Greenvolt, Kosovo, Forestalia, Enertrag, RWE, Egypt AGP + RLE, Venezuela, Taipower repower + Hsinta, PowerSeraya, Eneva x2, Topolobampo, Brigalow). No gevernova.com node above 144171; no 8-K since Aug 27.
+
+**Close calls:** none. One new data point from the SRA query: Q2 disclosure restated as 18 GW of new SRAs signed and 10 GW converted to firm in the quarter (matches the tracked baseline). "Mostly sold out through 2028, primarily taking 2029 orders now" reconfirmed.
+
+**Look into:** Singapore H-class share; Hsinta original order date; plus the standing list ("339 MW Japan 2025" source; OEM unit-count vs GW; $14.2B Saudi share inside 116 GW; Zingoni successor; SRA deposit terms in Q2 10-Q; 2001-2003 cancellation analogue; print/pdf node sweep; non-HA heavy-duty regional split; Venezuela $/MW; sec.gov non-earnings 8-K query; Siemens ~60% DC vs GEV ~20%; Japanese utility SRAs; Duke 20-unit split; Chevron/Kilby SRA status; Xcel F-class siting; Blue Energy 7HA.02 count; Malaysia HA backfill).
+
+**Issues:** none. Next run 16:17 UTC.
+
+---
+
 ## 2026-09-30 14:19 UTC — hourly run
 
 **Alerts sent:** none (backfill only).
