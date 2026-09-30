@@ -5,6 +5,20 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-30 18:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. **Updates:** 0. All 28 queries ran; result set identical to 17:19 and every GEV hit matched an existing row. No gevernova.com node above 144171; no 8-K since Aug 27.
+
+**Close calls:** none. Only new wording this hour: Eneva Azulão II described as "second 7HA.02 order in less than six months for the complex" (consistent with the Oct 2022 / Apr 2023 dates now in the table).
+
+**Look into:** Singapore H-class share; Hsinta original order date; plus the standing list ("339 MW Japan 2025" source; OEM unit-count vs GW; $14.2B Saudi share inside 116 GW; Zingoni successor; SRA deposit terms in Q2 10-Q; 2001-2003 cancellation analogue; print/pdf node sweep; non-HA heavy-duty regional split; Venezuela $/MW; sec.gov non-earnings 8-K query; Siemens ~60% DC vs GEV ~20%; Japanese utility SRAs; Duke 20-unit split; Chevron/Kilby SRA status; Xcel F-class siting; Blue Energy 7HA.02 count; Malaysia HA backfill).
+
+**Issues:** none. Next run 19:17 UTC.
+
+---
+
 ## 2026-09-30 17:19 UTC — hourly run
 
 **Alerts sent:** none.
