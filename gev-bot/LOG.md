@@ -5,6 +5,24 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-30 12:19 UTC — hourly run
+
+**Alerts sent:** none (backfill only).
+
+**New contracts found:** 1 (backfill). **Updates:** 0. All 28 queries ran; the live result set was identical to 11:19. New row: CS Energy Brigalow Peaking Power Plant, Queensland — 12x LM2500XPRESS, up to 400 MW, hydrogen-ready, announced Jan 8, 2024, COD 2026. State-owned generator, international aero order. Not an alert: 2024 order.
+
+**Resolved look-into:** the Gas Turbine World "starts 2024 with a surge" item (Mar 20, 2024) covered three things: Kuwait Sabiya 9F.03 AGP upgrades (services, 4 units, +70 MW — no row, consistent with the earlier services-only judgment), CS Energy Brigalow (now tracked), and Iberdrola Topolobampo III (already tracked). There was no separate Jan 2024 Mexico 9F order. Closed.
+
+**Close calls:** none new. Mitsubishi list unchanged (Qatar, Morocco, Uzbekistan, Chiba-Sodegaura, Tung Hsiao).
+
+**Pitch note:** Australia now shows three GEV aero/wind rows (Brigalow LM2500XPRESS, ATCO Whyalla LM6000VELOX, Aula Carmody's Hill wind) and no HA — the Australian gas market is buying fast-start aero peakers, not baseload H-class.
+
+**Look into:** Eneva Azulão II order date; Singapore H-class share; plus the standing list ("339 MW Japan 2025" source; OEM unit-count vs GW; $14.2B Saudi share inside 116 GW; Zingoni successor; SRA deposit terms in Q2 10-Q; 2001-2003 cancellation analogue; print/pdf node sweep; non-HA heavy-duty regional split; Venezuela $/MW; sec.gov non-earnings 8-K query; Siemens ~60% DC vs GEV ~20%; Japanese utility SRAs; Duke 20-unit split; Chevron/Kilby SRA status; Xcel F-class siting; Blue Energy 7HA.02 count; Malaysia HA backfill).
+
+**Issues:** none. Next run 13:17 UTC.
+
+---
+
 ## 2026-09-30 11:19 UTC — hourly run
 
 **Alerts sent:** none.
