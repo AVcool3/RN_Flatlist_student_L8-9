@@ -5,6 +5,23 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-30 06:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. **Updates:** 0. All 28 queries ran; result set unchanged apart from one Kuwait services item below. Every GEV hit matched a tracked row. Latest gevernova.com new-unit gas turbine release still June 23 (Quang Trach II); latest 8-K still Aug 27; no new print/pdf nodes above 144171.
+
+**Close calls:**
+- Gulf query surfaced Kuwait: 2024 upgrades of four 9F.03 units at the 2 GW Sabiya CCGT, with Alghanim International as local partner. Services/upgrade on the installed base, not a new-unit order — not added. Partially answers the standing "Kuwait HA backfill" item: the Kuwait footprint in the search index is F-class services, and no HA new-unit order in Kuwait has surfaced in any run so far.
+- Enertrag detail conflict: one snippet gives "7x 6MW-164m", the tracked row (from the GEV release) has 7x 5.5MW-158m. Release wins; no change.
+- Search-engine snippet again mixed the Dec 2024 "DC ~15% of ~40 GW" line into the current DC paragraph; already handled at 00:19.
+
+**Look into:** locate the Jan 2024 Mexico 9F / LM2500 XPRESS order release; pin "339 MW Japan 2025" to its release; unit-count vs GW comparison across OEMs; which part of the $14.2B Saudi package is inside the 116 GW figure; successor to Zingoni as Power CEO; SRA deposit/cancellation terms in the Q2 10-Q; 2001–2003 GE cancellation analogue; continue print/pdf node sweep; regional split of non-HA heavy-duty units; Venezuela $/MW sizing; sec.gov query variant for non-earnings 8-Ks; Siemens 60% DC vs GEV ~20% reconciliation; Japanese utility SRAs beyond Kansai; Duke 20-unit split; Chevron/Kilby SRA status; Xcel F-class siting; Eneva Azulão date; Blue Energy 7HA.02 count; Malaysia HA backfill (Kuwait now judged services-only).
+
+**Issues:** none. Next run 07:17 UTC.
+
+---
+
 ## 2026-09-30 05:19 UTC — hourly run
 
 **Alerts sent:** none.
