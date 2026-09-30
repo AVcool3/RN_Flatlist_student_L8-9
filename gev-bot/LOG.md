@@ -5,6 +5,22 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-30 13:19 UTC — hourly run
+
+**Alerts sent:** none (backfill only).
+
+**New contracts found:** 1 (backfill). **Updates:** 1. All 28 queries ran; live result set identical to 12:19. New row: Eneva Azulão II, Brazil — 1x 7HA.02 combined cycle (STF-A650 steam turbine, H65 + H53 generators, HRSG), 590 MW, announced Apr 13, 2023, COD 2027; second H-class order from Eneva. Update: Azulão I row now carries its order date (Oct 2022) instead of "unverified". Neither is an alert: 2022-2023 orders.
+
+**Resolved look-into:** Eneva Azulão II order date (Apr 13, 2023). Closed. Brazil now shows two GEV HA units at one IPP site, both reserve-power contracts with the national system operator — the only H-class GEV has disclosed in Brazil.
+
+**Close calls:** none new. Siemens Energy: DC operators plus Middle East customers were ~half of quarterly GT orders (reconfirmed). Mitsubishi list unchanged.
+
+**Look into:** Singapore H-class share (Keppel/Sembcorp Sakra vs PowerSeraya); plus the standing list ("339 MW Japan 2025" source; OEM unit-count vs GW; $14.2B Saudi share inside 116 GW; Zingoni successor; SRA deposit terms in Q2 10-Q; 2001-2003 cancellation analogue; print/pdf node sweep; non-HA heavy-duty regional split; Venezuela $/MW; sec.gov non-earnings 8-K query; Siemens ~60% DC vs GEV ~20%; Japanese utility SRAs; Duke 20-unit split; Chevron/Kilby SRA status; Xcel F-class siting; Blue Energy 7HA.02 count; Malaysia HA backfill).
+
+**Issues:** none. Next run 14:17 UTC.
+
+---
+
 ## 2026-09-30 12:19 UTC — hourly run
 
 **Alerts sent:** none (backfill only).
