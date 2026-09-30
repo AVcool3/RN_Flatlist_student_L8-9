@@ -5,6 +5,20 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-09-30 17:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. **Updates:** 0. All 28 queries ran; result set identical to 16:19 and every GEV hit matched an existing row. No gevernova.com node above 144171; no 8-K since Aug 27.
+
+**Close calls:** none. Electrification query added one datum: Q1-26 Electrification orders $7.1B were +86% organic with an order-to-shipment ratio of ~2.5x (pitch note: book-to-bill in Electrification is running hotter than Gas Power's disclosed unit cadence).
+
+**Look into:** Singapore H-class share; Hsinta original order date; plus the standing list ("339 MW Japan 2025" source; OEM unit-count vs GW; $14.2B Saudi share inside 116 GW; Zingoni successor; SRA deposit terms in Q2 10-Q; 2001-2003 cancellation analogue; print/pdf node sweep; non-HA heavy-duty regional split; Venezuela $/MW; sec.gov non-earnings 8-K query; Siemens ~60% DC vs GEV ~20%; Japanese utility SRAs; Duke 20-unit split; Chevron/Kilby SRA status; Xcel F-class siting; Blue Energy 7HA.02 count; Malaysia HA backfill).
+
+**Issues:** none. Next run 18:17 UTC.
+
+---
+
 ## 2026-09-30 16:19 UTC — hourly run
 
 **Alerts sent:** none.
