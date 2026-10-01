@@ -5,6 +5,22 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-10-01 02:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. **Updates:** 0. All 28 queries ran. Result set is identical to the 01:19 run. Only item checked: an inspenet.com video page (Sept 20, 2026) on the Eurus Hiyamizutouge order (7x 4.2 MW-117m, 29.4 MW, Aomori; 2-year service contract with 2-year extension option). Already tracked in CONTRACTS.md, no change.
+
+**Close calls:**
+- Geometric Power, Aba, Nigeria: 3x LM6000-PD SPRINT. Resurfaced from a 2010s GE Nigeria release; far too old to backfill.
+- Siemens Energy restated "sold out, now filling 2030-2031 slots" and "more orders in past 18 months than previous two decades" (competitor cadence, already noted).
+
+**Look into:** unchanged — SRA year-end series check (29/43 GW); Jafurah original order date and ACWA/Aramco ownership split; Singapore H-class share (Keppel/Sembcorp Sakra vs PowerSeraya); Hsinta original order date; "339 MW Japan 2025" source; OEM unit-count vs GW; $14.2B Saudi share inside 116 GW; Zingoni successor; SRA deposit terms in Q2 10-Q; 2001-2003 cancellation analogue; print/pdf node sweep; non-HA heavy-duty regional split; Venezuela $/MW; sec.gov non-earnings 8-K query; Siemens ~60% DC vs GEV ~20%; Japanese utility SRAs; Duke 20-unit split; Chevron/Kilby SRA status; Xcel F-class siting; Blue Energy 7HA.02 count; Malaysia HA backfill.
+
+**Issues:** none. Next run 03:17 UTC.
+
+---
+
 ## 2026-10-01 01:19 UTC — hourly run
 
 **Alerts sent:** none.
