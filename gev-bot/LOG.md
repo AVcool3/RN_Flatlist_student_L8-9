@@ -5,6 +5,23 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-10-01 03:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. **Updates:** 0. All 28 queries ran. Result set identical to the 02:19 run; nothing needed fetching.
+
+**Close calls:**
+- India query surfaced a line that GEV Gas Power "extended the Technical Assistance and License Agreement with India to engineer and manufacture heavy duty gas turbines in India" (the BHEL licensing relationship). Licensing/manufacturing, not a turbine order; no row. Worth a footnote on the India slide: GEV's heavy-duty India channel runs through a licensee, which is why India gas rows are scarce while wind and T&D rows are plentiful.
+- Brazil query resurfaced 2013-15 era GE wind fleet (Casa dos Ventos, Eletrosul, etc.) and Renova 230-turbine contract. Pre-spin history, no rows.
+- Siemens Energy restated "data centre + Middle East ~half of quarterly GT orders" (already logged).
+
+**Look into:** unchanged — SRA year-end series check (29/43 GW); Jafurah original order date and ACWA/Aramco ownership split; Singapore H-class share; Hsinta original order date; "339 MW Japan 2025" source; OEM unit-count vs GW; $14.2B Saudi share inside 116 GW; Zingoni successor; SRA deposit terms in Q2 10-Q; 2001-2003 cancellation analogue; print/pdf node sweep; non-HA heavy-duty regional split; Venezuela $/MW; sec.gov non-earnings 8-K query; Siemens ~60% DC vs GEV ~20%; Japanese utility SRAs; Duke 20-unit split; Chevron/Kilby SRA status; Xcel F-class siting; Blue Energy 7HA.02 count; Malaysia HA backfill; BHEL TALA scope (new).
+
+**Issues:** none. Next run 04:17 UTC.
+
+---
+
 ## 2026-10-01 02:19 UTC — hourly run
 
 **Alerts sent:** none.
