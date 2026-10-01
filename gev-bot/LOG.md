@@ -5,6 +5,26 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-10-01 04:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. **Updates:** 0. All 28 queries ran. Two items checked, both dedupe:
+- gevernova.com print/pdf node 144163 = "GE Vernova to supply 29.4 MW of wind capacity for Eurus Energy's Hiyamizutouge Project in Japan" (Sept 2026). Already tracked.
+- gevernova.com "GE Vernova, Saudi Electricity Company complete first Saudi-led gas turbine [outage]" (Mar 24, 2025): first maintenance outage planned and executed entirely by Saudi engineers on 4x 7F at SEC's Riyadh PP8 (~500 MW block). Services milestone, no row.
+
+**Close calls:**
+- MarketScreener "five gas turbines ordered in Saudi Arabia" = Qurayyah IPP expansion (3x 7HA.03 + 2x 7HA.02), already tracked.
+- Gulf Construction / Dussur: first 7HA.03 rolled out of the Dammam GESAT facility and delivered to Taiba 1 (1,800 MW, completion 2027). Delivery milestone on a tracked order, no row.
+
+**Pitch notes (new, from snippets):** GEV claims ~50% of Japan's installed heavy-duty gas turbine capacity and ~25% of its onshore wind capacity; Hiyamizutouge is the fourth Japan order/milestone since start of 2024 and takes GEV wind in Japan to 1.8 GW. Useful for the Japan slide and the "Japanese utility SRAs" look-into (GEV's installed base there is the natural source of future HA SRAs). Mitsubishi backlog restated 35 GW vs 23 GW a year earlier (competitor).
+
+**Look into:** unchanged — SRA year-end series check (29/43 GW); Jafurah original order date and ACWA/Aramco ownership split; Singapore H-class share; Hsinta original order date; "339 MW Japan 2025" source; OEM unit-count vs GW; $14.2B Saudi share inside 116 GW; Zingoni successor; SRA deposit terms in Q2 10-Q; 2001-2003 cancellation analogue; print/pdf node sweep (144163 now cleared); non-HA heavy-duty regional split; Venezuela $/MW; sec.gov non-earnings 8-K query; Siemens ~60% DC vs GEV ~20%; Japanese utility SRAs; Duke 20-unit split; Chevron/Kilby SRA status; Xcel F-class siting; Blue Energy 7HA.02 count; Malaysia HA backfill; BHEL TALA scope.
+
+**Issues:** none. Next run 05:17 UTC.
+
+---
+
 ## 2026-10-01 03:19 UTC — hourly run
 
 **Alerts sent:** none.
