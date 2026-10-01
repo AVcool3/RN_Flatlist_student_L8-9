@@ -5,6 +5,22 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-10-01 06:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. **Updates:** 0. All 28 queries ran. Result set identical to the 05:19 run apart from one gevernova.com release resurfacing with a useful snippet, fetched to confirm (below). No new rows.
+
+**Look-into resolved:** "339 MW Japan 2025" source. It is the Hiyamizutouge release (gevernova.com, Sept 15, 2026): "the company has secured 339 MW of orders in 2025 across a diverse customer base, including established utilities and emerging independent power producers." Same release carries the "~50% of Japan's installed heavy-duty gas turbine capacity and 25% of onshore wind capacity" claim. (The "1.8 GW total GEV wind in Japan" line comes from the Jan 2025 Eurus Iwaya/Shitsukari release, not this one.) Removed from the look-into list.
+
+**Close calls:** none new. Electrification backlog restated at $42.4B (up >4x since 2022) in a Yahoo Finance piece; consistent with the Q2-26 8-K figures already in the baseline.
+
+**Look into:** SRA year-end series check (29/43 GW); Jafurah original order date and ACWA/Aramco ownership split; Singapore H-class share; Hsinta original order date; OEM unit-count vs GW; $14.2B Saudi share inside 116 GW; Zingoni successor; SRA deposit terms in Q2 10-Q; 2001-2003 cancellation analogue; print/pdf node sweep; non-HA heavy-duty regional split; Venezuela $/MW; sec.gov non-earnings 8-K query; Siemens ~60% DC vs GEV ~20%; Japanese utility SRAs; Duke 20-unit split; Chevron/Kilby SRA status; Xcel F-class siting; Blue Energy 7HA.02 count; Malaysia HA backfill; BHEL TALA scope.
+
+**Issues:** none. Next run 07:17 UTC.
+
+---
+
 ## 2026-10-01 05:19 UTC — hourly run
 
 **Alerts sent:** none.
