@@ -5,6 +5,24 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-10-01 01:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. **Updates:** 0. All 28 queries ran. Result set is identical to the 00:19 run except for two resurfaced items, both already handled:
+- RWE 305 MW (109x 2.8MW-127m, Honey Mesquite + Forest Creek repower, Texas; Mar 19, 2025) — fetched to date it; matches the tracked row from the Sept 30 backfill.
+- Adani Energy Solutions HVDC VSC terminal station for the 2.5 GW Khavda–South Olpad corridor — GE Vernova T&D India Electrification, excluded by the standing rule.
+
+**Close calls:** none new. Siemens Energy snippet restated 179 units booked in H1 FY26 vs 194 in all of FY25 (competitor cadence, already noted).
+
+**Pitch note:** a snippet gives the SRA year-end series as 29 GW (end-2024) → 43 GW (end-2025), which bridges the Q1-25 "21 GW" start point and the 56 → 63 GW Q1/Q2-26 figures already in the log. Verify against the Q4-25 8-K before putting the full series on a slide.
+
+**Look into:** SRA year-end series check (29/43 GW); Jafurah original order date and ACWA/Aramco ownership split; Singapore H-class share (Keppel/Sembcorp Sakra vs PowerSeraya); Hsinta original order date; "339 MW Japan 2025" source; OEM unit-count vs GW; $14.2B Saudi share inside 116 GW; Zingoni successor; SRA deposit terms in Q2 10-Q; 2001-2003 cancellation analogue; print/pdf node sweep; non-HA heavy-duty regional split; Venezuela $/MW; sec.gov non-earnings 8-K query; Siemens ~60% DC vs GEV ~20%; Japanese utility SRAs; Duke 20-unit split; Chevron/Kilby SRA status; Xcel F-class siting; Blue Energy 7HA.02 count; Malaysia HA backfill.
+
+**Issues:** none. Next run 02:17 UTC.
+
+---
+
 ## 2026-10-01 00:19 UTC — hourly run
 
 **Alerts sent:** none (backfill only; no alert rule matched).
