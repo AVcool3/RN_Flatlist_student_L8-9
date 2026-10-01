@@ -5,6 +5,28 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-10-01 00:19 UTC — hourly run
+
+**Alerts sent:** none (backfill only; no alert rule matched).
+
+**New contracts found:** 1 (backfill). **Updates:** 0. All 28 queries ran. Result set is the same as recent hours apart from three gevernova.com print/pdf nodes not seen before. Fetched all three (PDF metadata titles only; the "Sept 30, 2026" dates are PDF generation dates, not release dates):
+- node 144115 = "GE Vernova secures H-class equipment order for EVN's Quang Trach II LNG Power Plant in Vietnam" (June 2026) — already tracked, no change.
+- node 144149 = Strazik to speak at 14th Morgan Stanley Laguna conference (Sept 16, 2026) — conference notice, no row.
+- node 143962 = "GE Vernova announces start of operations at Jafurah Cogeneration ISPP in Saudi Arabia at ADIPEC 2025" (Nov 3, 2025). Not in CONTRACTS.md, so added as a backfill row: 1x 7HA.01 (first H-class built locally by GESAT), up to 320 MW + 314 t/h steam, 20-year service agreement, EPC Doosan Enerbility, serves Aramco's Jafurah gas field. Segment: industrial cogeneration / oil & gas. Original order date is ~2021 and is flagged "verify" in the row.
+
+**Close calls:**
+- Zhoushan (Zhejiang) 2x 9HA.02, Oct 2023, and RGE/BJEI 4x 6F.03 cogeneration (Aug 2023): China orders, excluded by the standing China rule.
+- Caithness Guernsey (Ohio) HA order: 2019, too old to backfill.
+- Qurayyah IPP expansion (3x 7HA.03 + 2x 7HA.02) resurfaced; already tracked.
+
+**Pitch note:** Jafurah adds a data point for the Saudi "industrial / oil & gas self-generation" sub-segment (alongside the Taiba/Qassim and Qurayyah utility-scale IPP rows). GESAT local H-class assembly is also relevant to the $14.2B Saudi initiatives look-into: GEV is building in-Kingdom HA capacity, which supports the view that the Saudi share of the 116 GW is sticky.
+
+**Look into:** Jafurah original order date and ACWA/Aramco ownership split; Singapore H-class share (Keppel/Sembcorp Sakra vs PowerSeraya); Hsinta original order date; "339 MW Japan 2025" source; OEM unit-count vs GW; $14.2B Saudi share inside 116 GW; Zingoni successor; SRA deposit terms in Q2 10-Q; 2001-2003 cancellation analogue; print/pdf node sweep (143962, 144115, 144149 now cleared); non-HA heavy-duty regional split; Venezuela $/MW; sec.gov non-earnings 8-K query; Siemens ~60% DC vs GEV ~20%; Japanese utility SRAs; Duke 20-unit split; Chevron/Kilby SRA status; Xcel F-class siting; Blue Energy 7HA.02 count; Malaysia HA backfill.
+
+**Issues:** none. gevernova.com print/pdf nodes still return raw PDF (titles only). Next run 01:17 UTC.
+
+---
+
 ## 2026-09-30 23:19 UTC — hourly run
 
 **Alerts sent:** none.
