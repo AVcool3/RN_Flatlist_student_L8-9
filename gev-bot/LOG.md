@@ -5,6 +5,22 @@ you can skim it on your phone. "Close calls" = things that look like a contract 
 aren't confirmed. "Look into" = leads worth a manual check. "Issues" = problems the
 bot hit (blocked sites, no new results, ambiguous data).
 
+## 2026-10-01 05:19 UTC — hourly run
+
+**Alerts sent:** none.
+
+**New contracts found:** 0. **Updates:** 0. All 28 queries ran. Result set identical to the 04:19 run; nothing needed fetching. Quiet overnight window (US) as expected.
+
+**Close calls:** none new. Only restated items: Siemens "sold out, filling 2030-31", Mitsubishi 10 large-frame units in FY26-Q1 (4 US / 6 Japan), 9 GW of GEV reservations signed in a 30-day window (2024-era quote), DC ~15% of a ~40 GW backlog (also 2024-era, superseded by the ~20% of 116 GW figure).
+
+**Pitch note:** two datapoints from the "signs agreement" snippets confirm the onshore-wind workhorse strategy: GEV claims #1 US onshore installer for five straight years and a >55,000-turbine global fleet. Wind rows in CONTRACTS.md are almost entirely 6.1 MW-158m / 3.8 MW-154m / 2.7 MW-132 units, i.e., repeat sales of a few platforms to repeat customers (BBWind x20, Greenvolt x2, IVPC x2, Eurus x3). That repeat-customer pattern is the wind analogue of the gas SRA story.
+
+**Look into:** unchanged — SRA year-end series check (29/43 GW); Jafurah original order date and ACWA/Aramco ownership split; Singapore H-class share; Hsinta original order date; "339 MW Japan 2025" source; OEM unit-count vs GW; $14.2B Saudi share inside 116 GW; Zingoni successor; SRA deposit terms in Q2 10-Q; 2001-2003 cancellation analogue; print/pdf node sweep; non-HA heavy-duty regional split; Venezuela $/MW; sec.gov non-earnings 8-K query; Siemens ~60% DC vs GEV ~20%; Japanese utility SRAs; Duke 20-unit split; Chevron/Kilby SRA status; Xcel F-class siting; Blue Energy 7HA.02 count; Malaysia HA backfill; BHEL TALA scope.
+
+**Issues:** none. Next run 06:17 UTC.
+
+---
+
 ## 2026-10-01 04:19 UTC — hourly run
 
 **Alerts sent:** none.
